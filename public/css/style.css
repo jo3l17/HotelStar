@@ -4679,7 +4679,8 @@ ul.slides {
   .collapse.in{
 	display:block !important;
   }
-  /*  */
+
+  /* Barra de navegacion nueva */
   .transparent-nav .navbar-collapse .navbar-nav{
 	background:black !important;
 }
@@ -4694,20 +4695,32 @@ ul.slides {
   .navbar-default .nav > li{
 	border-bottom:1px solid #333333 !important;
 }
-@media(max-width:1199px){
-	.btn_book:before{
-		content: "\f0f3" !important;
-	}
-	.btn_book{
-	margin-top: 1% !important;
-		font-family: FontAwesome;
-	}
+
+#div_language .btn_login{
+	margin-top:0 !important;
 }
+.btn_login::before{
+	content: "Login"
+}
+.btn_login{
+	margin-top:0.3%;
+	float: right;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1px solid #ffcb05;
+	color: #ffcb05;
+	font-size: 14px;
+	padding: 8px 27px;
+	text-decoration: none;
+	margin-right: 2.5%;
+}
+
+
 .btn_book:before{
 	content: "Book Now";
 }
-.btn_book{
-	margin-top:0.2%;
+.btn_book, .btn_book:focus{
+	margin-top:0.3%;
 	float: right;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -4721,4 +4734,299 @@ ul.slides {
 	color: white;
 	background-color: #ffcb05;
 	text-decoration: none;
+}
+
+#div_language{
+	margin-top:0.3%;
+	float: right;
+	margin-right: 1.4%;
+}
+#btn_language{
+	float: right;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1px solid #ffcb05;
+	color: #ffcb05;
+	font-size: 14px;
+	padding: 8px 27px;
+	text-decoration: none;
+}
+#btn_language:hover{
+	color: white;
+	background-color: #ffcb05;
+}
+#btn_language::before{
+	content: "Español"
+}
+#btn_language>span{
+	display: none;
+}
+
+/* estilos para cuando esta logueado */
+.btn_login:focus{
+	text-decoration: none;
+	color: #ffcb05;
+}
+.btn_login:focus:hover{
+	text-decoration: none;
+	color: white;
+}
+.btn_login:hover{
+	color: white;
+	background-color: #ffcb05;
+	text-decoration: none;
+}
+/*  */
+
+@media(max-width:1199px){
+	.btn_book:before{
+		content: "\f0f3" !important;
+	}
+	.btn_book{
+	margin-top: 1% !important;
+		font-family: FontAwesome;
+	}
+	
+	#div_language{
+		margin-top: 1% !important;
+		margin-right: 0 !important;
+	}
+	.btn_login{
+		margin-right: 2% !important;
+		margin-top: 0% !important;
+		}
+	
+}
+@media(max-width:768px){
+	#btn_language{
+		height: 38px !important;
+		padding-top: 15%;
+	}
+	#btn_language>span{
+		display: block !important;
+	}
+	#btn_language::before{
+		content: "" !important;
+	}
+	#btn_language>i{
+		display: none;
+	}
+	.btn_book{
+		margin-right: 5px;
+	}
+	.btn_login:before{
+		content: "\f007" !important;
+	}
+	.btn_login{
+		font-family: FontAwesome;
+	}	
+}
+/* login nuevo */
+.custom-form{
+	padding:0px 10px;
+	text-align:center;
+}
+
+.custom-form h3{
+	font-size:35px;
+	text-transform:uppercase;
+	margin-bottom:10px;
+}
+
+.custom-form h3 .fa{
+	margin-left:14px;
+}
+
+.custom-form form{
+	margin-top:40px;
+}
+
+.custom-form .form-group{
+	position:relative;
+}
+
+.custom-form .form-group .fa{
+	position:absolute;
+	top:14px;
+	left:26px;
+	font-size:18px;
+}
+
+.custom-form .form-group .fa-envelope{
+	font-size:15px;
+	top:15px;
+}
+
+.custom-form .form-group input{
+	height:45px;
+	padding-left:30px !important;
+}
+
+@media(min-width:992px){
+	.custom-form .form-group.col-md-2 input{
+		height:45px;
+		padding-left:10px !important;
+	}
+	.custom-form .form-group.col-md-2{
+		height:45px;
+		padding-left:1px !important;
+		padding-right: 1px !important;
+	}
+	.custom-form .form-group.col-md-1 input{
+		height:45px;
+		padding-left:10px !important;
+	}
+	.custom-form .form-group.col-md-1{
+		width: 12%;
+		height:45px;
+		padding-left:1px !important;
+		padding-right: 1px !important;
+	}
+	.custom-form .form-group.col-md-3 input{
+		height:45px;
+		padding-left:10px !important;
+	}
+	.custom-form .form-group.col-md-3{
+		height:45px;
+		padding-left:1px !important;
+		padding-right: 1px !important;
+	}
+	.custom-form .form-group.col-md-6{
+		padding-right: 1px !important;
+		width: 186px;
+	}
+	.custom-form .form-group.col-md-6 input{
+		padding-right: 1px !important;
+		width: 165px;
+	}
+	
+}
+
+.custom-form .form-group textarea{
+	padding-left:40px;
+	padding-top:14px;
+	height:97px;
+}
+
+.custom-form .custom-check{
+	margin:20px 0px;
+	font-size:13px;
+}
+
+.custom-form .checkbox input{
+	top:-2px;
+}
+
+.custom-form button{
+	height:45px;
+	font-size:16px;
+	margin-top:25px;
+}
+
+.custom-form .other-links{
+	text-align:center;
+	margin-top:32px;
+}
+
+.custom-form .link-line{
+	font-size:14px;
+	margin-bottom:0px;
+}
+
+.custom-form .link-line + .link-line{
+	margin-top:15px;
+}
+
+.custom-form .link-line > a{
+	font-weight:bold;
+}
+
+.custom-form .simple-link{
+	text-decoration:underline;
+	display:inline-block;
+	margin-top:20px;
+}
+
+.custom-check input[type="checkbox"] {
+    display:none;
+}
+
+.custom-check input[type="checkbox"] + label {
+	font-weight:normal;
+	cursor:pointer;
+}
+
+.custom-check input[type="checkbox"]:not(:checked) + label .fa-check{
+	display:none;
+}
+
+.custom-check input[type="checkbox"]:checked + label .fa-check{
+	display:block;
+}
+
+.custom-check input[type="checkbox"] + label span {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-2px 15px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+	text-align:center;
+	font-size:12px;
+	padding-top:1px;
+}
+/* video back */
+#hero-main {
+    background: rgba(0,0,0,0.6);
+}
+/* owl index custom navigation */
+#owl-index .owl-controls .owl-buttons .owl-prev,
+#owl-index .owl-controls .owl-buttons .owl-next{
+	background:none;
+	color:#0d0d0d;
+}
+#owl-index .owl-controls{
+	margin-top:50px;
+}
+
+#owl-index .owl-controls .owl-page span{
+	height:30px;
+	width:30px;
+	opacity:1;
+}
+#owl-index .owl-controls{
+	margin-top:30px;
+}
+
+#owl-index .owl-controls .owl-buttons .owl-prev,
+#owl-index .owl-controls .owl-buttons .owl-next{
+	font-size:37px;	
+	line-height:0;
+}
+@media(max-width:768px){
+	#owl-index .owl-controls .owl-buttons .owl-prev {
+		left: -0% !important;
+	}
+	#owl-index .owl-controls .owl-buttons .owl-next {
+		right: -0% !important;
+	}
+}
+#owl-index .owl-controls .owl-buttons .owl-prev {
+    width: 15px;
+    position: absolute;
+	top: 40%;
+	left: -3%;
+    display: block !important;
+    border:0px solid black;
+}
+#owl-index .owl-controls .owl-buttons .owl-next {
+    width: 15px;
+    position: absolute;
+    top: 40%;
+    right: -2%;
+    display: block !important;
+    border:0px solid black;
+}
+#owl-index .owl-item{
+	padding: 0px 20px;
 }

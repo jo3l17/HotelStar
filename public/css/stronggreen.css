@@ -3601,3 +3601,25 @@ p{
 .reservation-support .support-list .text .bold{
 	color:black;
 }
+/* colores botones */
+.btn_login{
+	border: 1px solid #6CE34B;
+	color: #6CE34B;
+}
+.btn_book, .btn_book:focus{
+	border: 1px solid #6CE34B;
+	color: #6CE34B;
+}
+.btn_book:hover{
+	background-color: #6CE34B;
+}
+#btn_language{
+	border: 1px solid #6CE34B;
+	color: #6CE34B;
+}
+#btn_language:hover{
+	background-color: #6CE34B;
+}
+.btn_login:hover{
+	background-color: #6CE34B;
+}
