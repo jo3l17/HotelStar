@@ -3623,3 +3623,10 @@ p{
 .btn_login:hover{
 	background-color: #ff6666;
 }
+/* colores modal */
+#owl-modal .btn{
+	background-color: #ff6666;
+}
+.modal-header{
+	background-color: #ff6666;
+}
