@@ -466,16 +466,17 @@
         </section><!-- end banner-3 -->
     	
         <!--=============== GRID ===============-->
-        <section style="margin-top: 5%;">
+        <section style="margin-top: 5%; margin-bottom: 5%;">
             <div class="container">
                     <div class="grid">
                       <div class="grid-sizer"></div>
-                      <div class="grid-item grid-item--width3 grid-item--height2" id="first-grid-item"></div>
-                      <div class="grid-item grid-item--width3 grid-item--height2"></div>
+                      <div class="gutter-sizer"></div>
                       <div class="grid-item grid-item--width4 grid-item--height3 grid-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/FUQheX3PSnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                      <div class="grid-item grid-item--width6 grid-item--height3"></div>
-                      <div class="grid-item grid-item--width2 grid-item--height2"></div>
-                      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+                      <div class="grid-item grid-item--width2 grid-item--height3" id="grid-2"><img src="http://placehold.it/300x300" alt=""></div>
+                      <div class="grid-item grid-item--width4 grid-item--height4" id="grid-3"><img src="http://placehold.it/800x600" alt=""></div>
+                      <div class="grid-item grid-item--width6 grid-item--height4" id="grid-4"><img src="http://placehold.it/800x400" alt=""></div>
+                      <div class="grid-item grid-item--width2 grid-item--height3" id="grid-5"><img src="http://placehold.it/400x400" alt=""></div>
+                      <div class="grid-item grid-item--width2 grid-item--height3" id="grid-6"><img src="http://placehold.it/400x400" alt=""></div>
                     </div>
         </div>
         </section>
@@ -1842,7 +1843,8 @@
             $('.grid').masonry({
               itemSelector: '.grid-item',
               columnWidth: '.grid-sizer',
-              percentPosition: true
+              percentPosition: true,
+            //   gutter: '.gutter-sizer',
             });
         </script>
         <script src="js/jquery.colorpanel.js"></script>

@@ -36,7 +36,7 @@
 		itemsCustom : false,
 		itemsDesktop : [1199,3],
 		itemsDesktopSmall : [991,2],
-		itemsTablet: [768,2],
+		itemsTablet: [768,1],
 		itemsTabletSmall: [600,1],
 		itemsMobile : [479,1],
 		singleItem : false,
@@ -71,12 +71,14 @@ $(window).on('load',function(){
 });
 jQuery(document).ready(function(){
     if (jQuery(window).width() < 1199) {
-        $(".grid-video").appendTo($(".grid"))
+		// var $grid=$('.grid').masonry();
+        // var elems = $grid.masonry('getItemElements')
     }  
 });
 jQuery(window).resize(function () {
-	console.log(jQuery(window).width())
 	if (jQuery(window).width() < 1199) {
-        $(".grid-video").appendTo($(".grid"))
+		var $grid=$('.grid').masonry();
+		var elems = $grid.masonry('getItemElements')[2]
+		// console.log(elems)
     }
 });
