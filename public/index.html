@@ -465,52 +465,19 @@
             </div><!-- end container -->
         </section><!-- end banner-3 -->
     	
-        <!-- grid -->
-        <section>
-                <h1>Photos & vidéos du Médoc</h1>
-
-                <div class="wrapper-gallery">
-                <div class="grid">
-                  
-                  <div class="grid-item"></div>
-                  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-                  <div class="grid-item grid-item--height2"></div>
-                  <div class="grid-item grid-item--height2"></div>
-                  <div class="grid-item grid-item"></div>
-                  
-                  <div class="grid-item grid-item--width2">
-                  <iframe src="https://player.vimeo.com/video/145142344?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                  </div>
-                  <div class="grid-item">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oMIvRPLrVeE" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="grid-item grid-item--height2"></div>
-                  <div class="grid-item grid-item--width2"></div>
-                  <div class="grid-item">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fsmKjdjhlcY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="grid-item grid-item--height2"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item grid-item--width2"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fsmKjdjhlcY" frameborder="0" allowfullscreen></iframe>
-                
-                  </div>
-                  <div class="grid-item grid-item--height2 grid-item--width2"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item grid-item--width2"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item grid-item--height2"></div>
-                  <div class="grid-item grid-item--height2 grid-item--width2">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BUyB5ZbXvb8" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item grid-item--height2"></div>
-                </div>
-                </div>
+        <!--=============== GRID ===============-->
+        <section style="margin-top: 5%;">
+            <div class="container">
+                    <div class="grid">
+                      <div class="grid-sizer"></div>
+                      <div class="grid-item grid-item--width3 grid-item--height2" id="first-grid-item"></div>
+                      <div class="grid-item grid-item--width3 grid-item--height2"></div>
+                      <div class="grid-item grid-item--width4 grid-item--height3 grid-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/FUQheX3PSnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="grid-item grid-item--width6 grid-item--height3"></div>
+                      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+                      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+                    </div>
+        </div>
         </section>
         <!--=============== ABOUT ===============-->
         <section id="about"> 
@@ -1873,10 +1840,10 @@
         <script src='https://masonry.desandro.com/masonry.pkgd.js'></script>
         <script>
             $('.grid').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: 280,
-                gutter: 20
-                });
+              itemSelector: '.grid-item',
+              columnWidth: '.grid-sizer',
+              percentPosition: true
+            });
         </script>
         <script src="js/jquery.colorpanel.js"></script>
         <script>

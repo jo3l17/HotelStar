@@ -63,10 +63,20 @@
 		responsiveBaseWidth: window,
 	});
 
-    
-
 })(jQuery)
 
 $(window).on('load',function(){
-    $('#myModal').modal('show');
+	$('#myModal').modal('show');
+	
+});
+jQuery(document).ready(function(){
+    if (jQuery(window).width() < 1199) {
+        $(".grid-video").appendTo($(".grid"))
+    }  
+});
+jQuery(window).resize(function () {
+	console.log(jQuery(window).width())
+	if (jQuery(window).width() < 1199) {
+        $(".grid-video").appendTo($(".grid"))
+    }
 });
