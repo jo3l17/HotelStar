@@ -1,6 +1,8 @@
 (function ($) {
     var index = $("#owl-index")
-    var modal = $("#owl-modal")
+	var modal = $("#owl-modal")
+	var rooms_custom = $("#owl-rooms-custom")
+	var ofertas = $("#owl-ofertas")
 
     modal.owlCarousel({
         items : 1,
@@ -61,6 +63,64 @@
 		responsive: true,
 		responsiveRefreshRate : 200,
 		responsiveBaseWidth: window,
+	});
+	rooms_custom.owlCarousel({
+		items : 2,
+		itemsCustom : false,
+		itemsDesktop : [1199,2],
+		itemsDesktopSmall : [991,2],
+		itemsTablet: [768,2],
+		itemsTabletSmall: [600,1],
+		itemsMobile : [479,1],
+		singleItem : false,
+		itemsScaleUp : false,
+		margin:30,
+	 
+		//Autoplay
+		autoPlay : true,
+		stopOnHover : true,
+	 
+		// Navigation
+	 
+		//Pagination
+		pagination : true,
+		paginationNumbers: false,
+	 
+		// Responsive 
+		responsive: true,
+		responsiveRefreshRate : 200,
+		responsiveBaseWidth: window,
+
+	})
+	ofertas.owlCarousel({
+		items : 3,
+		itemsCustom : false,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [991,2],
+		itemsTablet: [768,2],
+		itemsTabletSmall: [600,1],
+		itemsMobile : [479,1],
+		singleItem : false,
+		itemsScaleUp : false,
+	 
+		//Autoplay
+		autoPlay : true,
+		stopOnHover : true,
+	 
+		// Navigation
+		navigation : false,
+		navigationText : false,
+		rewindNav : false,
+		scrollPerPage : false,
+	 
+		//Pagination
+		pagination : true,
+		paginationNumbers: false,
+	 
+		// Responsive 
+		responsive: true,
+		responsiveRefreshRate : 200,
+		responsiveBaseWidth: window,    
 	});
 
 })(jQuery)

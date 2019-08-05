@@ -3625,8 +3625,16 @@ p{
 }
 /* colores modal */
 #owl-modal .btn{
-	background-color: #ffcb05;
+	background-color: #E266E8;
 }
 .modal-header{
-	background-color: #ffcb05;
+	background-color: #E266E8;
+}
+/* colores ofertas */
+#owl-ofertas .spa-service-img .spa-mask{
+	background:#E266E8;
+}
+/* colores opiniones */
+.reviewer-block:hover .reviewer-img .puntuacion{
+	border-color:#E266E8;
 }

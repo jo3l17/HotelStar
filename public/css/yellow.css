@@ -3630,3 +3630,11 @@ p{
 .modal-header{
 	background-color: #ffcb05;
 }
+/* colores ofertas */
+#owl-ofertas .spa-service-img .spa-mask{
+	background:#ffcb05;
+}
+/* colores opiniones */
+.reviewer-block:hover .reviewer-img .puntuacion{
+	border-color:#ffcb05;
+}
