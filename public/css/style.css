@@ -5175,7 +5175,6 @@ ul.slides {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: white;
-	background-color: #ffcb05;
 	font-size: 14px;
 	padding: 8px 27px;
 	text-decoration: none;
@@ -5311,4 +5310,96 @@ ul.slides {
 	.comentario-custom{
 		padding-top: 20%;
 	}
+}
+/* programas turisticos */
+.programas-desc{
+	padding: 0% 5%;
+	margin-bottom: 5%;
+}
+.programas-desc .btn{
+	margin-left:2%;
+}
+.owl-carousel.owl-theme .btn{
+	margin-top:0.5%;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	padding: 8px 27px;
+	text-decoration: none;
+	margin-right: 2.5%;
+}
+.hidden-scrollbar {
+	overflow:hidden;
+	text-align:justify;    
+	}
+	.hidden-scrollbar .inner {
+	max-height: 200px;
+	overflow:auto;
+	margin:15px -300px 15px 15px;
+	padding-right:300px;
+	}
+/* email */
+#email_custom h2{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:48px;
+	margin-bottom:20px;
+}
+
+#email_custom p{
+	font-size:18px;
+	margin-bottom:35px;
+	font-weight:300;
+}
+
+#email_custom form input{
+	font-size:16px;
+	width: 100%;
+}
+
+#email_custom form  .btn{
+	font-size:22px;
+	width:100%;
+	position:relative;
+}
+#email_custom form  .col-xs-2{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#email_custom form  .btn .fa{
+	position:absolute;
+	top:11px;
+	left:40%;
+}
+
+#email_custom form input,
+#email_custom form  .btn{
+	height:44px;
+}
+
+#email_custom{
+	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/newsletter.jpg');
+	background-size:cover;
+	background-position:center;
+	color:white;
+}
+
+#email_custom p{
+	color:white;
+}
+
+#email_custom form input{
+	border-radius:0px;
+}
+/* footer */
+#footer-top .footer-heading-custom{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:26px;
+	text-transform:uppercase;
+}
+#footer-top.ftr-top-style-3 .footer-heading-custom{
+	color:#ffcb05;	
 }

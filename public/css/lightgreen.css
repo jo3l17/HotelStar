@@ -3638,3 +3638,18 @@ p{
 .reviewer-block:hover .reviewer-img .puntuacion{
 	border-color:#C4C920;
 }
+/* colores de carouseles */
+.owl-carousel.owl-theme .btn{
+	background-color:#C4C920;
+}
+/* email */
+#email_custom form  .btn{
+	border:1px solid #C4C920;
+	background:#C4C920;
+	color:#000;
+}
+
+#email_custom form  .btn:hover{
+	background:black;
+	color:#C4C920;
+}
