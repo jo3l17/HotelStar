@@ -3653,3 +3653,11 @@ p{
 	background:black;
 	color:#7fc143;
 }
+/* footer */
+#footer-top.ftr-top-style-3 .footer-heading-custom{
+	color:#7fc143;
+}
+/* contacto */
+#contact-page #contact-form select:focus{
+	border-color:#7fc143;
+}

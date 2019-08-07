@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Homepage 1 Slider</title>
+    <title>Hotel Star</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -25,9 +25,11 @@
 
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Color Panel -->
     <link href="css/jquery.colorpanel.css" rel="stylesheet">
     <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Owl Carousel Stylesheet -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -61,7 +63,7 @@
                                 <div class="owl-carousel owl-theme" id="owl-modal">
                                     <div style=" max-width:100%">
                                         <div>
-                                            <img src="http://placehold.it/500x400" alt="" />
+                                            <img src="http://placehold.it/500x400" class="img-responsive" alt="" />
                                         </div>
                                         <div>
                                             <h2>WEB OFICIAL.</h2></a>
@@ -78,7 +80,7 @@
                                     </div>
                                     <div style=" max-width:100%">
                                         <div>
-                                            <img src="http://placehold.it/500x400" alt="" />
+                                            <img src="http://placehold.it/500x400" class="img-responsive" alt="" />
                                         </div>
 
                                         <div>
@@ -97,7 +99,7 @@
                                     </div>
                                     <div style=" max-width:100%">
                                         <div>
-                                            <img src="http://placehold.it/500x400" alt="" />
+                                            <img src="http://placehold.it/500x400" class="img-responsive" alt="" />
                                         </div>
                                         <div>
                                             <h2>Oferta 28% descuento en Tarifa No Reembolsable.</h2></a>
@@ -504,8 +506,8 @@
         </div><!-- end container -->
     </section><!-- end banner-3 -->
 
-    <!--=============== GRID ===============-->
-    <section style="margin-top: 5%; margin-bottom: 5%;">
+    <!--=============== GALLERY ===============-->
+    <section class="section-padding">
         <div class="container">
             <div class="grid">
                 <div class="grid-sizer"></div>
@@ -529,7 +531,7 @@
     </section>
 
     <!--=============== ROOMS ===============-->
-    <section id="rooms-2" class="section-padding">
+    <section id="rooms-2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -615,67 +617,66 @@
     </section><!-- end rooms-2 -->
 
     <!--============= SERVICIOS ===========-->
-    <section id="our-services" class="innerpage-wrapper">
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="page-heading">
+                        <h2>Our <span>Awesome Services</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit.</p>
+                    </div><!-- end page-heading -->
 
-        <div id="services" class="innerpage-section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="page-heading">
-                            <h2>Nuestros <span>Servicios</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                quis nostrud exerci tation ullamcorper suscipit.</p>
-                        </div><!-- end page-heading -->
+                    <div class="row">
+                        <div id="service-blocks">
 
-                        <div class="row">
-                            <div id="service-blocks">
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="service-block">
+                                    <span><i class="fa fa-coffee"></i></span>
+                                    <h2 class="service-name">Restaurant</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
+                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
+                                </div><!-- end service-block -->
+                            </div><!-- end columns -->
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="service-block">
-                                        <span><i class="fa fa-coffee"></i></span>
-                                        <h2 class="service-name">Restaurant</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta
-                                            quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                    </div><!-- end service-block -->
-                                </div><!-- end columns -->
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="service-block">
+                                    <span><i class="fa fa-leaf"></i></span>
+                                    <h2 class="service-name">Spa</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
+                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
+                                </div><!-- end service-block -->
+                            </div><!-- end columns -->
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="service-block">
-                                        <span><i class="fa fa-leaf"></i></span>
-                                        <h2 class="service-name">Spa</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta
-                                            quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                    </div><!-- end service-block -->
-                                </div><!-- end columns -->
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="service-block">
+                                    <span><i class="fa fa-users"></i></span>
+                                    <h2 class="service-name">Meeting Rooms</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
+                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
+                                </div><!-- end service-block -->
+                            </div><!-- end columns -->
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="service-block">
-                                        <span><i class="fa fa-users"></i></span>
-                                        <h2 class="service-name">Meeting Rooms</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta
-                                            quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                    </div><!-- end service-block -->
-                                </div><!-- end columns -->
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="service-block">
+                                    <span><i class="fa fa-wifi"></i></span>
+                                    <h2 class="service-name">Free Wifi</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
+                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
+                                </div><!-- end service-block -->
+                            </div><!-- end columns -->
+                        </div><!-- end service-blocks -->
+                    </div><!-- end row -->
 
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="service-block">
-                                        <span><i class="fa fa-wifi"></i></span>
-                                        <h2 class="service-name">Free Wifi</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta
-                                            quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                    </div><!-- end service-block -->
-                                </div><!-- end columns -->
+                    <div class="butn text-center">
+                        <a href="services.html" class="btn btn-lg btn-padding btn-g-border">More Services</a>
+                    </div><!-- end butn -->
 
-                            </div><!-- end service-blocks -->
-                        </div><!-- end row -->
-
-                    </div><!-- end columns -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end services -->
-
-    </section><!-- end innerpage-wrapper -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end services -->
 
     <!--============= OFERTAS ===========-->
     <section id="spa-page" class="innerpage-wrapper">
@@ -891,7 +892,6 @@
 
     <!--=============OPINIONES ===========-->
     <section id="our-testimonials" class="innerpage-wrapper">
-
         <div id="reviews" class="innerpage-section-padding">
             <div class="container">
                 <div class="row">
@@ -916,15 +916,11 @@
                                 <span class="name">Lorem Ipsum</span>
                             </div><!-- end reviewer-info -->
                         </div><!-- end reviewer-block -->
-                    </div><!-- end columns -->
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="reviewer-block">
-                            <div class="reviewer-img row">
-                                <div class="puntuacion">
-                                    <h1>8.9</h1>
-                                </div>
+                            <div class="reviewer-img">
+                                <img src="images/reviewer-3.jpg" class="img-circle" alt="reviewer-img" />
                             </div><!-- end reviewer-img -->
-                            <div class="reviewer-info comentario-custom">
+                            <div class="reviewer-info">
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                     minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
@@ -939,14 +935,14 @@
                             </div><!-- end reviewer-info -->
                         </div><!-- end reviewer-block -->
                     </div><!-- end columns -->
-                </div>
-                <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="reviewer-block">
-                            <div class="reviewer-img">
-                                <img src="images/reviewer-3.jpg" class="img-circle" alt="reviewer-img" />
+                            <div class="reviewer-img row">
+                                <div class="puntuacion">
+                                    <h1>8.9</h1>
+                                </div>
                             </div><!-- end reviewer-img -->
-                            <div class="reviewer-info">
+                            <div class="reviewer-info comentario-custom">
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                     minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
@@ -1048,7 +1044,7 @@
     </section><!-- end innerpage-wrapper -->
 
     <!--=============== PROGRAMAS TURISTICOS ===============-->
-    <section id="rooms-2" class="section-padding">
+    <section id="rooms-2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -1157,7 +1153,7 @@
     </section><!-- end PROGRAMAS TURISTICOS -->
 
     <!--=============== LUGARES DE INTERES ===============-->
-    <section id="rooms-2">
+    <section id="rooms-2" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -1266,7 +1262,7 @@
     </section><!-- end LUGARES DE INTERES -->
 
     <!--=============== ESTABLECIMIENTOS ===============-->
-    <section id="rooms-2" class="section-padding">
+    <section id="rooms-2" class="section-padding paddingcustom">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -1406,1419 +1402,36 @@
     </section><!-- end email_custom -->
 
     <section class="innerpage-wrapper">
-            <div id="intro" class="innerpage-section-padding">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" id="intro-img">
-                                <img src="images/about-us.jpg" class="img-responsive" alt="about-us" />
-                            </div><!-- end columns -->
-                                
-                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="intro-text">
-                                <div class="innerpage-heading">
-                                    <h1>Palabras del Administrador</h1>
-                                </div><!-- end innerpage-heading -->
-                                    
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam placerat tortor at suscipit. Nunc iaculis libero a quam consequat molestie. Cras volutpat ornare lectus, ut pulvinar neque pretium eu. Pellentesque ultricies sem in risus lobortis condimentum. Proin sit amet dui sapien, eu euismod orci. Pellentesque vitae nisl elementum justo tincidunt lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <div class="row about_info">
-                                    <div class="col-xs-12 col-sm-6"></div>
-                                    <div class="col-xs-12 col-sm-6">
-                                        <img class="img-responsive" src="./images/firma.jpg" alt="">
-                                    </div>
-                                </div>						
-                            </div><!-- end columns -->
-                        </div><!-- end row -->
-                    </div><!-- end container -->
-                </div><!-- end intro -->
-    </section>
-
-    <!--=============== ABOUT ===============-->
-    <section id="about">
-        <div class="container">
-            <div class="row" id="about-img">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="about-text">
-                    <h2>About Star Hotel</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation ullamcorper suscipit.</p>
-                    <a href="about.html" class="btn btn-lg btn-padding">View More</a>
-                </div><!-- end columns -->
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end about -->
-
-
-    <!--=============== BANNER-1 ==============-->
-    <section id="banner-1" class="banner-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h2>Get 25% off on Any Other Events</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation ullamcorper suscipit.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center btn-right">
-                            <a href="#" class="btn btn-lg btn-padding btn-w-border" id="btn-price">From 99 $</a>
-                        </div><!-- end columns -->
-
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center btn-left">
-                            <a href="#" class="btn btn-lg btn-padding btn-yellow">Book Now</a>
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end banner-1 -->
-
-
-    <!--================ ROOMS ==============-->
-    <section id="rooms" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Our <span>Best Rooms</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="owl-carousel owl-theme" id="owl-rooms">
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-1.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Single Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-2.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Pro Delux Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-3.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Delux Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-4.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Double Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-5.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Royal Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-6.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Single Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-3.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Delux Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-4.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Double Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-1.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Single Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-2.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Pro Delux Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-5.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Royal Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-6.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Single Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- end item -->
-
-                        <div>
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-3.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Delux Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-
-                            <div class="grid">
-                                <div class="room-block">
-                                    <div class="room-img">
-                                        <img src="images/room-4.jpg" class="img-reponsive" alt="room-image" />
-                                        <div class="room-title">
-                                            <a href="#">
-                                                <h3>Double Room</h3>
-                                            </a>
-                                            <div class="rating">
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star"></i></span>
-                                                <span><i class="fa fa-star-o"></i></span>
-                                            </div><!-- end rating -->
-                                        </div><!-- end room-title -->
-                                    </div><!-- end room-img -->
-
-                                    <div class="room-price">
-                                        <ul class="list-unstyled">
-                                            <li>89$ / Night <span class="link"><a href="room-details.html">View
-                                                        Details</a></span></li>
-                                        </ul>
-                                    </div><!-- end room-price -->
-                                </div><!-- end room-block -->
-                            </div><!-- end grid -->
-                        </div><!-- item -->
-
-                    </div><!-- end owl-rooms -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end rooms -->
-
-
-    <!--==================== OFFERS ==================-->
-    <section id="offers" class="section-padding bg-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Latest <span>Offers</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="row" id="offer-blocks">
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <a href="#">
-                                <div class="offer-block" id="offer-1">
-                                    <div class="offer-mask">
-                                        <p class="tag">Enjoy with 25% OFF</p>
-                                        <div class="offer-info">
-                                            <h2>Dining Offer</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                                nonummy nibh.</p>
-                                            <ul class="list-unstyled">
-                                                <li>- Flight Ticket</li>
-                                                <li>- Restaurant (Full Board)</li>
-                                                <li>- Music Concert</li>
-                                                <li>- Airport Pick-up</li>
-                                                <li>- Sport Activities</li>
-                                            </ul>
-                                        </div><!-- end offer-info -->
-                                    </div><!-- end offer-mask -->
-                                </div><!-- end offer-block -->
-                            </a>
-                        </div><!-- end columns -->
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <a href="#">
-                                <div class="offer-block" id="offer-2">
-                                    <div class="offer-img">
-                                        <div class="offer-mask">
-                                            <p class="tag">Enjoy with 25% OFF</p>
-                                            <div class="offer-info">
-                                                <h2>Weekend Spa Offer</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                                    nonummy nibh.</p>
-                                                <ul class="list-unstyled">
-                                                    <li>- Flight Ticket</li>
-                                                    <li>- Restaurant (Full Board)</li>
-                                                    <li>- Music Concert</li>
-                                                    <li>- Airport Pick-up</li>
-                                                    <li>- Sport Activities</li>
-                                                </ul>
-                                            </div><!-- end offer-info -->
-                                        </div><!-- end offer-mask -->
-                                    </div><!-- end offer-img -->
-                                </div><!-- end offer-block -->
-                            </a>
-                        </div><!-- end columns -->
-
-                    </div><!-- end row -->
-
-                    <div class="butn text-center">
-                        <a href="offers.html" class="btn btn-lg btn-padding btn-g-border">View More Offers</a>
-                    </div><!-- end butn -->
-
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end offers -->
-
-
-    <!--================ SERVICES ==============-->
-    <section id="services" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Our <span>Awesome Services</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="row">
-                        <div id="service-blocks">
-
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                <div class="service-block">
-                                    <span><i class="fa fa-coffee"></i></span>
-                                    <h2 class="service-name">Restaurant</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
-                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                </div><!-- end service-block -->
-                            </div><!-- end columns -->
-
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                <div class="service-block">
-                                    <span><i class="fa fa-leaf"></i></span>
-                                    <h2 class="service-name">Spa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
-                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                </div><!-- end service-block -->
-                            </div><!-- end columns -->
-
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                <div class="service-block">
-                                    <span><i class="fa fa-users"></i></span>
-                                    <h2 class="service-name">Meeting Rooms</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
-                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                </div><!-- end service-block -->
-                            </div><!-- end columns -->
-
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                <div class="service-block">
-                                    <span><i class="fa fa-wifi"></i></span>
-                                    <h2 class="service-name">Free Wifi</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae
-                                        natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                                </div><!-- end service-block -->
-                            </div><!-- end columns -->
-                        </div><!-- end service-blocks -->
-                    </div><!-- end row -->
-
-                    <div class="butn text-center">
-                        <a href="services.html" class="btn btn-lg btn-padding btn-g-border">More Services</a>
-                    </div><!-- end butn -->
-
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end services -->
-
-
-    <!--===================== PHOTO-GALLERY ===================-->
-    <section id="photo-gallery" class="section-padding no-pd-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Picture <span>Gallery</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div id="filter-buttons" class="text-center">
-                        <button class="btn filter-button active" data-filter="filter">Cafe</button>
-                        <button class="btn filter-button first-btn" data-filter="meeting">Meeting Rooms</button>
-                        <button class="btn filter-button" data-filter="spa">SPA</button>
-                        <button class="btn filter-button" data-filter="pool">Pool</button>
-                        <button class="btn filter-button" data-filter="deluxe">Deluxe Rooms</button>
-                    </div><!-- end filter-buttons -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-
-
-        <div class="container-fluid no-padding">
-            <div class="row">
-                <div id="gallery">
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter work video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-1.jpg" title="image-1" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-1.jpg" alt="image-1">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter cafe video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-2.jpg" title="image-2" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-2.jpg" alt="image-2">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter spa video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-3.jpg" title="image-3" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-3.jpg" alt="image-3">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter pool video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-4.jpg" title="image-4" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-4.jpg" alt="image-4">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter room video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-5.jpg" title="image-5" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-5.jpg" alt="image-5">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter deluxe video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-6.jpg" title="image-6" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-6.jpg" alt="image-6">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter deluxe video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-7.jpg" title="image-7" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-7.jpg" alt="image-7">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter deluxe video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-8.jpg" title="image-8" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-8.jpg" alt="image-8">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter meeting video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-9.jpg" title="image-9" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-9.jpg" alt="image-9">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                    <div class="gallery-product col-xs-12 col-sm-4 col-md-3 col-lg-15  filter cafe video no-padding">
-                        <div class="gallery-block">
-                            <a href="images/gallery-10.jpg" title="image-10" class="with-caption image-link">
-                                <div class="gallery-img">
-                                    <img class="img-responsive" src="images/gallery-10.jpg" alt="image-10">
-
-                                    <div class="gallery-mask">
-                                        <div class="gallery-title">
-                                            <h2>Spa and Beauty</h2>
-                                            <p>2 Pictures</p>
-                                        </div> <!-- end gallery-title -->
-                                    </div><!-- end gallery-mask -->
-                                </div><!-- end gallery-img -->
-                            </a>
-                        </div><!-- end gallery-block -->
-                    </div><!-- end gallery-product -->
-
-                </div><!-- end gallery -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end gallery -->
-
-
-    <!--===================== TEAM ===================-->
-    <section id="team" class="section-padding no-pd-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Meet <span>Our Team</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="owl-carousel owl-theme" id="owl-team">
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-1.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-2.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-3.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-4.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-2.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-1.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-2.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-3.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-4.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                        <div class="item">
-                            <div class="member-block">
-                                <div class="member-img">
-                                    <img src="images/team-2.jpg" class="img-responsive" alt="Member-Img" />
-                                    <div class="title">
-                                        <p class="member-name">John Doe</p>
-                                        <p class="member-status">Director</p>
-                                    </div><!-- end title -->
-                                </div><!-- end member-img -->
-
-                                <div class="member-info">
-                                    <p>Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-                                    <ul class="list-inline list-unstyled connect">
-                                        <li><a class="fb" href="#"><span><i
-                                                        class="fa fa-facebook-square"></i></span></a></li>
-                                        <li><a class="tw" href="#"><span><i class="fa fa-twitter-square"></i></span></a>
-                                        </li>
-                                        <li><a class="ln" href="#"><span><i
-                                                        class="fa fa-linkedin-square"></i></span></a></li>
-                                    </ul>
-                                </div><!-- end member-info -->
-                            </div><!-- end member-block -->
-                        </div><!-- end item -->
-
-                    </div><!-- end owl-team -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end team -->
-
-
-    <!--=============== TESTIMONIALS ==============-->
-    <section id="testimonials" class="banner-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                    <div class="carousel slide review-carousel" data-ride="carousel">
-
-                        <div class="row">
-                            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
-                                <ol class="carousel-indicators">
-                                    <li data-target=".review-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target=".review-carousel" data-slide-to="1"></li>
-                                    <li data-target=".review-carousel" data-slide-to="2"></li>
-                                </ol>
-                            </div><!-- end columns -->
-
-                            <div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
-                                <div class="row">
-                                    <div
-                                        class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-7 col-lg-offset-3 col-lg-7">
-                                        <h2>What People Say About Us</h2>
-                                    </div><!-- end columns -->
-                                </div><!-- end row -->
-
-                                <div class="carousel-inner">
-
-                                    <div class="item active">
-                                        <div class="row">
-
-                                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 reviewer-image">
-                                                <img src="images/reviewer-1.jpg" alt="reviewer-image"
-                                                    class="img-circle">
-                                            </div><!-- end columns -->
-
-                                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                                                <p class="review-text">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                                    quis nostrud exerci tation ullamcorper suscipit.</p>
-                                                <div class="rating">
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                </div><!-- end rating -->
-                                                <p class="reviewer-name">Lorem Ipsum</p>
-                                            </div><!-- end columns -->
-
-                                        </div><!-- end row -->
-                                    </div><!-- end item -->
-
-                                    <div class="item">
-                                        <div class="row">
-
-                                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 reviewer-image">
-                                                <img src="images/reviewer-1.jpg" alt="reviewer-image"
-                                                    class="img-circle">
-                                            </div><!-- end columns -->
-
-                                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                                                <p class="review-text">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                                    quis nostrud exerci tation ullamcorper suscipit.</p>
-                                                <div class="rating">
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                </div><!-- end rating -->
-
-                                                <p class="reviewer-name">Lorem Ipsum</p>
-                                            </div><!-- end columns -->
-
-                                        </div><!-- end row -->
-                                    </div><!-- end item -->
-
-                                    <div class="item">
-                                        <div class="row">
-
-                                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 reviewer-image">
-                                                <img src="images/reviewer-1.jpg" alt="reviewer-image"
-                                                    class="img-circle">
-                                            </div><!-- end columns -->
-
-                                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                                                <p class="review-text">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                                    quis nostrud exerci tation ullamcorper suscipit.</p>
-                                                <div class="rating">
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                    <span><i class="fa fa-star star-opacity"></i></span>
-                                                </div><!-- end rating -->
-
-                                                <p class="reviewer-name">Lorem Ipsum</p>
-                                            </div><!-- end columns -->
-
-                                        </div><!-- end row -->
-                                    </div><!-- end item -->
-
-                                </div><!-- end carousel-inner -->
-                            </div><!-- end columns -->
-                        </div><!-- end row -->
-                    </div><!-- end review-carousel -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end testimonials -->
-
-
-    <!--================ BANNER-2 =============-->
-    <section id="banner-2" class="banner-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="highlight-box">
-                        <h2>112+</h2>
-                        <h4>New Friendships</h4>
-                    </div><!-- end highlight-box -->
-                </div><!-- end columns -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="highlight-box">
-                        <h2>254+</h2>
-                        <h4>Five Star Ratings</h4>
-                    </div><!-- end highlight-box -->
-                </div><!-- end columns -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="highlight-box">
-                        <h2>430+</h2>
-                        <h4>International Guests</h4>
-                    </div><!-- end highlight-box -->
-                </div><!-- end columns -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <div class="highlight-box">
-                        <h2>745+</h2>
-                        <h4>Breakfast Served</h4>
-                    </div><!-- end highlight-box -->
-                </div><!-- end columns -->
-
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end banner-2 -->
-
-
-    <!--=============== PRICING ===============-->
-    <section id="pricing" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Our <span>Pricing</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="row" id="price-tables">
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 column-padding text-center">
-                            <div class="price-table">
-                                <div class="p-table-heading">
-                                    <h2 class="title">Luxury Room</h2>
-                                    <h2 class="price">99$<span>/night</span></h2>
-                                </div><!-- end p-table-heading -->
-
-                                <div class="features">
-                                    <ul class=" list-unstyled text-center">
-                                        <li>Breakfast</li>
-                                        <li>Private Balcony</li>
-                                        <li>Sea View</li>
-                                        <li>Free Wifi</li>
-                                        <li>Bathroom</li>
-                                        <li>Water Heated pool</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-black btn-padding">Book Now</a>
-                                </div><!-- end features -->
-                            </div><!-- end price-table -->
-                        </div><!-- end columns -->
-
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 column-padding text-center">
-                            <div class="price-table">
-                                <div class="p-table-heading">
-                                    <h2 class="title">Comfort Room</h2>
-                                    <h2 class="price">199$<span>/night</span></h2>
-                                </div><!-- end p-table-heading -->
-
-                                <div class="features">
-                                    <ul class=" list-unstyled text-center">
-                                        <li>Breakfast</li>
-                                        <li>Private Balcony</li>
-                                        <li>Sea View</li>
-                                        <li>Free Wifi</li>
-                                        <li>Bathroom</li>
-                                        <li>Water Heated pool</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-black btn-padding">Book Now</a>
-                                </div><!-- end features -->
-                            </div><!-- end price-table -->
-                        </div><!-- end columns -->
-
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 column-padding text-center">
-                            <div class="price-table">
-                                <div class="p-table-heading">
-                                    <h2 class="title">Deluxe Room</h2>
-                                    <h2 class="price">99$<span>/night</span></h2>
-                                </div><!-- end p-table-heading -->
-
-                                <div class="features">
-                                    <ul class=" list-unstyled text-center">
-                                        <li>Breakfast</li>
-                                        <li>Private Balcony</li>
-                                        <li>Sea View</li>
-                                        <li>Free Wifi</li>
-                                        <li>Bathroom</li>
-                                        <li>Water Heated pool</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-black btn-padding">Book Now</a>
-                                </div><!-- end features -->
-                            </div><!-- end price-table -->
-                        </div><!-- end columns -->
-
-                    </div><!-- end row -->
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end pricing -->
-
-
-    <!--===================== LATEST-BLOG ===================-->
-    <section id="latest-blog" class="section-padding no-pd-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="page-heading">
-                        <h2>Latest <span>Blog</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                    </div><!-- end page-heading -->
-
-                    <div class="row">
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="latest-block">
-                                <div class="latest-img">
-                                    <img src="images/blog-1.jpg" class="img-responsive" alt="Blog-Image" />
-
-                                    <div class="latest-info">
-                                        <p><span><i class="fa fa-calendar"></i></span> 29 April, 2017</p>
-                                        <h2>Lorem ipsum dolor sit amet</h2>
-                                        <a href="blog-details.html">View More</a>
-                                    </div><!-- end latest-info -->
-                                </div><!-- end latest-img -->
-                            </div><!-- end latest-block -->
-                        </div><!-- end columns -->
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="latest-block">
-                                <div class="latest-img">
-                                    <img src="images/blog-2.jpg" class="img-responsive" alt="Blog-Image" />
-
-                                    <div class="latest-info">
-                                        <p><span><i class="fa fa-calendar"></i></span> 29 April, 2017</p>
-                                        <h2>Lorem ipsum dolor sit amet</h2>
-                                        <a href="blog-details.html">View More</a>
-                                    </div><!-- end latest-info -->
-                                </div><!-- end latest-img -->
-                            </div><!-- end latest-block -->
-                        </div><!-- end columns -->
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="latest-block">
-                                <div class="latest-img">
-                                    <img src="images/blog-3.jpg" class="img-responsive" alt="Blog-Image" />
-
-                                    <div class="latest-info">
-                                        <p><span><i class="fa fa-calendar"></i></span> 29 April, 2017</p>
-                                        <h2>Lorem ipsum dolor sit amet</h2>
-                                        <a href="blog-details.html">View More</a>
-                                    </div><!-- end latest-info -->
-                                </div><!-- end latest-img -->
-                            </div><!-- end latest-block -->
-                        </div><!-- end columns -->
-
-                    </div><!-- end row -->
-
-                    <div class="butn text-center">
-                        <a href="blog-listings.html" class="btn btn-lg btn-padding btn-g-border">View More</a>
-                    </div><!-- end butn -->
-
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end blog -->
-
-
-    <!--============== NEWSLETTER ===============-->
-    <section id="newsletter" class="banner-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h2>Our Newsletter</h2>
-                    <p>Sign up here to receive interesting updates</p>
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="email" class="form-control input-lg" placeholder="your email id"
-                                    required />
-                                <span class="input-group-btn"><button class="btn btn-lg"><i
-                                            class="fa fa-paper-plane"></i></button></span>
+        <div id="intro" class="innerpage-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center" id="intro-img">
+                        <img src="images/about-us.jpg" class="img-responsive" alt="about-us" />
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="intro-text">
+                        <div class="innerpage-heading">
+                            <h1>Palabras del Administrador</h1>
+                        </div><!-- end innerpage-heading -->
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam placerat tortor at
+                            suscipit. Nunc iaculis libero a quam consequat molestie. Cras volutpat ornare lectus, ut
+                            pulvinar neque pretium eu. Pellentesque ultricies sem in risus lobortis condimentum. Proin
+                            sit amet dui sapien, eu euismod orci. Pellentesque vitae nisl elementum justo tincidunt
+                            lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="row about_info">
+                            <div class="col-xs-12 col-sm-6"></div>
+                            <div class="col-xs-12 col-sm-6">
+                                <img class="img-responsive" src="./images/firma.jpg" alt="">
                             </div>
                         </div>
-                    </form>
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end newsletter -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end intro -->
+    </section>
 
     <!--========== FOOTER-CUSTOM ==========-->
     <section>
@@ -2869,7 +1482,7 @@
                             <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
                                 <h5 class="footer-heading-custom">Nuestro Partner Es:</h5>
                                 <div>
-                                    <img class="img-responsive" src="./images/footer.jpg" alt="">
+                                    <img class="img-responsive" src="./images/footer.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -2893,75 +1506,6 @@
             </div><!-- end container -->
         </div><!-- end footer-top -->
     </section>
-
-    <!--========== FOOTER ==========-->
-    <section>
-        <div id="footer-top" class="banner-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left" id="more-about">
-                        <h2 class="footer-heading"><span>STAR</span>HOTEL</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit.</p>
-                        <ul class="social-links list-inline list-unstyled">
-                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
-                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
-                        </ul>
-                    </div><!-- end more-about -->
-                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 text-left" id="company">
-                        <h4 class="footer-heading">Company</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Dinning</a></li>
-                            <li><a href="#">Staff</a></li>
-                            <li><a href="#">Blog's</a></li>
-                        </ul>
-                    </div><!-- end useful-links -->
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="f-services">
-                        <h4 class="footer-heading">Services</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Restaurant</a></li>
-                            <li><a href="#">Spa</a></li>
-                            <li><a href="#">Meeting Rooms</a></li>
-                            <li><a href="#">Free Wifi</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Food & Drinks</a></li>
-                        </ul>
-                    </div><!-- end visit-us -->
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
-                        <h4 class="footer-heading">Contact Us</h4>
-                        <ul class="list-unstyled">
-                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
-                            <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
-                    </div><!-- end social-links -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end footer-top -->
-        <div id="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
-                        <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
-                    </div><!-- end columns -->
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
-                        <ul class="list-unstyled list-inline">
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div><!-- end columns -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end footer-bottom -->
-
-    </section>
-    <!--Footer Section Ends-->
-
 
     <!-- Page Scripts Starts -->
     <!-- <script src="js/jquery.min.js"></script> -->

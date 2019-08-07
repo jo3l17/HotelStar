@@ -4795,7 +4795,7 @@ ul.slides {
 		margin-right: 0 !important;
 	}
 	.btn_login{
-		margin-right: 2% !important;
+		margin-right: 20% !important;
 		margin-top: 0% !important;
 		}
 	
@@ -4827,16 +4827,16 @@ ul.slides {
 }
 @media(max-width:500px){
 	.btn_login{
-		margin-top: 15% !important;
+		margin-top: 5px !important;
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
 		border: 1px solid #ffcb05;
 		color: #ffcb05;
 		font-size: 14px;
-		padding: 8px 10px;
+		padding: 8px 19px;
 		text-decoration: none;
-		margin-right: 50% !important;
+		margin-right: 25% !important;
 	}
 	.btn_book, .btn_book:focus{
 		margin-top: 2.3% !important;
@@ -4846,19 +4846,22 @@ ul.slides {
 		border: 1px solid #ffcb05;
 		color: #ffcb05;
 		font-size: 14px;
-		padding: 8px 10px;
+		padding: 8px 15px;
 		text-decoration: none;
 	}
 	#btn_language{
-		margin-top: 10%;
+		margin-top: 5px;
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
 		border: 1px solid #ffcb05;
 		color: #ffcb05;
 		font-size: 14px;
-		padding: 10px 10px;
+		padding: 10px 14px;
 		text-decoration: none;
+	}
+	button.navbar-toggle{
+		padding: 20px 10px !important;
 	}
 }
 /* login nuevo */
@@ -5339,6 +5342,10 @@ ul.slides {
 	margin:15px -300px 15px 15px;
 	padding-right:300px;
 	}
+/* fix establecimientos */
+.paddingcustom{
+	padding-top:0;
+}
 /* email */
 #email_custom h2{
 	font-weight:bold;
@@ -5402,4 +5409,56 @@ ul.slides {
 }
 #footer-top.ftr-top-style-3 .footer-heading-custom{
 	color:#ffcb05;	
+}
+/* contacto */
+#map-contact-text>a{
+	cursor: pointer;
+}
+/* opiniones */
+.innerpage-section-padding-custom{
+	padding: 10px 10px;
+}
+.calificaciones{
+	padding: 5% 0;
+}
+.blanco{
+	background:white;
+}
+/* contacto */
+#contact-page #contact-form .text-area-custom{
+	height:305px;
+	padding-top:16px;
+}
+
+#contact-page #contact-form select{
+	text-transform:uppercase;
+	font-size:14px;
+	margin-bottom:30px;
+	padding-left:20px;
+}
+
+#contact-page #contact-form select{
+	height:53px;
+}
+
+#contact-page #contact-form select{
+	border-radius:0px;
+	box-shadow:none;
+	background:#f3f4f4;
+	border-color:#e6e7e8;
+}
+
+.form-check-input{
+	height: 13px !important;
+	margin-right: 2px !important;
+	margin-bottom: 0 !important;
+}
+.g-recaptcha {
+	display: inline-block;
+}
+/* fidelizacion */
+#contact-page #contact-form .text-area-custom-2{
+	height:470px;
+	padding-top:16px;
+	resize: none;
 }

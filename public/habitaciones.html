@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contacto</title>
+    <title>Habitaciones</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
         rel="stylesheet">
 
+    <!-- Flag-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -20,11 +23,12 @@
 
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Color Panel -->
-    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+    <link href="css/jquery.colorpanel.css" rel="stylesheet">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+
 </head>
 
 
@@ -33,12 +37,11 @@
     <!--====== LOADER =====-->
     <div class="loader"></div>
 
-
-    <!--========== COLOR-PANEL ==========-->
+    <!--====== COLOR PANEL =====-->
     <div id="colorPanel" class="colorPanel">
         <a id="cpToggle" href="#"></a>
         <ul></ul>
-    </div><!-- end colorPanel -->
+    </div>
 
 
     <!--========== TOP-BAR ==========-->
@@ -82,7 +85,6 @@
     </div><!-- end top-bar -->
 
 
-    <!--================= PAGE-COVER ===============-->
     <section class="page-cover cover-navbar-wrapper pt-174 black-full-overlay-img">
 
         <div class="header-absolute">
@@ -298,10 +300,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1 class="page-title">Nuestra Ubicacion</h1>
+                    <h1 class="page-title">Rooms Listing Page</h1>
                     <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li class="active">Contacto</li>
+                        <li class="active">Room Listing</li>
                     </ul>
                 </div><!-- end columns -->
             </div><!-- end row -->
@@ -309,101 +311,156 @@
     </section><!-- end page-cover -->
 
 
-    <!--=============INNERPAGE-WRAPPER =============-->
-    <section id="contact-page" class="innerpage-wrapper section-padding no-pd-top no-pd-bot">
-        <div id="dinning" class="innerpage-section-padding-custom">
-            <div id="contact-form" class="innerpage-section-padding blanco">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-offset-1 col-lg-10 col-lg-offset-1">
+    <!--=============INNERPAGE-WRAPPER ===========-->
+    <section id="room-listings" class="innerpage-wrapper">
 
-                            <div class="innerpage-heading">
-                                <h1>Contact Us</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod
-                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                            </div><!-- end innerpage-heading -->
+        <div id="room-listing-blocks" class="innerpage-section-padding">
+            <div class="container">
+                <div class="row">
 
-                            <form id="frm_contact" name="frm_contact" method="post">
-                                <div class="row">
-                                    <div class="col-sm-6 slide-right-vis">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name"
-                                                name="txt_name" id="txt_name" />
-                                        </div>
+                        <ul id="room-list" class="list-unstyled">
+                            <li id="room-list-1">
+                                <div class="room-list-block">
+                                    <div class="row">
+                                        <div
+                                            class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-5 col-md-7 col-lg-offset-5 col-lg-7 room-text">
+                                            <div class="room-info">
+                                                <h1 class="room-name">Double Room</h1>
+                                                <span class="room-position">A Room With Sea View</span>
+                                                <ul class="list-inline list-unstyled room-features">
+                                                    <li><span data-toggle="tooltip" title="Wifi"><i
+                                                                class="fa fa-wifi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Clean"><i
+                                                                class="fa fa-leaf"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Taxi"><i
+                                                                class="fa fa-taxi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Big LCD"><i
+                                                                class="fa fa-television"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Breakfast"><i
+                                                                class="fa fa-cutlery"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Play Station"><i
+                                                                class="fa fa-futbol-o"></i></span></li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit.</p>
+                                                <a href="room-details.html" class="btn btn-lg btn-yellow">View More</a>
+                                            </div><!-- end room-info -->
+                                        </div><!-- end columns -->
+                                    </div><!-- end row -->
+                                </div><!-- end room-list-block -->
+                            </li><!-- end list-item -->
 
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Email"
-                                                name="txt_email" id="txt_email" />
-                                        </div>
+                            <li id="room-list-2">
+                                <div class="room-list-block">
+                                    <div class="row">
+                                        <div
+                                            class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-5 col-md-7 col-lg-offset-5 col-lg-7 room-text">
+                                            <div class="room-info">
+                                                <h1 class="room-name">Deluxe Room</h1>
+                                                <span class="room-position">A Room With Sea View</span>
+                                                <ul class="list-inline list-unstyled room-features">
+                                                    <li><span data-toggle="tooltip" title="Wifi"><i
+                                                                class="fa fa-wifi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Clean"><i
+                                                                class="fa fa-leaf"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Taxi"><i
+                                                                class="fa fa-taxi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Big LCD"><i
+                                                                class="fa fa-television"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Breakfast"><i
+                                                                class="fa fa-cutlery"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Play Station"><i
+                                                                class="fa fa-futbol-o"></i></span></li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit.</p>
+                                                <a href="room-details.html" class="btn btn-lg btn-yellow">View More</a>
+                                            </div><!-- end room-info -->
+                                        </div><!-- end columns -->
+                                    </div><!-- end row -->
+                                </div><!-- end room-list-block -->
+                            </li><!-- end list-item -->
 
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Phone" name="txt_phone"
-                                                id="txt_phone" />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control" id="asunto"
-                                                onchange="if(this.selectedIndex == 0){this.selectedIndex = ind;}else{ind = this.selectedIndex}"
-                                                name="asunto">
-                                                <option>Asunto</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
+                            <li id="room-list-3">
+                                <div class="room-list-block">
+                                    <div class="row">
+                                        <div
+                                            class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-5 col-md-7 col-lg-offset-5 col-lg-7 room-text">
+                                            <div class="room-info">
+                                                <h1 class="room-name">Single Room</h1>
+                                                <span class="room-position">A Room With Sea View</span>
+                                                <ul class="list-inline list-unstyled room-features">
+                                                    <li><span data-toggle="tooltip" title="Wifi"><i
+                                                                class="fa fa-wifi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Clean"><i
+                                                                class="fa fa-leaf"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Taxi"><i
+                                                                class="fa fa-taxi"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Big LCD"><i
+                                                                class="fa fa-television"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Breakfast"><i
+                                                                class="fa fa-cutlery"></i></span></li>
+                                                    <li><span data-toggle="tooltip" title="Play Station"><i
+                                                                class="fa fa-futbol-o"></i></span></li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit.</p>
+                                                <a href="room-details.html" class="btn btn-lg btn-yellow">View More</a>
+                                            </div><!-- end room-info -->
+                                        </div><!-- end columns -->
+                                    </div><!-- end row -->
+                                </div><!-- end room-list-block -->
+                            </li><!-- end list-item -->
+                        </ul>
 
-                                    </div><!-- end columns -->
+                    </div><!-- end columns -->
 
-                                    <div class="col-sm-6 slide-left-vis">
-                                        <div class="form-group">
-                                            <textarea class="form-control text-area-custom" placeholder="Your Message"
-                                                name="txt_message" id="txt_message"></textarea>
-                                        </div>
-                                    </div><!-- end columns -->
-                                    <div class="text-center form-group">
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    I wish to recieve commercial information. offers and discounts
-                                                    from
-                                                    Bitacora Club Lanzarote
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    I agree with the terms of Bitacora Club Lanzarote
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="g-recaptcha"
-                                            data-sitekey="6LdrtbEUAAAAAKIGdaQr4HW1eTtkfhYxkZiQT3YA"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 side-bar">
+
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <div class="side-bar-block special-offer">
+                                    <div id="circle">
+                                        <span>December</span>
+                                        <h3>Special Offer</h3>
+                                        <p>Get 20% Off</p>
                                     </div>
-                                    <div class="col-sm-12 text-center" id="result_msg"></div>
-                                    <div class="col-sm-12 butn text-center">
-                                        <button name="submit" id="submit"
-                                            class="btn btn-padding btn-g-border">Submit</button>
-                                    </div><!-- end butn -->
-                                </div><!-- end row -->
-                            </form><!-- end contact-form -->
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end contact-form -->
-        </div>
+                                    <p id="offer-text">Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do
+                                        eius mod tempor.</p>
+                                    <a href="#" class="btn">Book Now</a>
+                                </div><!-- end side-bar-block -->
+                            </div><!-- end columns -->
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <div class="side-bar-block special-offer">
+                                    <div id="circle">
+                                        <span>December</span>
+                                        <h3>Special Offer</h3>
+                                        <p>Get 20% Off</p>
+                                    </div>
+                                    <p id="offer-text">Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do
+                                        eius mod tempor.</p>
+                                    <a href="#" class="btn">Book Now</a>
+                                </div><!-- end side-bar-block -->
+                            </div><!-- end columns -->
+
+                        </div><!-- end row -->
+
+                    </div><!-- end columns -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end room-listing-blocks -->
+
     </section><!-- end innerpage-wrapper -->
-
-
-    <!--===== MAP ====-->
-    <section class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509729.487836256!2d-123.77686152799836!3d37.1864783963941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia!5e0!3m2!1sen!2s!4v1490695907554"
-            allowfullscreen></iframe>
-    </section><!-- end map -->
 
 
     <!--============== NEWSLETTER ===============-->
@@ -479,7 +536,6 @@
                             <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
                             <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
                         </ul>
-
                     </div><!-- end social-links -->
 
                 </div><!-- end row -->
@@ -533,12 +589,8 @@
             }
         });
     </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom-navigation.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/custom-validation.js"></script>
-
     <!-- Page Scripts Ends -->
 
 </body>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contacto</title>
+    <title>Ubicacion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
         rel="stylesheet">
 
+    <!-- Flag-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -20,11 +23,12 @@
 
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Color Panel -->
-    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+    <link href="css/jquery.colorpanel.css" rel="stylesheet">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+
 </head>
 
 
@@ -309,101 +313,121 @@
     </section><!-- end page-cover -->
 
 
-    <!--=============INNERPAGE-WRAPPER =============-->
-    <section id="contact-page" class="innerpage-wrapper section-padding no-pd-top no-pd-bot">
-        <div id="dinning" class="innerpage-section-padding-custom">
-            <div id="contact-form" class="innerpage-section-padding blanco">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-offset-1 col-lg-10 col-lg-offset-1">
-
-                            <div class="innerpage-heading">
-                                <h1>Contact Us</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod
-                                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                            </div><!-- end innerpage-heading -->
-
-                            <form id="frm_contact" name="frm_contact" method="post">
-                                <div class="row">
-                                    <div class="col-sm-6 slide-right-vis">
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name"
-                                                name="txt_name" id="txt_name" />
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Email"
-                                                name="txt_email" id="txt_email" />
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Phone" name="txt_phone"
-                                                id="txt_phone" />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control" id="asunto"
-                                                onchange="if(this.selectedIndex == 0){this.selectedIndex = ind;}else{ind = this.selectedIndex}"
-                                                name="asunto">
-                                                <option>Asunto</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-
-                                    </div><!-- end columns -->
-
-                                    <div class="col-sm-6 slide-left-vis">
-                                        <div class="form-group">
-                                            <textarea class="form-control text-area-custom" placeholder="Your Message"
-                                                name="txt_message" id="txt_message"></textarea>
-                                        </div>
-                                    </div><!-- end columns -->
-                                    <div class="text-center form-group">
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    I wish to recieve commercial information. offers and discounts
-                                                    from
-                                                    Bitacora Club Lanzarote
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    I agree with the terms of Bitacora Club Lanzarote
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="g-recaptcha"
-                                            data-sitekey="6LdrtbEUAAAAAKIGdaQr4HW1eTtkfhYxkZiQT3YA"></div>
-                                    </div>
-                                    <div class="col-sm-12 text-center" id="result_msg"></div>
-                                    <div class="col-sm-12 butn text-center">
-                                        <button name="submit" id="submit"
-                                            class="btn btn-padding btn-g-border">Submit</button>
-                                    </div><!-- end butn -->
-                                </div><!-- end row -->
-                            </form><!-- end contact-form -->
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end contact-form -->
-        </div>
-    </section><!-- end innerpage-wrapper -->
-
-
     <!--===== MAP ====-->
-    <section class="map">
+    <section class="map map-2">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509729.487836256!2d-123.77686152799836!3d37.1864783963941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia!5e0!3m2!1sen!2s!4v1490695907554"
             allowfullscreen></iframe>
+
+        <div id="m-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-5 col-lg-4">
+                        <div id="map-contact-block">
+                            <h2>Contact Us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam .</p>
+                            <ul class="list-unstyled">
+                                <li><span class="mc-icon"><i class="fa fa-map-marker"></i></span>
+                                    <div class="mc-text">
+                                        <p>Street No: 1234/A, Blu Vard Area, Main Double Road
+                                    </div>
+                                </li>
+                                <li><span class="mc-icon"><i class="fa fa-envelope"></i></span>
+                                    <div class="mc-text">
+                                        <p>support@starhotel.com</p>
+                                    </div>
+                                </li>
+                                <li><span class="mc-icon"><i class="fa fa-phone"></i></span>
+                                    <div class="mc-text">
+                                        <p>+123–4567 890</p>
+                                    </div>
+                                </li>
+                                <li><span class="mc-icon"><i class="fa fa-globe"></i></span>
+                                    <div class="mc-text">
+                                        <p>https://star-hotel.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- end map-contact-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-sm-6 col-md-7 col-lg-8">
+                        <div id="map-contact-text">
+                            <a>
+                                <p>Click here to acces our location in Google Maps</p>
+                            </a>
+                            <p>Siguenos en esta redes sociales</p>
+                            <ul class="contact-links list-inline list-unstyled">
+                                <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                            </ul>
+                        </div><!-- end map-contact-text -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end m-contact -->
     </section><!-- end map -->
+
+
+    <!--=============INNERPAGE-WRAPPER =============-->
+    <section id="contact-page" class="innerpage-wrapper">
+
+        <div id="contact-form" class="innerpage-section-padding no-pd-top contact-form-2">
+            <div class="container text-center">
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-offset-1 col-lg-10 col-lg-offset-1">
+
+                        <div class="innerpage-heading">
+                            <h1>Send Message</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div><!-- end innerpage-heading -->
+
+                        <form id="frm_contact" name="frm_contact" method="post">
+                            <div class="row">
+                                <div class="col-sm-6 slide-right-vis">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="txt_name"
+                                            id="txt_name" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Email"
+                                            name="txt_email" id="txt_email" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone" name="txt_phone"
+                                            id="txt_phone" />
+                                    </div>
+
+                                </div><!-- end columns -->
+
+                                <div class="col-sm-6 slide-left-vis">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message" name="txt_message"
+                                            id="txt_message"></textarea>
+                                    </div>
+                                </div><!-- end columns -->
+                                <div class="col-sm-12 text-center" id="result_msg"></div>
+                                <div class="col-sm-12 butn text-center">
+                                    <button name="submit" id="submit"
+                                        class="btn btn-padding btn-g-border">Submit</button>
+                                </div><!-- end butn -->
+                            </div><!-- end row -->
+                        </form><!-- end contact-form -->
+
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end contact-form -->
+
+    </section><!-- end innerpage-wrapper -->
 
 
     <!--============== NEWSLETTER ===============-->
@@ -533,7 +557,7 @@
             }
         });
     </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/jquery.colorpanel.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom-navigation.js"></script>
     <script src="js/jquery.validate.js"></script>
