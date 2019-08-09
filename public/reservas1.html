@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Date-Picker Stylesheet-->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- Color Panel -->
+    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+</head>
+
+
+<body>
+
+    <!--====== LOADER =====-->
+    <div class="loader"></div>
+
+
+    <!--========== COLOR-PANEL ==========-->
+    <div id="colorPanel" class="colorPanel">
+        <a id="cpToggle" href="#"></a>
+        <ul></ul>
+    </div><!-- end colorPanel -->
+
+
+    <!--========== TOP-BAR ==========-->
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
+                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                            <li>
+                                <form>
+                                    <div class="form-group">
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                        <select class="form-control">
+                                            <option value="">EN</option>
+                                            <option value="">UR</option>
+                                            <option value="">FR</option>
+                                            <option value="">IT</option>
+                                        </select>
+                                    </div><!-- end form-group -->
+                                </form>
+                            </li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+
+    <!--================= PAGE-COVER ===============-->
+    <section class="page-cover cover-navbar-wrapper pt-174 black-full-overlay-img">
+
+        <div class="header-absolute">
+            <nav class="navbar navbar-default navbar-custom transparent-nav black-menu" id="mynavbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="btn_book" href="reservation-right-sidebar.html"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="div_language" class="dropdown"><a id="btn_language" href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span class="flag-icon flag-icon-es"></span> <i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_language">
+                                <li><a href=""><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-fr"></span> Francés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                            </ul>
+                        </div>
+                        <!-- si esta logueado este boton -->
+                        <div id="div_language" class="dropdown"><a id="btn_login" class="btn_login" href="#"
+                                class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_login">
+                                <li><a href="">Tu nombre</a></li>
+                                <li><a href="">Configurar</a></li>
+                                <li><a href="">Logout</a></li>
+                            </ul>
+                        </div>
+                        <!-- si no este -->
+                        <!-- <a class="btn_login" href="login-2.html"></a> -->
+                        <a href="index.html" class="navbar-brand"><span>STAR</span>HOTEL</a>
+                    </div><!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<span><i
+                                            class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 1</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-1-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-1-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-1-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-1-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 2</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-2-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-2-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-2-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-2-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 3</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-3-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-3-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-3-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-3-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="homepage-restaurant.html">Restaurant Homepage</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Rooms<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="room-listings.html">List View Full Width</a></li>
+                                    <li><a href="room-listings-left-sidebar.html">List View Left Sidebar</a></li>
+                                    <li><a href="room-listings-right-sidebar.html">List View Right Sidebar</a></li>
+                                    <li><a href="room-grid.html">Grid View Full Width</a></li>
+                                    <li><a href="room-grid-left-sidebar.html">Grid View Left Sidebar</a></li>
+                                    <li><a href="room-grid-right-sidebar.html">Grid View Right Sidebar</a></li>
+                                    <li><a href="room-details-left-sidebar.html">Room Details Left Sidebar</a></li>
+                                    <li><a href="room-details-right-sidebar.html">Room Details Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Dining<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dining-1.html">Dining-1</a></li>
+                                    <li><a href="dining-2.html">Dining-2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Features<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu active"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Header</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li class="active"><a href="#">Header Style 1</a></li>
+                                            <li><a href="feature-header-2.html">Header Style 2</a></li>
+                                            <li><a href="feature-header-3.html">Header Style 3</a></li>
+                                            <li><a href="feature-header-4.html">Header Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Page Title</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="feature-page-cover-1.html">Page Title Style 1</a></li>
+                                            <li><a href="feature-page-cover-2.html">Page Title Style 2</a></li>
+                                            <li><a href="feature-page-cover-3.html">Page Title Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Footer</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="feature-footer-1.html">Footer Style 1</a></li>
+                                            <li><a href="feature-footer-2.html">Footer Style 2</a></li>
+                                            <li><a href="feature-footer-3.html">Footer Style 3</a></li>
+                                            <li><a href="feature-footer-4.html">Footer Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Forms</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="login-1.html">Login 1</a></li>
+                                            <li><a href="login-2.html">Login 2</a></li>
+                                            <li><a href="registration-1.html">Registration 1</a></li>
+                                            <li><a href="registration-2.html">Registration 2</a></li>
+                                            <li><a href="forgot-password-1.html">Forgot Password 1</a></li>
+                                            <li><a href="forgot-password-2.html">Forgot Password 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Pages<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu mega-dropdown-menu row">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li class="dropdown-header">Standard Pages</li>
+                                                    <li><a href="about-1.html">About-1</a></li>
+                                                    <li><a href="about-2.html">About-2</a></li>
+                                                    <li><a href="services-1.html">Services-1</a></li>
+                                                    <li><a href="services-2.html">Services-2</a></li>
+                                                    <li><a href="event-listings.html">Event Listing</a></li>
+                                                    <li><a href="event-details.html">Event Details</a></li>
+                                                    <li><a href="blog-listings-left-sidebar.html">Blog Left Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="blog-listings-right-sidebar.html">Blog Right
+                                                            Sidebar</a></li>
+                                                    <li><a href="blog-details-left-sidebar.html">Blog Detail Left
+                                                            Sidebar</a></li>
+                                                    <li><a href="blog-details-right-sidebar.html">Blog Detail Right
+                                                            Sidebar</a></li>
+                                                    <li><a href="gallery-2-columns.html">2 Columns Gallery</a></li>
+                                                    <li><a href="gallery-3-columns.html">3 Columns Gallery</a></li>
+                                                    <li><a href="gallery-4-columns.html">4 Columns Gallery</a></li>
+                                                    <li><a href="gallery-masonry.html">Masonry Gallery</a></li>
+                                                    <li><a href="spa-page.html">Spa</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="team-1.html">Team-1</a></li>
+                                                    <li><a href="team-2.html">Team-2</a></li>
+                                                    <li><a href="offers.html">Offers</a></li>
+                                                    <li><a href="testimonials-1.html">Testimonials-1</a></li>
+                                                    <li><a href="testimonials-2.html">Testimonials-2</a></li>
+                                                    <li><a href="testimonials-3.html">Testimonials-3</a></li>
+                                                    <li><a href="pricing-1.html">Pricing-1</a></li>
+                                                    <li><a href="pricing-2.html">Pricing-2</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a
+                                                            href="reservation-left-sidebar.html">Reservation-Left-Sidebar</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="reservation-right-sidebar.html">Reservation-Right-Sidebar</a>
+                                                    </li>
+                                                    <li class="dropdown-header header-2">Special Pages</li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                    <li><a href="error-page.html">404 Page</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Contact<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="contact-1.html">Contact-1</a></li>
+                                    <li><a href="contact-2.html">Contact-2</a></li>
+                                </ul>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- end container -->
+            </nav><!-- end navbar -->
+        </div><!-- end header-absolute -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="page-title">Paso 1</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Reservas</li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end page-cover -->
+
+
+    <!--=============INNERPAGE-WRAPPER =============-->
+    <section id="selector-fechas">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-1 col-md-11 col-lg-12">
+                    <form action="reservas1.html" method="post" class="form-inline" role="form">
+                        <div class="input-group col-md-2 col-sm-3 col-lg-2">
+                            <input id="fecha_inicio" name="checkin" class="form-control" type="text"
+                                placeholder="Fecha Llegada:" readonly="readonly" required="required" value="04-08-2019">
+                            <span class="input-group-addon" id="checkin1">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                            </span>
+                        </div>
+                        <div class="input-group col-md-2 col-sm-3 col-lg-2">
+                            <input id="fecha_termino" name="checkout" class="form-control" type="text"
+                                placeholder="Fecha Salida:" readonly="readonly" required="required" value="17-07-2019">
+                            <span class="input-group-addon" id="checkout1">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                            </span>
+                        </div>
+
+                        <div class="input-group col-md-3 col-sm-4 col-xs-12">
+                            <select name="moneda" id="moneda" class="form-control">
+                                <option value="EUR">EURO (€)</option>
+                                <option value="GBP">British Pound (£)</option>
+                                <option value="USD" selected="selected">US Dollar (US$)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="DKK">Danish Krone (DKK)</option>
+                                <option value="NOK">Norwegian Krone (NOK)</option>
+                                <option value="RUB">Russian Ruble (RUB)</option>
+                                <option value="SEK">Swedish Krona (SEK)</option>
+                                <option value="ISK">Icelandic Króna (ISK)</option>
+                                <option value="AUD">Australian Dollar (A$)</option>
+                                <option value="CAD">Canadian Dollar (C$)</option>
+                                <option value="">----------------------------</option>
+                                <option value="AED">United Arab Emirates Dirham (AED)</option>
+                                <option value="AFN">Afghan Afghani (AFN)</option>
+                                <option value="ALL">Albanian Lek (ALL)</option>
+                                <option value="AMD">Armenian Dram (AMD)</option>
+                                <option value="ANG">Netherlands Antillean Guilder (ANG)</option>
+                                <option value="AOA">Angolan Kwanza (AOA)</option>
+                                <option value="AUD">Australian Dollar (A$)</option>
+                                <option value="AWG">Aruban Florin (AWG)</option>
+                                <option value="AZN">Azerbaijani Manat (AZN)</option>
+                                <option value="BAM">Bosnia-Herzegovina Convertible Mark (BAM)</option>
+                                <option value="BBD">Barbadian Dollar (BBD)</option>
+                                <option value="BDT">Bangladeshi Taka (BDT)</option>
+                                <option value="BGN">Bulgarian Lev (BGN)</option>
+                                <option value="BHD">Bahraini Dinar (BHD)</option>
+                                <option value="BIF">Burundian Franc (BIF)</option>
+                                <option value="BMD">Bermudan Dollar (BMD)</option>
+                                <option value="BND">Brunei Dollar (BND)</option>
+                                <option value="BSD">Bahamian Dollar (BSD)</option>
+                                <option value="BTC">Bitcoin (฿)</option>
+                                <option value="BTN">Bhutanese Ngultrum (BTN)</option>
+                                <option value="BWP">Botswanan Pula (BWP)</option>
+                                <option value="BYN">Belarusian Ruble (BYN)</option>
+                                <option value="BYR">Belarusian Ruble (2000–2016) (BYR)</option>
+                                <option value="BZD">Belize Dollar (BZD)</option>
+                                <option value="CDF">Congolese Franc (CDF)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="CLF">Chilean Unit of Account (UF) (CLF)</option>
+                                <option value="CNH">CNH (CNH)</option>
+                                <option value="CNY">Chinese Yuan (CN¥)</option>
+                                <option value="CRC">Costa Rican Colón (CRC)</option>
+                                <option value="CUP">Cuban Peso (CUP)</option>
+                                <option value="CVE">Cape Verdean Escudo (CVE)</option>
+                                <option value="CZK">Czech Koruna (CZK)</option>
+                                <option value="DEM">German Mark (DEM)</option>
+                                <option value="DJF">Djiboutian Franc (DJF)</option>
+                                <option value="DKK">Danish Krone (DKK)</option>
+                                <option value="DOP">Dominican Peso (DOP)</option>
+                                <option value="DZD">Algerian Dinar (DZD)</option>
+                                <option value="EGP">Egyptian Pound (EGP)</option>
+                                <option value="ERN">Eritrean Nakfa (ERN)</option>
+                                <option value="ETB">Ethiopian Birr (ETB)</option>
+                                <option value="FIM">Finnish Markka (FIM)</option>
+                                <option value="FJD">Fijian Dollar (FJD)</option>
+                                <option value="FKP">Falkland Islands Pound (FKP)</option>
+                                <option value="FRF">French Franc (FRF)</option>
+                                <option value="GEL">Georgian Lari (GEL)</option>
+                                <option value="GHS">Ghanaian Cedi (GHS)</option>
+                                <option value="GIP">Gibraltar Pound (GIP)</option>
+                                <option value="GMD">Gambian Dalasi (GMD)</option>
+                                <option value="GNF">Guinean Franc (GNF)</option>
+                                <option value="GTQ">Guatemalan Quetzal (GTQ)</option>
+                                <option value="GYD">Guyanaese Dollar (GYD)</option>
+                                <option value="HKD">Hong Kong Dollar (HK$)</option>
+                                <option value="HNL">Honduran Lempira (HNL)</option>
+                                <option value="HRK">Croatian Kuna (HRK)</option>
+                                <option value="HTG">Haitian Gourde (HTG)</option>
+                                <option value="HUF">Hungarian Forint (HUF)</option>
+                                <option value="IDR">Indonesian Rupiah (IDR)</option>
+                                <option value="IEP">Irish Pound (IEP)</option>
+                                <option value="ILS">Israeli New Shekel (₪)</option>
+                                <option value="INR">Indian Rupee (₹)</option>
+                                <option value="IQD">Iraqi Dinar (IQD)</option>
+                                <option value="IRR">Iranian Rial (IRR)</option>
+                                <option value="ISK">Icelandic Króna (ISK)</option>
+                                <option value="ITL">Italian Lira (ITL)</option>
+                                <option value="JMD">Jamaican Dollar (JMD)</option>
+                                <option value="JOD">Jordanian Dinar (JOD)</option>
+                                <option value="JPY">Japanese Yen (¥)</option>
+                                <option value="KES">Kenyan Shilling (KES)</option>
+                                <option value="KGS">Kyrgystani Som (KGS)</option>
+                                <option value="KHR">Cambodian Riel (KHR)</option>
+                                <option value="KMF">Comorian Franc (KMF)</option>
+                                <option value="KPW">North Korean Won (KPW)</option>
+                                <option value="KRW">South Korean Won (₩)</option>
+                                <option value="KWD">Kuwaiti Dinar (KWD)</option>
+                                <option value="KYD">Cayman Islands Dollar (KYD)</option>
+                                <option value="KZT">Kazakhstani Tenge (KZT)</option>
+                                <option value="LAK">Laotian Kip (LAK)</option>
+                                <option value="LBP">Lebanese Pound (LBP)</option>
+                                <option value="LKR">Sri Lankan Rupee (LKR)</option>
+                                <option value="LRD">Liberian Dollar (LRD)</option>
+                                <option value="LSL">Lesotho Loti (LSL)</option>
+                                <option value="LTL">Lithuanian Litas (LTL)</option>
+                                <option value="LVL">Latvian Lats (LVL)</option>
+                                <option value="LYD">Libyan Dinar (LYD)</option>
+                                <option value="MAD">Moroccan Dirham (MAD)</option>
+                                <option value="MDL">Moldovan Leu (MDL)</option>
+                                <option value="MGA">Malagasy Ariary (MGA)</option>
+                                <option value="MKD">Macedonian Denar (MKD)</option>
+                                <option value="MMK">Myanmar Kyat (MMK)</option>
+                                <option value="MNT">Mongolian Tugrik (MNT)</option>
+                                <option value="MOP">Macanese Pataca (MOP)</option>
+                                <option value="MRO">Mauritanian Ouguiya (MRO)</option>
+                                <option value="MUR">Mauritian Rupee (MUR)</option>
+                                <option value="MVR">Maldivian Rufiyaa (MVR)</option>
+                                <option value="MWK">Malawian Kwacha (MWK)</option>
+                                <option value="MYR">Malaysian Ringgit (MYR)</option>
+                                <option value="MZN">Mozambican Metical (MZN)</option>
+                                <option value="NAD">Namibian Dollar (NAD)</option>
+                                <option value="NGN">Nigerian Naira (NGN)</option>
+                                <option value="NIO">Nicaraguan Córdoba (NIO)</option>
+                                <option value="NOK">Norwegian Krone (NOK)</option>
+                                <option value="NPR">Nepalese Rupee (NPR)</option>
+                                <option value="NZD">New Zealand Dollar (NZ$)</option>
+                                <option value="OMR">Omani Rial (OMR)</option>
+                                <option value="PAB">Panamanian Balboa (PAB)</option>
+                                <option value="PGK">Papua New Guinean Kina (PGK)</option>
+                                <option value="PHP">Philippine Peso (PHP)</option>
+                                <option value="PKG">PKG (PKG)</option>
+                                <option value="PKR">Pakistani Rupee (PKR)</option>
+                                <option value="PLN">Polish Zloty (PLN)</option>
+                                <option value="QAR">Qatari Rial (QAR)</option>
+                                <option value="RON">Romanian Leu (RON)</option>
+                                <option value="RSD">Serbian Dinar (RSD)</option>
+                                <option value="RUB">Russian Ruble (RUB)</option>
+                                <option value="RWF">Rwandan Franc (RWF)</option>
+                                <option value="SAR">Saudi Riyal (SAR)</option>
+                                <option value="SBD">Solomon Islands Dollar (SBD)</option>
+                                <option value="SCR">Seychellois Rupee (SCR)</option>
+                                <option value="SDG">Sudanese Pound (SDG)</option>
+                                <option value="SEK">Swedish Krona (SEK)</option>
+                                <option value="SGD">Singapore Dollar (SGD)</option>
+                                <option value="SHP">St. Helena Pound (SHP)</option>
+                                <option value="SKK">Slovak Koruna (SKK)</option>
+                                <option value="SLL">Sierra Leonean Leone (SLL)</option>
+                                <option value="SOS">Somali Shilling (SOS)</option>
+                                <option value="SRD">Surinamese Dollar (SRD)</option>
+                                <option value="STD">São Tomé &amp; Príncipe Dobra (STD)</option>
+                                <option value="SVC">Salvadoran Colón (SVC)</option>
+                                <option value="SYP">Syrian Pound (SYP)</option>
+                                <option value="SZL">Swazi Lilangeni (SZL)</option>
+                                <option value="THB">Thai Baht (THB)</option>
+                                <option value="TJS">Tajikistani Somoni (TJS)</option>
+                                <option value="TMT">Turkmenistani Manat (TMT)</option>
+                                <option value="TND">Tunisian Dinar (TND)</option>
+                                <option value="TOP">Tongan Paʻanga (TOP)</option>
+                                <option value="TRY">Turkish Lira (TRY)</option>
+                                <option value="TTD">Trinidad &amp; Tobago Dollar (TTD)</option>
+                                <option value="TWD">New Taiwan Dollar (NT$)</option>
+                                <option value="TZS">Tanzanian Shilling (TZS)</option>
+                                <option value="UAH">Ukrainian Hryvnia (UAH)</option>
+                                <option value="UGX">Ugandan Shilling (UGX)</option>
+                                <option value="UZS">Uzbekistani Som (UZS)</option>
+                                <option value="VEF">Venezuela Bolívar (VEF)</option>
+                                <option value="VND">Vietnamese Dong (₫)</option>
+                                <option value="VUV">Vanuatu Vatu (VUV)</option>
+                                <option value="WST">Samoan Tala (WST)</option>
+                                <option value="XAF">Central African CFA Franc (FCFA)</option>
+                                <option value="XCD">East Caribbean Dollar (EC$)</option>
+                                <option value="XDR">Special Drawing Rights (XDR)</option>
+                                <option value="XOF">West African CFA Franc (CFA)</option>
+                                <option value="XPF">CFP Franc (CFPF)</option>
+                                <option value="YER">Yemeni Rial (YER)</option>
+                                <option value="ZAR">South African Rand (ZAR)</option>
+                                <option value="ZMK">Zambian Kwacha (1968–2012) (ZMK)</option>
+                                <option value="ZMW">Zambian Kwacha (ZMW)</option>
+                                <option value="ZWL">Zimbabwean Dollar (2009) (ZWL)</option>
+
+                            </select>
+                        </div>
+
+                        <input type="hidden" id="idioma" name="idioma" value="1">
+
+                        <span style="margin:0px 20px; font-weight: bold;" class="hidden-sm">Total noches: -18</span>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-refresh"></i> Actualizar</button>
+
+                        <span style="margin:0px px; font-weight: bold; padding-top:5px;"
+                            class="visible-sm col-sm-3 col-md-3">Total noches: </span>
+                        <input type="hidden" id="csc" name="csc" value="1" readonly="readonly" />
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top:1%">
+        <div class="container">
+            <div class="panel-group row hidden-sm hidden-xs" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Si ha estado hospedado anteriormente, antes de reservar regístrese en nuestro programa
+                                de
+                                fidelización y obtendrá estos beneficios.<i class="fa fa-chevron-down pull-right"
+                                    aria-hidden="true"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top:3%">
+        <div class="container">
+            <div class="col-md-8">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel1">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Apartamento Premier de 1 dormitorio<i class="fa fa-chevron-down pull-right"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">
+                                        <center>
+                                            <img src="./images/gallery-1.jpg" class="img-responsive" alt="">
+                                        </center>
+                                    </div>
+                                    <div class="col-md-9">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sunt quam
+                                        itaque
+                                        beatae quas a alias neque voluptatem dignissimos laboriosam quidem recusandae,
+                                        consequatur perspiciatis. Dolor porro accusantium eius dolore! Rerum!
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <center>
+                                        <div class="visible-xs visible-sm visible-md" style="margin-top:8px"> </div>
+                                        <p><b><b>¡ Felicitaciones ! tenemos disponibilidad en
+                                                    nuestro</b>&nbsp;Apartamento
+                                                Premier de 1 dormitorio</b></p>
+                                        <p><b>Seleccione Ocupación:</b></p>
+
+                                        <select id="ocupacion-1" class="ocupaciones">
+                                            <option value="0">Adulto(s) + niño(s) (2-12 años)</option>
+
+
+
+                                            <option value="156" selected="selected">2 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="157">2 Adulto(s) + 1 niño(s) </option>
+
+
+                                            <option value="158">2 Adulto(s) + 2 niño(s) </option>
+
+
+                                            <option value="159">3 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="161">1 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="162">1 Adulto(s) + 1 niño(s) </option>
+
+
+                                            <option value="163">1 Adulto(s) + 2 niño(s) </option>
+
+
+                                            <option value="206">3 Adulto(s) + 1 niño(s) </option>
+                                        </select>
+
+                                        <input type="hidden" value="0" id="cuna-1" />
+                                    </center>
+                                </div>
+                                <div class="row">
+                                    <div class="panel-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="col-xs-8 xol-md-9" colspan="2">Estancia corta</th>
+                                                    <th>Condiciones</th>
+                                                </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sin Comida</td>
+                                                    <td class="col-xs-3 text-right">$ <span class="precio">75.38</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button href="" id="agregar"
+                                                            class="btn btn-xs btn-primary">seleccionar</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel2">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Apartamento Deluxe de 1 dormitorio<i class="fa fa-chevron-down pull-right"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">
+                                        <center>
+                                            <img src="./images/gallery-1.jpg" class="img-responsive" alt="">
+                                        </center>
+                                    </div>
+                                    <div class="col-md-9">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sunt quam
+                                        itaque
+                                        beatae quas a alias neque voluptatem dignissimos laboriosam quidem recusandae,
+                                        consequatur perspiciatis. Dolor porro accusantium eius dolore! Rerum!
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <center>
+                                        <div class="visible-xs visible-sm visible-md" style="margin-top:8px"> </div>
+                                        <p><b><b>¡ Felicitaciones ! tenemos disponibilidad en
+                                                    nuestro</b>&nbsp;Apartamento
+                                                Premier de 1 dormitorio</b></p>
+                                        <p><b>Seleccione Ocupación:</b></p>
+
+                                        <select id="ocupacion-2" class="ocupaciones">
+                                            <option value="0">Adulto(s) + niño(s) (2-12 años)</option>
+
+                                            <option value="156" selected="selected">2 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="157">2 Adulto(s) + 1 niño(s) </option>
+
+
+                                            <option value="158">2 Adulto(s) + 2 niño(s) </option>
+
+
+                                            <option value="159">3 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="161">1 Adulto(s) + 0 niño(s) </option>
+
+
+                                            <option value="162">1 Adulto(s) + 1 niño(s) </option>
+
+
+                                            <option value="163">1 Adulto(s) + 2 niño(s) </option>
+
+
+                                            <option value="206">3 Adulto(s) + 1 niño(s) </option>
+                                        </select>
+
+                                        <input type="hidden" value="0" id="cuna-1" />
+                                    </center>
+                                </div>
+                                <div class="row">
+                                    <div class="panel-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="col-xs-8 xol-md-9" colspan="2">Estancia corta</th>
+                                                    <th>Condiciones</th>
+                                                </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sin Comida</td>
+                                                    <td class="col-xs-3 text-right">$ <span class="precio">75.38</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button href="" id="agregar2"
+                                                            class="btn btn-xs btn-primary">seleccionar</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-md-8-->
+            <div class="col-md-4">
+                <div id="detalles-compra">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-2"><i class="fa fa-bell fa-4x" aria-hidden="true"></i></div>
+                                    <div class="col-xs-10">
+                                        <h5 style="padding-top:10px; font-size:18px; margin-left:10px">
+                                            Hotel Star
+                                            <br>
+                                            Detalle de la reserva:
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-heading">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <center>
+                                        <table style="margin: 0px 20px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Fecha Llegada:</td>
+                                                    <td>&nbsp;&nbsp;<strong>6-11-2019</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fecha Salida:</td>
+                                                    <td>&nbsp;&nbsp;<strong>7-11-2019</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>total noches</td>
+                                                    <td>&nbsp;&nbsp;<strong>1</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div id="detail-items" class="row detail-items">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-9 col-md-12">
+                                            <center>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Total:&nbsp;&nbsp;</td>
+                                                            <td><strong><span id="total" class="text-right"></span></strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Prepago:&nbsp;&nbsp;</td>
+                                                            <td><strong><span class="text-right">0</span></strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Saldo:&nbsp;&nbsp;</td>
+                                                            <td><strong><span class="text-right">0</span></strong></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </center>
+                                        </div>
+                                        <div class="col-xs-3 col-md-12">
+                                            <br class="hidden-xs hidden-sm">
+                                            <center>
+                                                <a href="#" class="btn btn-md btn-primary disabled">Siguiente</a>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== NEWSLETTER ===============-->
+    <section id="newsletter" class="banner-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2>Our Newsletter</h2>
+                    <p>Sign up here to receive interesting updates</p>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control input-lg" placeholder="your email id"
+                                    required />
+                                <span class="input-group-btn"><button class="btn btn-lg"><i
+                                            class="fa fa-paper-plane"></i></button></span>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end newsletter -->
+
+
+    <!--========== FOOTER ==========-->
+    <section>
+        <div id="footer-top" class="banner-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left" id="more-about">
+                        <h2 class="footer-heading"><span>STAR</span>HOTEL</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit.</p>
+                        <ul class="social-links list-inline list-unstyled">
+                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                        </ul>
+                    </div><!-- end more-about -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 text-left" id="company">
+                        <h4 class="footer-heading">Company</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Dinning</a></li>
+                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">Blog's</a></li>
+                        </ul>
+                    </div><!-- end useful-links -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="f-services">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Restaurant</a></li>
+                            <li><a href="#">Spa</a></li>
+                            <li><a href="#">Meeting Rooms</a></li>
+                            <li><a href="#">Free Wifi</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Food & Drinks</a></li>
+                        </ul>
+                    </div><!-- end visit-us -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
+                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                            <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                        </ul>
+
+                    </div><!-- end social-links -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                        <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-bottom -->
+
+    </section>
+    <!--Footer Section Ends-->
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorpanel.js"></script>
+    <script>
+        $('#colorPanel').ColorPanel({
+            styleSheet: '#cpswitch'
+            , animateContainer: false
+            , colors: {
+                '#ffcb05': 'css/yellow.css'
+                , '#3cafff': 'css/skyblue.css'
+                , '#ff6666': 'css/pink.css'
+                , '#7fc143': 'css/green.css'
+                , '#00cccc': 'css/cyan.css'
+                , '#ffbf80': 'css/skin.css'
+                , '#9797ff': 'css/lightblue.css'
+                , '#d98cb3': 'css/purple.css'
+                , '#cc9966': 'css/brown.css'
+                , '#00e6ac': 'css/spring-green.css'
+                , '#fc603f': 'css/orange.css'
+                , '#c4c920': 'css/lightgreen.css'
+                , '#e266e8': 'css/strongpurple.css'
+                , '#6ce34b': 'css/stronggreen.css'
+                ,
+            }
+        });
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-gallery.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-flex.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/customteam.js"></script>
+
+    <!-- Page Scripts Ends -->
+
+</body>
+
+</html>

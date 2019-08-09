@@ -3606,7 +3606,7 @@ p{
 	border: 1px solid #d98cb3;
 	color: #d98cb3;
 }
-.btn_book, .btn_book:focus{
+.btn_book, .btn_book:focus, .btn_login:focus{
 	border: 1px solid #d98cb3;
 	color: #d98cb3;
 }
@@ -3660,4 +3660,18 @@ p{
 /* contacto */
 #contact-page #contact-form select:focus{
 	border-color:#d98cb3;
+}
+/* reservas */
+#selector-fechas{
+	background-color: #d98cb3;
+}
+#selector-fechas .btn{
+	background-color: #d98cb3;
+	color:white;
+	border: 1px solid white
+}
+#selector-fechas .btn:hover{
+	background-color: white;
+	color:#d98cb3;
+	border: 1px solid #d98cb3;
 }

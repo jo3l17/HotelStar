@@ -4710,8 +4710,6 @@ ul.slides {
 	float: right;
 	font-weight: 400;
 	text-transform: uppercase;
-	border: 1px solid #ffcb05;
-	color: #ffcb05;
 	font-size: 14px;
 	padding: 8px 27px;
 	text-decoration: none;
@@ -4727,15 +4725,12 @@ ul.slides {
 	float: right;
 	font-weight: 400;
 	text-transform: uppercase;
-	border: 1px solid #ffcb05;
-	color: #ffcb05;
 	font-size: 14px;
 	padding: 8px 27px;
 	text-decoration: none;
 }
 .btn_book:hover{
 	color: white;
-	background-color: #ffcb05;
 	text-decoration: none;
 }
 
@@ -4748,15 +4743,12 @@ ul.slides {
 	float: right;
 	font-weight: 400;
 	text-transform: uppercase;
-	border: 1px solid #ffcb05;
-	color: #ffcb05;
 	font-size: 14px;
 	padding: 8px 27px;
 	text-decoration: none;
 }
 #btn_language:hover{
 	color: white;
-	background-color: #ffcb05;
 }
 #btn_language::before{
 	content: "Español"
@@ -4768,7 +4760,6 @@ ul.slides {
 /* estilos para cuando esta logueado */
 .btn_login:focus{
 	text-decoration: none;
-	color: #ffcb05;
 }
 .btn_login:focus:hover{
 	text-decoration: none;
@@ -4776,7 +4767,6 @@ ul.slides {
 }
 .btn_login:hover{
 	color: white;
-	background-color: #ffcb05;
 	text-decoration: none;
 }
 /*  */
@@ -4843,8 +4833,6 @@ ul.slides {
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
-		border: 1px solid #ffcb05;
-		color: #ffcb05;
 		font-size: 14px;
 		padding: 8px 15px;
 		text-decoration: none;
@@ -4854,8 +4842,6 @@ ul.slides {
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
-		border: 1px solid #ffcb05;
-		color: #ffcb05;
 		font-size: 14px;
 		padding: 10px 14px;
 		text-decoration: none;
@@ -5461,4 +5447,26 @@ ul.slides {
 	height:470px;
 	padding-top:16px;
 	resize: none;
+}
+/* reservas */
+#selector-fechas{
+	padding: 25px;
+	background-color: #ffcb05;
+}
+#selector-fechas .btn{
+	font-weight: 400;
+	background-color: #ffcb05;
+	color:white;
+	border: 1px solid white
+}
+#selector-fechas .btn:hover{
+	background-color: white;
+	color:#ffcb05;
+	border: 1px solid#ffcb05;
+}
+.detail-items{
+	border-top: 1px solid #ffcb05;
+	max-height: 276px;
+	min-height: 200px;
+	overflow-x: auto;
 }
