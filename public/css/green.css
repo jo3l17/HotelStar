@@ -3675,3 +3675,22 @@ p{
 	color:#7fc143;
 	border: 1px solid #7fc143;
 }
+#selector-fechas .btn,#habitaciones .btn,#detalles-compra-bottom .btn{
+	background-color: #7fc143;
+}
+#selector-fechas .btn:hover,#habitaciones .btn:hover,#detalles-compra-bottom .btn:hover{
+	color:#7fc143;
+	border: 1px solid #7fc143;
+}
+.detail-items{
+	border-top: 1px solid #7fc143;
+}
+@media (max-width: 992px){
+#detalles-compra-bottom {
+    background-color: #7fc143;
+    border-top: 1px solid black;
+}
+}
+#habitaciones .panel-heading{
+	background-color: #7fc143;
+}

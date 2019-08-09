@@ -5453,13 +5453,13 @@ ul.slides {
 	padding: 25px;
 	background-color: #ffcb05;
 }
-#selector-fechas .btn{
+#selector-fechas .btn,#habitaciones .btn,#detalles-compra-bottom .btn{
 	font-weight: 400;
 	background-color: #ffcb05;
 	color:white;
 	border: 1px solid white
 }
-#selector-fechas .btn:hover{
+#selector-fechas .btn:hover,#habitaciones .btn:hover,#detalles-compra-bottom .btn:hover{
 	background-color: white;
 	color:#ffcb05;
 	border: 1px solid#ffcb05;
@@ -5469,4 +5469,50 @@ ul.slides {
 	max-height: 276px;
 	min-height: 200px;
 	overflow-x: auto;
+}
+.detalles-compra-activo{
+	display: block
+}
+.detalles-compra-inactivo{
+	display: none
+}
+@media (max-width: 992px){
+#detalles-compra-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    padding-top: 10px;
+    background-color: #ffcb05;
+    border-top: 1px solid black;
+    z-index: 99996;
+}
+#detalles-compra-bottom .btn{
+	margin-top:5px;
+}
+#detalles-compra {
+    top: 0 !important;
+    left: 0;
+    margin: 0px;
+    position: fixed !important;
+    width: 100%;
+    height: 100% !important;
+    min-height: 100% !important;
+    z-index: 99999;
+    background-color: #ffecbb;
+    overflow: auto;
+}
+}
+#habitaciones .panel-heading{
+	background-color: #ffcb05;
+}
+#reservas-body .panel-body,#reservas-body .sub-heading{
+	background-color: #f2f2f2;
+}
+#detalles-compra{
+	width: 360px;
+}
+.detalles-compra-fixed{
+	position: fixed;
+	top: 80px;
+	width: 360px;
 }

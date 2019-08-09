@@ -33,7 +33,7 @@
 </head>
 
 
-<body>
+<body id="reservas-body">
 
     <!--====== LOADER =====-->
     <div class="loader"></div>
@@ -529,10 +529,10 @@
         <div class="container">
             <div class="panel-group row hidden-sm hidden-xs" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
+                    <div class="panel-heading" role="tab" id="headingThree">
                         <h4 class="panel-title">
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Si ha estado hospedado anteriormente, antes de reservar regístrese en nuestro programa
                                 de
                                 fidelización y obtendrá estos beneficios.<i class="fa fa-chevron-down pull-right"
@@ -540,7 +540,7 @@
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="panel-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                             squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
@@ -555,14 +555,14 @@
             </div>
         </div>
     </section>
-    <section style="padding-top:3%">
+    <section style="padding-top:3%" id="habitaciones">
         <div class="container">
             <div class="col-md-8">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel" id="panel1">
+                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel-1">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                     Apartamento Premier de 1 dormitorio<i class="fa fa-chevron-down pull-right"
                                         aria-hidden="true"></i>
@@ -627,11 +627,23 @@
                                 </div>
                                 <div class="row">
                                     <div class="panel-body">
+                                        <div id="condiciones-1-1" class="well collapse">
+                                            <h4>
+                                                <strong>No reembolsable</strong>
+                                            </h4>
+                                            1.- PREPAGO: cobraremos en su tarjeta de crédito el total de la reserva
+                                            por anticipado.
+                                            <br>
+                                            2.- CANCELACIÓN: si cancela o no se presenta el día de su llegada, el
+                                            dinero cobrado no será reembolsado.
+                                        </div>
                                         <table class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th class="col-xs-8 xol-md-9" colspan="2">Estancia corta</th>
-                                                    <th>Condiciones</th>
+                                                    <th class="col-xs-8 col-md-9" colspan="2">Estancia corta</th>
+                                                    <th class="col-xs-4 col-md-3 text-center"><a
+                                                            onclick="$('#condiciones-1-1').collapse('toggle');">Condiciones</a>
+                                                    </th>
                                                 </tr>
                                             <tbody>
                                                 <tr>
@@ -639,8 +651,8 @@
                                                     <td class="col-xs-3 text-right">$ <span class="precio">75.38</span>
                                                     </td>
                                                     <td class="text-center">
-                                                        <button href="" id="agregar"
-                                                            class="btn btn-xs btn-primary">seleccionar</button>
+                                                        <a
+                                                            class="agregarItem btn btn-xs btn-primary">seleccionar</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -651,19 +663,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel" id="panel2">
-                        <div class="panel-heading" role="tab" id="headingOne">
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel-2">
+                        <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">
                                     Apartamento Deluxe de 1 dormitorio<i class="fa fa-chevron-down pull-right"
                                         aria-hidden="true"></i>
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                            aria-labelledby="headingOne">
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingTwo">
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-3 col-lg-3">
@@ -718,11 +730,28 @@
                                 </div>
                                 <div class="row">
                                     <div class="panel-body">
+                                        <div id="condiciones-2-1" class="well collapse">
+                                            <h4>
+                                                <strong>Precio normal</strong>
+                                            </h4>
+                                            1.- PREPAGO: No cobraremos depósito al momento de efectuar la reserva, 9
+                                            días antes de la fecha de llegada cobraremos en su tarjeta de crédito la
+                                            primera noche, el saldo de la reserva deberá pagarlo en recepción el día de
+                                            llegada.
+                                            <br>
+                                            2.- CANCELACIONES: Sin cargos hasta 10 días antes de la llegada. Si cancela
+                                            fuera de plazo no se le devolverá el prepago.
+                                            <br>
+                                            3.- NO-SHOW: Si usted no se presenta el día de llegada, el establecimiento
+                                            cobrará en su tarjeta de crédito el 100% de la reserva.
+                                        </div>
                                         <table class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th class="col-xs-8 xol-md-9" colspan="2">Estancia corta</th>
-                                                    <th>Condiciones</th>
+                                                    <th class="col-xs-8 col-md-9" colspan="2">Estancia corta</th>
+                                                    <th class="col-xs-4 col-md-3 text-center"><a
+                                                            onclick="$('#condiciones-2-1').collapse('toggle');">Condiciones</a>
+                                                    </th>
                                                 </tr>
                                             <tbody>
                                                 <tr>
@@ -730,8 +759,8 @@
                                                     <td class="col-xs-3 text-right">$ <span class="precio">75.38</span>
                                                     </td>
                                                     <td class="text-center">
-                                                        <button href="" id="agregar2"
-                                                            class="btn btn-xs btn-primary">seleccionar</button>
+                                                        <a
+                                                            class="agregarItem btn btn-xs btn-primary">seleccionar</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -742,13 +771,19 @@
                         </div>
                     </div>
                 </div>
-            </div><!--end col-md-8-->
-            <div class="col-md-4">
-                <div id="detalles-compra">
+            </div>
+            <!--end col-md-8-->
+            <div class="col-md-4 visible-md visible-lg">
+                <div id="detalles-compra" class="detalles-compra-activo">
                     <div class="panel">
                         <div class="panel-heading">
                             <div class="container-fluid">
                                 <div class="row">
+                                    <span class="pull-right visible-sm">
+                                        <button class="btn btn-danger btn-sm" onClick="cerrarDetalles()">
+                                            <i class="fa fa-close"></i>
+                                        </button>
+                                    </span>
                                     <div class="col-xs-2"><i class="fa fa-bell fa-4x" aria-hidden="true"></i></div>
                                     <div class="col-xs-10">
                                         <h5 style="padding-top:10px; font-size:18px; margin-left:10px">
@@ -801,7 +836,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>Total:&nbsp;&nbsp;</td>
-                                                            <td><strong><span id="total" class="text-right"></span></strong></td>
+                                                            <td><strong><span id="total"
+                                                                        class="text-right"></span></strong></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Prepago:&nbsp;&nbsp;</td>
@@ -818,7 +854,7 @@
                                         <div class="col-xs-3 col-md-12">
                                             <br class="hidden-xs hidden-sm">
                                             <center>
-                                                <a href="#" class="btn btn-md btn-primary disabled">Siguiente</a>
+                                                <a href="#" id="btn-siguiente" class="btn btn-md btn-primary disabled">Siguiente</a>
                                             </center>
                                         </div>
                                     </div>
@@ -831,36 +867,13 @@
         </div>
     </section>
 
-    <!--============== NEWSLETTER ===============-->
-    <section id="newsletter" class="banner-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h2>Our Newsletter</h2>
-                    <p>Sign up here to receive interesting updates</p>
-                    <form>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="email" class="form-control input-lg" placeholder="your email id"
-                                    required />
-                                <span class="input-group-btn"><button class="btn btn-lg"><i
-                                            class="fa fa-paper-plane"></i></button></span>
-                            </div>
-                        </div>
-                    </form>
-                </div><!-- end columns -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section><!-- end newsletter -->
-
-
-    <!--========== FOOTER ==========-->
+    <!--========== FOOTER-CUSTOM ==========-->
     <section>
-        <div id="footer-top" class="banner-padding">
+        <div id="footer-top" class="banner-padding ftr-top-style-3 txt-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left" id="more-about">
-                        <h2 class="footer-heading"><span>STAR</span>HOTEL</h2>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5" id="more-about">
+                        <h2 class="footer-heading big-768"><span>STAR</span>HOTEL</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                             nostrud exerci tation ullamcorper suscipit.</p>
@@ -869,66 +882,103 @@
                             <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
                             <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
                             <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
                         </ul>
-                    </div><!-- end more-about -->
-
-                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 text-left" id="company">
-                        <h4 class="footer-heading">Company</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Dinning</a></li>
-                            <li><a href="#">Staff</a></li>
-                            <li><a href="#">Blog's</a></li>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4" id="f-instagram">
+                        <h4 class="footer-heading">Instagram Post</h4>
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><img src="images/insta-1.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-2.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-3.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-4.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-5.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-6.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
                         </ul>
-                    </div><!-- end useful-links -->
-
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="f-services">
-                        <h4 class="footer-heading">Services</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Restaurant</a></li>
-                            <li><a href="#">Spa</a></li>
-                            <li><a href="#">Meeting Rooms</a></li>
-                            <li><a href="#">Free Wifi</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Food & Drinks</a></li>
-                        </ul>
-                    </div><!-- end visit-us -->
-
+                    </div><!-- end columns -->
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
-                        <h4 class="footer-heading">Contact Us</h4>
-                        <ul class="list-unstyled">
-                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
-                            <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
-                        </ul>
-
-                    </div><!-- end social-links -->
-
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h4 class="footer-heading">Contact Us</h4>
+                                <ul class="list-unstyled">
+                                    <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
+                                    <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                                    <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h5 class="footer-heading-custom">Nuestro Partner Es:</h5>
+                                <div>
+                                    <img class="img-responsive" src="./images/footer.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="footer-bottom">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                                    <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
+                                </div><!-- end columns -->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                                    <ul class="list-unstyled list-inline">
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><!-- end columns -->
+                            </div><!-- end row -->
+                        </div><!-- end footer-bottom -->
+                    </div><!-- end columns -->
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end footer-top -->
+    </section>
 
-        <div id="footer-bottom">
+    <!--========== booking ==========-->
+    <section class="hidden-lg hidden-md">
+        <div id="detalles-compra-bottom" class="col-xs-12">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
-                        <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
-                    </div><!-- end columns -->
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
-                        <ul class="list-unstyled list-inline">
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div><!-- end columns -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end footer-bottom -->
-
+                    <div class="col-xs-3">
+                        <center>
+                            <a>
+                                <div class="row">
+                                    <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="row">
+                                    <span style="font-size:11px; font-weight: bold">ver detalle</span>
+                                </div>
+                            </a>
+                        </center>
+                    </div>
+                    <div class="col-xs-6">
+                        <center>
+                            <h4 style="margin-top: 10px">
+                                <strong>
+                                    Total: $ <span id="precio-total"></span>
+                                </strong>
+                            </h4>
+                        </center>
+                    </div>
+                    <div class="col-xs-3">
+                        <center>
+                            <a class="visible-xs btn btn-primary pull-right">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a class="visible-sm btn btn-primary pull-right">Siguiente</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!--Footer Section Ends-->
 
 
     <!-- Page Scripts Starts -->
