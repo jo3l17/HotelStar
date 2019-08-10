@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Flag-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Date-Picker Stylesheet-->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- Color Panel -->
+    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+</head>
+
+
+<body id="reservas-body">
+
+    <!--====== LOADER =====-->
+    <div class="loader"></div>
+
+
+    <!--========== COLOR-PANEL ==========-->
+    <div id="colorPanel" class="colorPanel">
+        <a id="cpToggle" href="#"></a>
+        <ul></ul>
+    </div><!-- end colorPanel -->
+
+
+    <!--========== TOP-BAR ==========-->
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
+                            <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                            <li>
+                                <form>
+                                    <div class="form-group">
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                        <select class="form-control">
+                                            <option value="">EN</option>
+                                            <option value="">UR</option>
+                                            <option value="">FR</option>
+                                            <option value="">IT</option>
+                                        </select>
+                                    </div><!-- end form-group -->
+                                </form>
+                            </li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+
+    <!--================= PAGE-COVER ===============-->
+    <section class="page-cover cover-navbar-wrapper pt-174 black-full-overlay-img">
+
+        <div class="header-absolute">
+            <nav class="navbar navbar-default navbar-custom transparent-nav black-menu" id="mynavbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="btn_book" href="reservation-right-sidebar.html"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="div_language" class="dropdown"><a id="btn_language" href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span class="flag-icon flag-icon-es"></span> <i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_language">
+                                <li><a href=""><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-fr"></span> Francés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                            </ul>
+                        </div>
+                        <!-- si esta logueado este boton -->
+                        <div id="div_language" class="dropdown"><a id="btn_login" class="btn_login" href="#"
+                                class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_login">
+                                <li><a href="">Tu nombre</a></li>
+                                <li><a href="">Configurar</a></li>
+                                <li><a href="">Logout</a></li>
+                            </ul>
+                        </div>
+                        <!-- si no este -->
+                        <!-- <a class="btn_login" href="login-2.html"></a> -->
+                        <a href="index.html" class="navbar-brand"><span>STAR</span>HOTEL</a>
+                    </div><!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<span><i
+                                            class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 1</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-1-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-1-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-1-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-1-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 2</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-2-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-2-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-2-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-2-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Homepage 3</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="homepage-3-slider.html">Slider Version</a></li>
+                                            <li><a href="homepage-3-image-back.html">Image Version</a></li>
+                                            <li><a href="homepage-3-video-back.html">Video Version</a></li>
+                                            <li><a href="homepage-3-landing.html">Landing Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="homepage-restaurant.html">Restaurant Homepage</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Rooms<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="room-listings.html">List View Full Width</a></li>
+                                    <li><a href="room-listings-left-sidebar.html">List View Left Sidebar</a></li>
+                                    <li><a href="room-listings-right-sidebar.html">List View Right Sidebar</a></li>
+                                    <li><a href="room-grid.html">Grid View Full Width</a></li>
+                                    <li><a href="room-grid-left-sidebar.html">Grid View Left Sidebar</a></li>
+                                    <li><a href="room-grid-right-sidebar.html">Grid View Right Sidebar</a></li>
+                                    <li><a href="room-details-left-sidebar.html">Room Details Left Sidebar</a></li>
+                                    <li><a href="room-details-right-sidebar.html">Room Details Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Dining<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dining-1.html">Dining-1</a></li>
+                                    <li><a href="dining-2.html">Dining-2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Features<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu active"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Header</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li class="active"><a href="#">Header Style 1</a></li>
+                                            <li><a href="feature-header-2.html">Header Style 2</a></li>
+                                            <li><a href="feature-header-3.html">Header Style 3</a></li>
+                                            <li><a href="feature-header-4.html">Header Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Page Title</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="feature-page-cover-1.html">Page Title Style 1</a></li>
+                                            <li><a href="feature-page-cover-2.html">Page Title Style 2</a></li>
+                                            <li><a href="feature-page-cover-3.html">Page Title Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Footer</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="feature-footer-1.html">Footer Style 1</a></li>
+                                            <li><a href="feature-footer-2.html">Footer Style 2</a></li>
+                                            <li><a href="feature-footer-3.html">Footer Style 3</a></li>
+                                            <li><a href="feature-footer-4.html">Footer Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Forms</a>
+                                        <ul class="dropdown-menu dropdown-sbm right-sbm">
+                                            <li><a href="login-1.html">Login 1</a></li>
+                                            <li><a href="login-2.html">Login 2</a></li>
+                                            <li><a href="registration-1.html">Registration 1</a></li>
+                                            <li><a href="registration-2.html">Registration 2</a></li>
+                                            <li><a href="forgot-password-1.html">Forgot Password 1</a></li>
+                                            <li><a href="forgot-password-2.html">Forgot Password 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Pages<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu mega-dropdown-menu row">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li class="dropdown-header">Standard Pages</li>
+                                                    <li><a href="about-1.html">About-1</a></li>
+                                                    <li><a href="about-2.html">About-2</a></li>
+                                                    <li><a href="services-1.html">Services-1</a></li>
+                                                    <li><a href="services-2.html">Services-2</a></li>
+                                                    <li><a href="event-listings.html">Event Listing</a></li>
+                                                    <li><a href="event-details.html">Event Details</a></li>
+                                                    <li><a href="blog-listings-left-sidebar.html">Blog Left Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="blog-listings-right-sidebar.html">Blog Right
+                                                            Sidebar</a></li>
+                                                    <li><a href="blog-details-left-sidebar.html">Blog Detail Left
+                                                            Sidebar</a></li>
+                                                    <li><a href="blog-details-right-sidebar.html">Blog Detail Right
+                                                            Sidebar</a></li>
+                                                    <li><a href="gallery-2-columns.html">2 Columns Gallery</a></li>
+                                                    <li><a href="gallery-3-columns.html">3 Columns Gallery</a></li>
+                                                    <li><a href="gallery-4-columns.html">4 Columns Gallery</a></li>
+                                                    <li><a href="gallery-masonry.html">Masonry Gallery</a></li>
+                                                    <li><a href="spa-page.html">Spa</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="team-1.html">Team-1</a></li>
+                                                    <li><a href="team-2.html">Team-2</a></li>
+                                                    <li><a href="offers.html">Offers</a></li>
+                                                    <li><a href="testimonials-1.html">Testimonials-1</a></li>
+                                                    <li><a href="testimonials-2.html">Testimonials-2</a></li>
+                                                    <li><a href="testimonials-3.html">Testimonials-3</a></li>
+                                                    <li><a href="pricing-1.html">Pricing-1</a></li>
+                                                    <li><a href="pricing-2.html">Pricing-2</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-4 col-md-3">
+                                                <ul class="list-unstyled">
+                                                    <li><a
+                                                            href="reservation-left-sidebar.html">Reservation-Left-Sidebar</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="reservation-right-sidebar.html">Reservation-Right-Sidebar</a>
+                                                    </li>
+                                                    <li class="dropdown-header header-2">Special Pages</li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                    <li><a href="error-page.html">404 Page</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Contact<span><i class="fa fa-angle-down"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="contact-1.html">Contact-1</a></li>
+                                    <li><a href="contact-2.html">Contact-2</a></li>
+                                </ul>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- end container -->
+            </nav><!-- end navbar -->
+        </div><!-- end header-absolute -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="page-title">Paso 2</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Reservas</li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end page-cover -->
+
+
+    <!--=============INNERPAGE-WRAPPER =============-->
+
+    <section style="padding-top:2%;padding-bottom: 2%;" id="habitaciones">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel-1">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    1. Revise el detalle de su reserva
+                                </a>
+                                <i role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne"
+                                    class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="row" style="margin-bottom: 20px">
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <strong>Hotel Star</strong>
+                                                <br>
+                                                Calle Las Malvinas 123, Arequipa
+                                                <br>
+                                                Telefono: +51 923 842 833
+                                                <br>
+                                                Email:info@hotel-star.com
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <center>
+                                                <strong>
+                                                    Fecha Llegada:
+                                                </strong>
+                                                <br>
+                                                <strong>16-08-2019</strong>
+                                                <br>
+                                                <span>A partir de las 10:00</span>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <center>
+                                                <strong>
+                                                    Fecha Salida:
+                                                </strong>
+                                                <br>
+                                                <strong>18-08-2019</strong>
+                                                <br>
+                                                <span>Antes de las 13:00</span>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Detalle de Habitaciones</th>
+                                                        <th>Ocupacion</th>
+                                                        <th>Comidas</th>
+                                                        <th>Tipo Tarifa</th>
+                                                        <th>Total</th>
+                                                        <th>Abono</th>
+                                                        <th>Saldo a Pagar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Apartamento Premier de 1 dormitorio</td>
+                                                        <td>Adulto(s): 2 + niño(s) 2-12 años: 0</td>
+                                                        <td>Sin comida</td>
+                                                        <td>No Reembolsable</td>
+                                                        <td>$ 285.86</td>
+                                                        <td>$ 285.86</td>
+                                                        <td>$ 0.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-3 pull-right">
+                                            <p>
+                                                <strong>
+                                                    Total:
+                                                </strong>
+                                                <span>
+                                                    $ 285.86
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <strong>
+                                                    Prepago:
+                                                </strong>
+                                                <span>
+                                                    $ 285.86
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <strong>
+                                                    Saldo:
+                                                </strong>
+                                                <span>
+                                                    $ 0.00
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end col-md-8-->
+            <form action="">
+                <div class="col-md-6" id="panel-2">
+                    <div class="panel">
+                        <div class="panel-heading" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">
+                                    2. Ingrese sus datos de contacto
+                                </a>
+                                <i role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo"
+                                    class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingTwo">
+                            <div class="panel-body">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Nombre: *</label>
+                                        <input id="nombre" name="nombre" class="form-control" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Apellido: *</label>
+                                        <input id="apellido" name="apellido" class="form-control" required>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group ">
+                                        <label>E-mail: *</label>
+                                        <input id="email" name="email" type="email" class="form-control" required>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>País: *</label>
+                                        <select name="pais" id="pais" class="form-control" required>
+                                            <option value="Espana">España</option>
+                                            <option>Portugal</option>
+                                            <option>United Kingdom</option>
+                                            <option>Ireland</option>
+                                            <option>Germany</option>
+                                            <option>Italy</option>
+                                            <option>France</option>
+                                            <option>Netherlands</option>
+                                            <option>Belgium</option>
+                                            <option>Norway</option>
+                                            <option>- - - - - - </option>
+                                            <option>Afghanistan</option>
+                                            <option>Albania</option>
+                                            <option>Algeria</option>
+                                            <option>American Samoa</option>
+                                            <option>Andorra</option>
+                                            <option>Angola</option>
+                                            <option>Anguilla</option>
+                                            <option>Antarctica</option>
+                                            <option>Antigua and Barbuda</option>
+                                            <option>Argentina</option>
+                                            <option>Armenia</option>
+                                            <option>Aruba</option>
+                                            <option>Australia</option>
+                                            <option>Austria</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahamas</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                            <option>Belarus</option>
+                                            <option>Belgium</option>
+                                            <option>Belize</option>
+                                            <option>Benin</option>
+                                            <option>Bermuda</option>
+                                            <option>Bhutan</option>
+                                            <option>Bolivia</option>
+                                            <option>Bosnia and Herzegovina</option>
+                                            <option>Botswana</option>
+                                            <option>Bouvet Island</option>
+                                            <option>Brazil</option>
+                                            <option>British Indian Ocean Territory</option>
+                                            <option>Brunei Darussalam</option>
+                                            <option>Bulgaria</option>
+                                            <option>Burkina Faso</option>
+                                            <option>Burundi</option>
+                                            <option>Cambodia</option>
+                                            <option>Cameroon</option>
+                                            <option>Canada</option>
+                                            <option>Cape Verde</option>
+                                            <option>Cayman Islands</option>
+                                            <option>Central African Republic</option>
+                                            <option>Chad</option>
+                                            <option>Chile</option>
+                                            <option>China</option>
+                                            <option>Christmas Island</option>
+                                            <option>Cocos Islands</option>
+                                            <option>Colombia</option>
+                                            <option>Comoros</option>
+                                            <option>Congo</option>
+                                            <option>Congo, Democratic Republic</option>
+                                            <option>Cook Islands</option>
+                                            <option>Costa Rica</option>
+                                            <option>Cote d'Ivoire</option>
+                                            <option>Croatia</option>
+                                            <option>Cuba</option>
+                                            <option>Cyprus</option>
+                                            <option>Czech Republic</option>
+                                            <option>Denmark</option>
+                                            <option>Djibouti</option>
+                                            <option>Dominica</option>
+                                            <option>Dominican Republic</option>
+                                            <option>Ecuador</option>
+                                            <option>Egypt</option>
+                                            <option>El Salvador</option>
+                                            <option>Equatorial Guinea</option>
+                                            <option>Eritrea</option>
+                                            <option>Estonia</option>
+                                            <option>Ethiopia</option>
+                                            <option>Falkland Islands</option>
+                                            <option>Faroe Islands</option>
+                                            <option>Fiji</option>
+                                            <option>Finland</option>
+                                            <option>France</option>
+                                            <option>French Guiana</option>
+                                            <option>French Polynesia</option>
+                                            <option>Gabon</option>
+                                            <option>Gambia</option>
+                                            <option>Georgia</option>
+                                            <option>Germany</option>
+                                            <option>Ghana</option>
+                                            <option>Gibraltar</option>
+                                            <option>Greece</option>
+                                            <option>Greenland</option>
+                                            <option>Grenada</option>
+                                            <option>Guadeloupe</option>
+                                            <option>Guam</option>
+                                            <option>Guatemala</option>
+                                            <option>Guinea</option>
+                                            <option>Guinea-Bissau</option>
+                                            <option>Guyana</option>
+                                            <option>Haiti</option>
+                                            <option>Heard and McDonald Isl.</option>
+                                            <option>Honduras</option>
+                                            <option>Hong Kong</option>
+                                            <option>Hungary</option>
+                                            <option>Iceland</option>
+                                            <option>India</option>
+                                            <option>Indonesia</option>
+                                            <option>Iran</option>
+                                            <option>Iraq</option>
+                                            <option>Ireland</option>
+                                            <option>Israel</option>
+                                            <option>Italy</option>
+                                            <option>Jamaica</option>
+                                            <option>Japan</option>
+                                            <option>Jordan</option>
+                                            <option>Kazakhstan</option>
+                                            <option>Kenya</option>
+                                            <option>Kiribati</option>
+                                            <option>Kuwait</option>
+                                            <option>Kyrgyzstan</option>
+                                            <option>Laos</option>
+                                            <option>Latvia</option>
+                                            <option>Lebanon</option>
+                                            <option>Lesotho</option>
+                                            <option>Liberia</option>
+                                            <option>Libya</option>
+                                            <option>Liechtenstein</option>
+                                            <option>Lithuania</option>
+                                            <option>Luxembourg</option>
+                                            <option>Macao</option>
+                                            <option>Macedonia</option>
+                                            <option>Madagascar</option>
+                                            <option>Malawi</option>
+                                            <option>Malaysia</option>
+                                            <option>Maldives</option>
+                                            <option>Mali</option>
+                                            <option>Malta</option>
+                                            <option>Marshall Islands</option>
+                                            <option>Martinique</option>
+                                            <option>Mauritania</option>
+                                            <option>Mauritius</option>
+                                            <option>Mayotte</option>
+                                            <option>Mexico</option>
+                                            <option>Micronesia</option>
+                                            <option>Moldova</option>
+                                            <option>Monaco</option>
+                                            <option>Mongolia</option>
+                                            <option>Montenegro</option>
+                                            <option>Montserrat</option>
+                                            <option>Morocco</option>
+                                            <option>Mozambique</option>
+                                            <option>Myanmar</option>
+                                            <option>Namibia</option>
+                                            <option>Nauru</option>
+                                            <option>Nepal</option>
+                                            <option>Netherlands</option>
+                                            <option>Netherlands Antilles</option>
+                                            <option>New Caledonia</option>
+                                            <option>New Zealand</option>
+                                            <option>Nicaragua</option>
+                                            <option>Niger</option>
+                                            <option>Nigeria</option>
+                                            <option>Norfolk Island</option>
+                                            <option>North Korea</option>
+                                            <option>Norway</option>
+                                            <option>Oman</option>
+                                            <option>Pakistan</option>
+                                            <option>Palau</option>
+                                            <option>Palestinian Territory</option>
+                                            <option>Panama</option>
+                                            <option>Papua New Guinea</option>
+                                            <option>Paraguay</option>
+                                            <option>Peru</option>
+                                            <option>Philippines</option>
+                                            <option>Pitcairn</option>
+                                            <option>Poland</option>
+                                            <option>Portugal</option>
+                                            <option>Puerto Rico</option>
+                                            <option>Qatar</option>
+                                            <option>Romania</option>
+                                            <option>Russian Federation</option>
+                                            <option>Rwanda</option>
+                                            <option>Saint Helena</option>
+                                            <option>Saint Kitts and Nevis</option>
+                                            <option>Saint Lucia</option>
+                                            <option>St. Pierre and Miquelon</option>
+                                            <option>St. Vincent and Grenadines</option>
+                                            <option>Samoa</option>
+                                            <option>San Marino</option>
+                                            <option>Sao Tome and Principe</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Senegal</option>
+                                            <option>Serbia</option>
+                                            <option>Seychelles</option>
+                                            <option>Sierra Leone</option>
+                                            <option>Singapore</option>
+                                            <option>Slovakia</option>
+                                            <option>Slovenia</option>
+                                            <option>Solomon Islands</option>
+                                            <option>Somalia</option>
+                                            <option>South Africa</option>
+                                            <option>South Georgia</option>
+                                            <option>South Korea</option>
+                                            <option>Spain</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Sudan</option>
+                                            <option>Suriname</option>
+                                            <option>Svalbard and Jan Mayen</option>
+                                            <option>Swaziland</option>
+                                            <option>Sweden</option>
+                                            <option>Switzerland</option>
+                                            <option>Syrian Arab Republic</option>
+                                            <option>Taiwan</option>
+                                            <option>Tajikistan</option>
+                                            <option>Tanzania</option>
+                                            <option>Thailand</option>
+                                            <option>Timor-Leste</option>
+                                            <option>Togo</option>
+                                            <option>Tokelau</option>
+                                            <option>Tonga</option>
+                                            <option>Trinidad and Tobago</option>
+                                            <option>Tunisia</option>
+                                            <option>Turkey</option>
+                                            <option>Turkmenistan</option>
+                                            <option>Tuvalu</option>
+                                            <option>Uganda</option>
+                                            <option>Ukraine</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
+                                            <option>UUEE Minor Outlying Islands</option>
+                                            <option>Uruguay</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                            <option>Vatican City</option>
+                                            <option>Venezuela</option>
+                                            <option>Vietnam</option>
+                                            <option>Virgin Islands, British</option>
+                                            <option>Virgin Islands, U.S.</option>
+                                            <option>Wallis and Futuna</option>
+                                            <option>Western Sahara</option>
+                                            <option>Yemen</option>
+                                            <option>Zambia</option>
+                                            <option>Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label>Código país *</label>
+                                                <select name="codigo" class="form-control" required>
+                                                    <option value="34">España +34</option>
+                                                    <option value="351">Portugal +351</option>
+                                                    <option value="44">United Kingdom +44</option>
+                                                    <option value="353">Ireland +353</option>
+                                                    <option value="49">Germany +49</option>
+                                                    <option value="39">Italy +39</option>
+                                                    <option value="33">France +33</option>
+                                                    <option value="31">Netherlands +31</option>
+                                                    <option value="32">Belgium +32</option>
+                                                    <option value="47">Norway +47</option>
+                                                    <option>- - - - - - </option>
+                                                    <option value="93">Afghanistan / +93</option>
+                                                    <option value="35818">Aland Islands / +35818</option>
+                                                    <option value="355">Albania / +355</option>
+                                                    <option value="213">Algeria / +213</option>
+                                                    <option value="684">American Samoa / +684</option>
+                                                    <option value="376">Andorra / +376</option>
+                                                    <option value="244">Angola / +244</option>
+                                                    <option value="1264">Anguilla / +1264</option>
+                                                    <option value="672">Antarctica / +672</option>
+                                                    <option value="1268">Antigua and Barbuda / +1268</option>
+                                                    <option value="374">Armenia / +374</option>
+                                                    <option value="297">Aruba / +297</option>
+                                                    <option value="61">Australia / +61</option>
+                                                    <option value="43">Austria / +43</option>
+                                                    <option value="994">Azerbaijan / +994</option>
+                                                    <option value="1242">Bahamas / +1242</option>
+                                                    <option value="973">Bahrain / +973</option>
+                                                    <option value="880">Bangladesh / +880</option>
+                                                    <option value="1246">Barbados / +1246</option>
+                                                    <option value="375">Belarus Belorussia / +375</option>
+                                                    <option value="32">Belgium / +32</option>
+                                                    <option value="501">Belize / +501</option>
+                                                    <option value="229">Benin / +229</option>
+                                                    <option value="1441">Bermuda / +1441</option>
+                                                    <option value="975">Bhutan / +975</option>
+                                                    <option value="387">Bosnia and Herzegovina / +387</option>
+                                                    <option value="267">Botswana / +267</option>
+                                                    <option value="551">Bouvet Islands / +55 1</option>
+                                                    <option value="246">British Indian Ocean Territory / +246
+                                                    </option>
+                                                    <option value="1284">British Virgin Islands / +1284</option>
+                                                    <option value="673">Brunei Darussalam / +673</option>
+                                                    <option value="359">Bulgaria / +359</option>
+                                                    <option value="226">Burkina Faso / +226</option>
+                                                    <option value="257">Burundi / +257</option>
+                                                    <option value="855">Cambodia / +855</option>
+                                                    <option value="237">Cameroon / +237</option>
+                                                    <option value="238">Cape Verde / +238</option>
+                                                    <option value="1345">Cayman Islands / +1 345 </option>
+                                                    <option value="236">Central African Republic / +236</option>
+                                                    <option value="235">Chad / +235</option>
+                                                    <option value="86">China / +86</option>
+                                                    <option value="61">Christmas Island / +61</option>
+                                                    <option value="618">Cocos Keeling Island / +61 8</option>
+                                                    <option value="269">Comoros / +269</option>
+                                                    <option value="242">Congo / +242</option>
+                                                    <option value="243">Congo Rep Dem / +243</option>
+                                                    <option value="682">Cook Islands / +682</option>
+                                                    <option value="506">Costa Rica / +506</option>
+                                                    <option value="385">Croatia / +385</option>
+                                                    <option value="53">Cuba / +53</option>
+                                                    <option value="357">Cyprus / +357</option>
+                                                    <option value="420">Czech Republic / +420</option>
+                                                    <option value="45">Denmark / +45</option>
+                                                    <option value="253">Djibouti / +253</option>
+                                                    <option value="1767">Dominica / +1767</option>
+                                                    <option value="01">Dominican Republic / ++ 1 </option>
+                                                    <option value="670">East Timor / +670</option>
+                                                    <option value="593">Ecuador / +593</option>
+                                                    <option value="20">Egypt / +20</option>
+                                                    <option value="503">El Salvador / +503</option>
+                                                    <option value="240">Equatorial Guinea / +240</option>
+                                                    <option value="291">Eritrea / +291</option>
+                                                    <option value="372">Estonia / +372</option>
+                                                    <option value="251">Ethiopia / +251</option>
+                                                    <option value="298 ">Faroe Islands / +298 </option>
+                                                    <option value="679">Fiji Islands / +679</option>
+                                                    <option value="358">Finland / +358</option>
+                                                    <option value="33">France / +33</option>
+                                                    <option value="594">French Guiana / +594</option>
+                                                    <option value="689">French Polynesia / +689</option>
+                                                    <option value="262">French Southern Territories / +262</option>
+                                                    <option value="241">Gabon / +241</option>
+                                                    <option value="220">Gambia / +220</option>
+                                                    <option value="995">Georgia / +995</option>
+                                                    <option value="49">Germany / +49</option>
+                                                    <option value="233">Ghana / +233</option>
+                                                    <option value="350">Gibraltar (UK) / +350</option>
+                                                    <option value="30">Greece / +30</option>
+                                                    <option value="299">Greenland / +299</option>
+                                                    <option value="1473">Grenada / +1473</option>
+                                                    <option value="590">Guadeloupe / +590</option>
+                                                    <option value="1671">Guam / +1671</option>
+                                                    <option value="502">Guatemala / +502</option>
+                                                    <option value="441481">Guernsey / +44 1481</option>
+                                                    <option value="224">Guinea / +224</option>
+                                                    <option value="245">Guinea Bissau / +245</option>
+                                                    <option value="592">Guyana / +592</option>
+                                                    <option value="509">Haiti / +509</option>
+                                                    <option value="0">Heard and Mcdonald Islands / +0</option>
+                                                    <option value="504">Honduras / +504</option>
+                                                    <option value="852">Hong Kong / +852</option>
+                                                    <option value="36">Hungary / +36</option>
+                                                    <option value="354">Iceland / +354</option>
+                                                    <option value="91">India / +91</option>
+                                                    <option value="62">Indonesia / +62</option>
+                                                    <option value="98">Iran / +98</option>
+                                                    <option value="964">Iraq / +964</option>
+                                                    <option value="353">Ireland / +353</option>
+                                                    <option value="441624">Isle of Man / +44 1624</option>
+                                                    <option value="972">Israel / +972</option>
+                                                    <option value="39">Italy / +39</option>
+                                                    <option value="225">Ivory Coast / +225</option>
+                                                    <option value="1876">Jamaica / +1876</option>
+                                                    <option value="81">Japan / +81</option>
+                                                    <option value="441">Jersey / +44 1</option>
+                                                    <option value="962">Jordan / +962</option>
+                                                    <option value="73">Kazakhstan / +7 3</option>
+                                                    <option value="254">Kenya / +254</option>
+                                                    <option value="686">Kiribati / +686</option>
+                                                    <option value="965">Kuwait / +965</option>
+                                                    <option value="996">Kyrgyzstan / +996</option>
+                                                    <option value="856">Lao Democratic Republic / +856</option>
+                                                    <option value="371">Latvia / +371</option>
+                                                    <option value="961">Lebanon / +961</option>
+                                                    <option value="266">Lesotho / +266</option>
+                                                    <option value="231">Liberia / +231</option>
+                                                    <option value="218">Libyan Arab Jamahiriya / +218</option>
+                                                    <option value="423">Liechtenstein / +423</option>
+                                                    <option value="370">Lithuania / +370</option>
+                                                    <option value="352">Luxembourg / +352</option>
+                                                    <option value="853">Macau / +853</option>
+                                                    <option value="389">Macedonia / +389</option>
+                                                    <option value="26120">Madagascar / +26120</option>
+                                                    <option value="265">Malawi / +265</option>
+                                                    <option value="60">Malaysia / +60</option>
+                                                    <option value="960">Maldives / +960</option>
+                                                    <option value="223">Mali / +223</option>
+                                                    <option value="356">Malta / +356</option>
+                                                    <option value="500">Malvinas Islands / +500</option>
+                                                    <option value="692">Marshall Islands / +692</option>
+                                                    <option value="596">Martinique / +596</option>
+                                                    <option value="222">Mauritania / +222</option>
+                                                    <option value="230">Mauritius / +230</option>
+                                                    <option value="269">Mayotte / +269</option>
+                                                    <option value="691">Micronesia / +691</option>
+                                                    <option value="373">Moldova / +373</option>
+                                                    <option value="377">Monaco / +377</option>
+                                                    <option value="976">Mongolia / +976</option>
+                                                    <option value="382">Montenegro / +382</option>
+                                                    <option value="1664">Montserrat / +1664</option>
+                                                    <option value="212">Morocco / +212</option>
+                                                    <option value="258">Mozambique / +258</option>
+                                                    <option value="95">Myanmar / +95</option>
+                                                    <option value="264">Namibia / +264</option>
+                                                    <option value="674">Nauru / +674</option>
+                                                    <option value="977">Nepal / +977</option>
+                                                    <option value="31">Netherlands / +31</option>
+                                                    <option value="599">Netherlands Antilles / +599</option>
+                                                    <option value="687">New Caledonia / +687</option>
+                                                    <option value="64">New Zealand / +64</option>
+                                                    <option value="505">Nicaragua / +505</option>
+                                                    <option value="227">Niger / +227</option>
+                                                    <option value="234">Nigeria / +234</option>
+                                                    <option value="683">Niue / +683</option>
+                                                    <option value="683">Norfolk Islands / +683</option>
+                                                    <option value="1670">Northern Mariana Islands / +1670</option>
+                                                    <option value="850">North Korea / +850</option>
+                                                    <option value="47">Norway / +47</option>
+                                                    <option value="968">Oman / +968</option>
+                                                    <option value="999">Other Countries / +999</option>
+                                                    <option value="92">Pakistan / +92</option>
+                                                    <option value="680">Palau / +680</option>
+                                                    <option value="275">Palestinian Occ Territories / +275</option>
+                                                    <option value="507">Panama / +507</option>
+                                                    <option value="675">Papua New Guinea / +675</option>
+                                                    <option value="63">Philippines / +63</option>
+                                                    <option value="872">Pitcairn / +872</option>
+                                                    <option value="48">Poland / +48</option>
+                                                    <option value="351">Portugal / +351</option>
+                                                    <option value="1787">Puerto Rico / +1787</option>
+                                                    <option value="974">Qatar / +974</option>
+                                                    <option value="262">Reunion / +262</option>
+                                                    <option value="40">Romania / +40</option>
+                                                    <option value="250">Ruanda / +250</option>
+                                                    <option value="7">Russian Federation / +7</option>
+                                                    <option value="590590">Saint-BarthÃ©lemy / +590 590</option>
+                                                    <option value="1758">Saint Lucia / +1758</option>
+                                                    <option value="685">Samoa / +685</option>
+                                                    <option value="378">San Marino / +378</option>
+                                                    <option value="239">Sao Tome and Principe / +239</option>
+                                                    <option value="966">Saudi Arabia / +966</option>
+                                                    <option value="221">Senegal / +221</option>
+                                                    <option value="381">Serbia / +381</option>
+                                                    <option value="248">Seychelles / +248</option>
+                                                    <option value="232">Sierra Leone / +232</option>
+                                                    <option value="65">Singapore / +65</option>
+                                                    <option value="590">Sint Maarten / +590</option>
+                                                    <option value="421">Slovakia / +421</option>
+                                                    <option value="386">Slovenia / +386</option>
+                                                    <option value="677">Solomon Islands / +677</option>
+                                                    <option value="252">Somalia / +252</option>
+                                                    <option value="27">South Africa / +27</option>
+                                                    <option value="995">South Georgia and South Sandwich / +995
+                                                    </option>
+                                                    <option value="82">South Korea / +82</option>
+                                                    <option value="34">Spain / +34</option>
+                                                    <option value="94">Sri Lanka / +94</option>
+                                                    <option value="290">St. Helena / +290</option>
+                                                    <option value="1869">St Kitts and Nevis / +1869</option>
+                                                    <option value="508">St Pierre and Miquelon / +508</option>
+                                                    <option value="1784">St Vincent and the Grenadines / +1784
+                                                    </option>
+                                                    <option value="249">Sudan / +249</option>
+                                                    <option value="597">Suriname / +597</option>
+                                                    <option value="47">Svalbard and Jan Mayen Islands / +47</option>
+                                                    <option value="268">Swaziland / +268</option>
+                                                    <option value="46">Sweden / +46</option>
+                                                    <option value="41">Switzerland / +41</option>
+                                                    <option value="963">Syrian Arab Republic / +963</option>
+                                                    <option value="886">Taiwan / +886</option>
+                                                    <option value="992">Tajikistan / +992</option>
+                                                    <option value="255">Tanzania / +255</option>
+                                                    <option value="66">Thailand / +66</option>
+                                                    <option value="228">Togo / +228</option>
+                                                    <option value="690">Tokelau / +690</option>
+                                                    <option value="676">Tonga / +676</option>
+                                                    <option value="1868">Trinidad and Tobago / +1868</option>
+                                                    <option value="216">Tunisia / +216</option>
+                                                    <option value="90">Turkey / +90</option>
+                                                    <option value="993">Turkmenistan / +993</option>
+                                                    <option value="1649">Turks and Caicos Islands / +1649</option>
+                                                    <option value="688">Tuvalu / +688</option>
+                                                    <option value="256">Uganda / +256</option>
+                                                    <option value="380">Ukraine / +380</option>
+                                                    <option value="971">United Arab Emirates / +971</option>
+                                                    <option value="44">United Kingdom / +44</option>
+                                                    <option value="998">Uzbekistan / +998</option>
+                                                    <option value="678">Vanuatu / +678</option>
+                                                    <option value="3906">Vatican City State / +39 06</option>
+                                                    <option value="58">Venezuela / +58</option>
+                                                    <option value="84">Vietnam / +84</option>
+                                                    <option value="1340">Virgin Islands US / +1340</option>
+                                                    <option value="681">Wallis and Futuna Islands / +681</option>
+                                                    <option value="21228">Western Sahara / +212 28</option>
+                                                    <option value="967">Yemen / +967</option>
+                                                    <option value="260">Zambia / +260</option>
+                                                    <option value="716">Zimbabwe / +716</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <label>Teléfono de contacto: *</label>
+                                                <input type="number" id="telefono" name="telefono" class="form-control"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Llegada estimada</label>
+                                        <select id="arrivo" name="arrivo" class="form-control">
+                                            <option value="0800">08:00</option>
+                                            <option value="0900">09:00</option>
+                                            <option value="1000">10:00</option>
+                                            <option value="1100">11:00</option>
+                                            <option value="1200" selected="selected">12:00</option>
+                                            <option value="1300">13:00</option>
+                                            <option value="1400">14:00</option>
+                                            <option value="1500">15:00</option>
+                                            <option value="1600">16:00</option>
+                                            <option value="1700">17:00</option>
+                                            <option value="1800">18:00</option>
+                                            <option value="1900">19:00</option>
+                                            <option value="2000">20:00</option>
+                                            <option value="2100">21:00</option>
+                                            <option value="2200">22:00</option>
+                                            <option value="2300">23:00</option>
+                                            <option value="2400">24:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="panel-2">
+                    <div class="panel">
+                        <div class="panel-heading" id="headingThree">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">
+                                    3. Ingrese su tarjeta de credito
+                                </a>
+                                <i role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree"
+                                    class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Titular de la tarjeta (tal y como aparece impreso): *</label>
+                                        <input id="nombre_t" name="nombre_t" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Número de Tarjeta (Ej. 4444555566667777): *</label>
+                                        <input name="n_tarjeta" id="n_tarjeta" class="form-control tarjeta" required
+                                            placeholder="____-____-____-____">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tipo de Tarjeta:</label>
+                                        <input id="tipo_tarjeta" name="tipo_tarjeta" class="form-control"
+                                            readonly="readonly">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Caducidad/Mes: *</label>
+                                        <select name="caducidad-mes" id="caducidad-mes" class="form-control" required>
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                            <option>04</option>
+                                            <option>05</option>
+                                            <option>06</option>
+                                            <option>07</option>
+                                            <option>08</option>
+                                            <option>09</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Caducidad/Año: *</label>
+                                        <select name="caducidad-ayo" id="caducidad-ayo" class="form-control" required>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                            <option>28</option>
+                                            <option>29</option>
+                                        </select>
+                                        <span id="caducidad-text-error" style="display: none" class="text-danger">Error
+                                            caducidad de la tarjeta de crédito Mes/Año.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 clearfix">
+                                    <div class="form-group">
+                                        <div class="col-md-8 col-xs-10 " style="margin-left: -13px;">
+                                            <label>CVV *</label>
+                                            <input type="text" minlength="3" maxlength="4" name="cvv" id="cvv"
+                                                class="form-control cvv" required pattern="[0-9]{3,4}">
+                                        </div>
+                                        <div class="col-md-4 col-xs-2" style="margin-top: 13px; margin-left: -23px;">
+                                            <img src="images/cvv.gif" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                    <div class="panel" id="panel-4">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour">
+                                    4.Comentarios y/o preguntas. Favor no escriba caracteres inválidos, por ejemplo: ^#
+                                    º & % $ " ! ¡ Ç | \ / ( ) [ ] { }
+                                </a>
+                                <i role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour"
+                                    class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel"
+                            aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <textarea name="comentario" class="form-control" id="comentario"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <center>
+                    <div class="form-group">
+                        <input name="ofertas" id="ofertas" type="checkbox">
+                        Deseo recibir información comercial, ofertas y descuentos de Hotel Star
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox">
+                        Estoy de acuerdo con los <a href="#">términos y condiciones</a> de la reserva en Hotel Star
+                    </div>
+                </center>
+            </div>
+            <div class="col-md-12">
+                <center>
+                    <button type="button" class="btn btn-primary" style="margin-top: 10px">Siguiente</button>
+                </center>
+            </div>
+        </div>
+    </section>
+    <section id="reservation-page" class="innerpage-wrapper">
+            
+            <div id="reservation-details"> 
+                <div class="container-fluid">
+                    <div class="row">
+                    
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-info">
+    						<div class="reserve-position center">
+                                <div class="innerpage-heading">
+                                    <h1>How to make reservation</h1>
+                                </div><!-- end innerpage-heading -->
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                <span class="hotel-name">The Star Hotel</span>
+    						</div><!-- end reserve-position -->
+                        </div><!-- end columns -->
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-support">
+                        	<div class="center">
+                                <div class="innerpage-heading">
+                                    <h1>Reservation Support</h1>
+                                </div><!-- end innerpage-heading -->
+                                
+                                <div class="support-list">
+                                    <div class="icon"><span><i class="fa fa-envelope"></i></span></div>
+                                    <div class="text">
+                                        <p>If you are on the go and still want to ask a question, simply drop us an e-mail.</p>
+                                        <p class="bold">support@starhotel.com</p>
+                                    </div><!-- end text -->
+                                </div><!-- end support-list -->
+                                
+                                <div class="support-list">
+                                    <div class="icon"><span><i class="fa fa-phone"></i></span></div>
+                                    <div class="text phone">
+                                        <p>If you are on the go and still want to ask a question, simply drop us an e-mail.</p>
+                                        <p class="bold">+222 – 5548 656</p>
+                                    </div><!-- end text -->
+                                </div><!-- end support-list -->
+                                
+                                <div class="support-list">
+                                    <div class="icon"><span><i class="fa fa-map-marker"></i></span></div>
+                                    <div class="text">
+                                        <p>Street No: 1234/A, Blu Vard Area, Main Double Road,</p>
+                                        <p class="bold">United Kingdom</p>
+                                    </div><!-- end text -->
+                                </div><!-- end support-list -->
+                                
+                            </div><!-- end center -->
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end reervation-details -->
+        
+        </section>
+
+    <!--========== FOOTER-CUSTOM ==========-->
+    <section>
+        <div id="footer-top" class="banner-padding ftr-top-style-3 txt-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5" id="more-about">
+                        <h2 class="footer-heading big-768"><span>STAR</span>HOTEL</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit.</p>
+                        <ul class="social-links list-inline list-unstyled">
+                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4" id="f-instagram">
+                        <h4 class="footer-heading">Instagram Post</h4>
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><img src="images/insta-1.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-2.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-3.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-4.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-5.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="images/insta-6.jpg" class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h4 class="footer-heading">Contact Us</h4>
+                                <ul class="list-unstyled">
+                                    <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
+                                    <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                                    <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h5 class="footer-heading-custom">Nuestro Partner Es:</h5>
+                                <div>
+                                    <img class="img-responsive" src="./images/footer.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="footer-bottom">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                                    <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
+                                </div><!-- end columns -->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                                    <ul class="list-unstyled list-inline">
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><!-- end columns -->
+                            </div><!-- end row -->
+                        </div><!-- end footer-bottom -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+    </section>
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorpanel.js"></script>
+    <script>
+        $('#colorPanel').ColorPanel({
+            styleSheet: '#cpswitch'
+            , animateContainer: false
+            , colors: {
+                '#ffcb05': 'css/yellow.css'
+                , '#3cafff': 'css/skyblue.css'
+                , '#ff6666': 'css/pink.css'
+                , '#7fc143': 'css/green.css'
+                , '#00cccc': 'css/cyan.css'
+                , '#ffbf80': 'css/skin.css'
+                , '#9797ff': 'css/lightblue.css'
+                , '#d98cb3': 'css/purple.css'
+                , '#cc9966': 'css/brown.css'
+                , '#00e6ac': 'css/spring-green.css'
+                , '#fc603f': 'css/orange.css'
+                , '#c4c920': 'css/lightgreen.css'
+                , '#e266e8': 'css/strongpurple.css'
+                , '#6ce34b': 'css/stronggreen.css'
+                ,
+            }
+        });
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-gallery.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-flex.js"></script>
+    <script src="js/custom-owl.js"></script>
+    <script src="js/customteam.js"></script>
+
+    <!-- Page Scripts Ends -->
+
+</body>
+
+</html>

@@ -218,6 +218,9 @@ i = 0;
 $(".agregarItem").click(function () {
 	$(this).addClass("disabled")
 	var itemId = $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().attr("id")
+	var tableContainer= $(this).parent().parent().parent().parent()
+	tableContainer.attr("id",`table-${i}`)
+	console.log(tableContainer.attr("id"))
 	$(this).addClass(`btn-${i}`);
 	$("#detail-items")
 		.append(
@@ -227,10 +230,10 @@ $(".agregarItem").click(function () {
 					<i class="fa fa-close"></i>
 				</button>
 			</span>
-			<h5>${$(`#${itemId} .panel-heading a`).html()}</h5>
+			<h5 style="">${$(`#${itemId} .panel-heading a`).html()}</h5>
 			<p>${$(`#ocupacion-1 option:selected`).text()}</p>
 			<p>niño(s): 0-1 años: 0</p>
-			<p>Estancia corta, Sin Comida</p>
+			<p>${$(`#table-${i} thead th.col-md-9`).html()}, ${$(`#table-${i} tbody>tr>td`).html()}</p>
 			<p><span>Total:$ ${$(`#${itemId} .precio`).html()}</span></p>
 		</div>`
 		)
@@ -250,7 +253,7 @@ function removeItem(i) {
 	$(`#item-${i}`).remove();
 	$(`.btn-${i}`).removeClass("disabled")
 	i--
-	if (total==0){
+	if (total == 0) {
 		$("#btn-siguiente").addClass("disabled")
 	}
 }
@@ -261,7 +264,7 @@ $.fn.scrollBottom = function () {
 console.log(fixed)
 function fixDiv() {
 	var $cache = $('#detalles-compra');
-	if ($(window).scrollTop() > 550 && $(window).scrollBottom() > 440) {
+	if ($(window).scrollTop() > 550 && $(window).scrollBottom() > 930) {
 
 		if ($(window).width() > 992) {
 			// $cache.css({
@@ -308,4 +311,17 @@ function cerrarDetalles() {
 	fixed.parent().addClass("visible-lg")
 	fixed.addClass("detalles-compra-inactivo")
 	fixed.removeClass("detalles-compra-activo")
+}
+let date = new Date()
+
+let day = date.getDate()
+let month = date.getMonth() + 1
+let year = date.getFullYear()
+
+if (month < 10) {
+	$('input#fecha_inicio').val(`${day}-0${month}-${year}`)
+	$('input#fecha_termino').val(`${day+1}-0${month}-${year}`)
+} else {
+	$('input#fecha_inicio').val(`${day}-${month}-${year}`)
+	$('input#fecha_termino').val(`${day+1}-${month}-${year}`)
 }

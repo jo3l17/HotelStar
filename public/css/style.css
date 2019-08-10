@@ -5444,28 +5444,28 @@ ul.slides {
 }
 /* fidelizacion */
 #contact-page #contact-form .text-area-custom-2{
-	height:470px;
+	height:520px;
 	padding-top:16px;
 	resize: none;
+}
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 /* reservas */
 #selector-fechas{
 	padding: 25px;
-	background-color: #ffcb05;
 }
 #selector-fechas .btn,#habitaciones .btn,#detalles-compra-bottom .btn{
 	font-weight: 400;
-	background-color: #ffcb05;
 	color:white;
 	border: 1px solid white
 }
 #selector-fechas .btn:hover,#habitaciones .btn:hover,#detalles-compra-bottom .btn:hover{
 	background-color: white;
-	color:#ffcb05;
-	border: 1px solid#ffcb05;
 }
 .detail-items{
-	border-top: 1px solid #ffcb05;
 	max-height: 276px;
 	min-height: 200px;
 	overflow-x: auto;
@@ -5482,7 +5482,6 @@ ul.slides {
     bottom: 0;
     height: 70px;
     padding-top: 10px;
-    background-color: #ffcb05;
     border-top: 1px solid black;
     z-index: 99996;
 }
@@ -5502,17 +5501,47 @@ ul.slides {
     overflow: auto;
 }
 }
-#habitaciones .panel-heading{
-	background-color: #ffcb05;
-}
 #reservas-body .panel-body,#reservas-body .sub-heading{
 	background-color: #f2f2f2;
+	padding-top: 10px;
 }
-#detalles-compra{
-	width: 360px;
+#reservas-body{
+	font-family: 'Lato', sans-serif;
 }
+@media(min-width:992px){
+	#detalles-compra{
+		width: 360px;
+	}
+}
+
 .detalles-compra-fixed{
 	position: fixed;
 	top: 80px;
 	width: 360px;
 }
+
+.detail-item{
+	padding: 12px;
+}
+.detail-item h5{
+	font-family: 'Lato', sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+}
+.detail-item p{
+	font-size: 105%;
+}
+
+#collapseLogin p{
+	font-size: 105%;
+}
+#collapseLogin .panel-body,#accordion1 .panel-body,#accordion2 .panel-body{
+	padding-top: 30px;
+}
+#habitaciones .btn{
+	border:1px solid transparent;
+}
+#detalles-compra .panel{
+	margin-bottom: 0;
+}
+/* calificaciones calidad */
