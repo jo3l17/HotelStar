@@ -6,6 +6,7 @@
 	var programas = $("#owl-programas-turisticos")
 	var lugares = $("#owl-lugares-interes")
 	var establecimientos = $("#owl-establecimientos")
+	var premios =$("#owl-premios")
 
 	modal.owlCarousel({
 		items: 1,
@@ -30,7 +31,6 @@
 		responsiveRefreshRate: 200,
 		responsiveBaseWidth: window,
 	})
-
 	index.owlCarousel({
 		items: 3,
 		itemsCustom: false,
@@ -58,7 +58,6 @@
 		responsiveRefreshRate: 200,
 		responsiveBaseWidth: window,
 	});
-
 	rooms_custom.owlCarousel({
 		items: 2,
 		itemsCustom: false,
@@ -108,7 +107,6 @@
 		responsiveRefreshRate: 200,
 		responsiveBaseWidth: window,
 	});
-
 	programas.owlCarousel({
 		items: 1,
 		itemsCustom: false,
@@ -178,6 +176,36 @@
 		responsiveRefreshRate: 200,
 		responsiveBaseWidth: window,
 	})
+	premios.owlCarousel({
+		items : 3,
+		itemsCustom : false,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [991,2],
+		itemsTablet: [768,2],
+		itemsTabletSmall: [600,1],
+		itemsMobile : [479,1],
+		singleItem : false,
+		itemsScaleUp : false,
+	 
+		//Autoplay
+		autoPlay : true,
+		stopOnHover : true,
+	 
+		// Navigation
+		navigation : false,
+		navigationText : false,
+		rewindNav : false,
+		scrollPerPage : false,
+	 
+		//Pagination
+		pagination : true,
+		paginationNumbers: false,
+	 
+		// Responsive 
+		responsive: true,
+		responsiveRefreshRate : 200,
+		responsiveBaseWidth: window,    
+	});
 
 })(jQuery)
 

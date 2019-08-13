@@ -4814,12 +4814,25 @@ ul.slides {
 		margin-right: 0 !important;
 	}
 	.btn_login{
-		margin-right: 20% !important;
-		margin-top: 0% !important;
+		margin-right: 2% !important;
+		margin-top: 1% !important;
 		}
+	#mynavbar .navbar-toggle {
+		margin-right: 2% !important;
+		margin-left: 2%;
+	}
 	
 }
+@media(min-width:620px) and (max-width:768px){
+	#mynavbar .navbar-toggle {
+		padding-top: 23px !important;
+	}
+}
 @media(max-width:768px){
+	#mynavbar .navbar-toggle {
+		margin-right: 0 !important;
+	}
+	
 	#btn_language{
 		height: 38px !important;
 		padding-top: 15%;
@@ -4842,11 +4855,21 @@ ul.slides {
 	.btn_login{
 		font-family: FontAwesome;
 	}
+	.btn_book{
+		margin-top: 1.5% !important;
+	}
+		
+	#div_language{
+		margin-top: 1.5% !important;
+	}
+	.btn_login{
+		margin-top: 1.5% !important;
+	}
 	
 }
 @media(max-width:500px){
 	.btn_login{
-		margin-top: 5px !important;
+		margin-top: 2.3% !important;
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -4855,7 +4878,7 @@ ul.slides {
 		font-size: 14px;
 		padding: 8px 19px;
 		text-decoration: none;
-		margin-right: 25% !important;
+		margin-right: 2% !important;
 	}
 	.btn_book, .btn_book:focus{
 		margin-top: 2.3% !important;
@@ -4866,8 +4889,10 @@ ul.slides {
 		padding: 8px 15px;
 		text-decoration: none;
 	}
+	#div_language{
+		margin-top: 2.3% !important;
+	}
 	#btn_language{
-		margin-top: 5px;
 		float: right;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -4952,6 +4977,16 @@ ul.slides {
 	.custom-form .form-group.col-md-6{
 		padding-right: 1px !important;
 		width: 186px;
+	}
+	.custom-form .form-group.col-md-6.custom{
+		padding-right: 1px !important;
+		padding-left: 1px !important;
+		width: 220px;
+	}
+	.custom-form .form-group.col-md-6.custom input{
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		width: 220px;
 	}
 	.custom-form .form-group.col-md-6 input{
 		padding-right: 1px !important;
@@ -5696,6 +5731,25 @@ input[type=date]::-webkit-outer-spin-button {
 }
 .mx-20{
 	margin: 0 20px;
+}
+
+.mt-25{
+	margin-top: 25px;
+}
+.mb-25{
+	margin-bottom: 25px;
+}
+.ml-25{
+	margin-left: 25px;
+}
+.mr-25{
+	margin-right: 25px;
+}
+.my-25{
+	margin: 25px 0;
+}
+.mx-25{
+	margin: 0 25px;
 }
 
 .m-0{
