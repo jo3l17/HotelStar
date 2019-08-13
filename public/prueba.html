@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+    <style>
+        .rate-popover {
+            cursor: pointer;
+        }
+        .amber-text{
+            color: aqua
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="rateMe">
+        <i class="fas fa-star py-2 px-1 rate-popover" data-index="0" data-html="true" data-toggle="popover"
+            data-placement="top" title="Very bad"></i>
+        <i class="fas fa-star py-2 px-1 rate-popover" data-index="1" data-html="true" data-toggle="popover"
+            data-placement="top" ></i>
+        <i class="fas fa-star py-2 px-1 rate-popover" data-index="2" data-html="true" data-toggle="popover"
+            data-placement="top" ></i>
+        <i class="fas fa-star py-2 px-1 rate-popover" data-index="3" data-html="true" data-toggle="popover"
+            data-placement="top" ></i>
+        <i class="fas fa-star py-2 px-1 rate-popover" data-index="4" data-html="true" data-toggle="popover"
+            data-placement="top" title="Excellent"></i>
+    </span>
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+    <script>
+        var $stars;
+
+        jQuery(document).ready(function ($) {
+
+            // Custom whitelist to allow for using HTML tags in popover content
+            var myDefaultWhiteList = $.fn.tooltip.Constructor.Default.whiteList
+            myDefaultWhiteList.textarea = [];
+            myDefaultWhiteList.button = [];
+
+            $stars = $('.rate-popover');
+
+            $stars.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive(index);
+            });
+
+            function markStarsAsActive(index) {
+                unmarkActive();
+                for (var i = 0; i <= index; i++) {
+                    $($stars.get(i)).addClass('amber-text');
+                }
+            }
+
+            function unmarkActive() {
+                $stars.removeClass('amber-text');
+            }
+
+            $stars.on('click', function () {
+                $stars.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe').on('click', '#voteSubmitButton', function () {
+                $stars.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe').on('click', '#closePopoverButton', function () {
+                $stars.popover('hide');
+            });
+
+        });
+
+        $(function () {
+            
+            $('.rate-popover').tooltip();
+        });
+    </script>
+</body>
+
+</html>

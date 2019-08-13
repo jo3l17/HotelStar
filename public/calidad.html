@@ -14,14 +14,20 @@
 
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
 
     <!-- Flag-icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
 
 
     <!-- Font Awesome Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Custom Stylesheets -->
@@ -338,15 +344,15 @@
                         </div>
                         <div class="col-md-6">
                             <span id="rateMe">
-                                <i class="fas fa-star py-2 px-1 rate-popover" data-index="0" data-html="true"
+                                <i class="fas fa-star fa-2x py-2 px-1 rate-popover" data-index="0" data-html="true"
                                     data-toggle="popover" data-placement="top" title="Very bad"></i>
-                                <i class="fas fa-star py-2 px-1 rate-popover" data-index="1" data-html="true"
-                                    data-toggle="popover" data-placement="top" title="Poor"></i>
-                                <i class="fas fa-star py-2 px-1 rate-popover" data-index="2" data-html="true"
-                                    data-toggle="popover" data-placement="top" title="OK"></i>
-                                <i class="fas fa-star py-2 px-1 rate-popover" data-index="3" data-html="true"
-                                    data-toggle="popover" data-placement="top" title="Good"></i>
-                                <i class="fas fa-star py-2 px-1 rate-popover" data-index="4" data-html="true"
+                                <i class="fas fa-star fa-2x py-2 px-1 rate-popover" data-index="1" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-star fa-2x py-2 px-1 rate-popover" data-index="2" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-star fa-2x py-2 px-1 rate-popover" data-index="3" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-star fa-2x py-2 px-1 rate-popover" data-index="4" data-html="true"
                                     data-toggle="popover" data-placement="top" title="Excellent"></i>
                             </span>
                         </div>
@@ -504,7 +510,56 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
     <!-- Page Scripts Ends -->
-    <script src="js/addons/rating.js"></script>
+    <script>
+        var $stars;
+
+        jQuery(document).ready(function ($) {
+
+            // Custom whitelist to allow for using HTML tags in popover content
+            var myDefaultWhiteList = $.fn.tooltip.Constructor.Default.whiteList
+            myDefaultWhiteList.textarea = [];
+            myDefaultWhiteList.button = [];
+
+            $stars = $('.rate-popover');
+
+            $stars.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive(index);
+            });
+
+            function markStarsAsActive(index) {
+                unmarkActive();
+                for (var i = 0; i <= index; i++) {
+                    $($stars.get(i)).addClass('amber-text');
+                }
+            }
+
+            function unmarkActive() {
+                $stars.removeClass('amber-text');
+            }
+
+            $stars.on('click', function () {
+                $stars.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe').on('click', '#voteSubmitButton', function () {
+                $stars.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe').on('click', '#closePopoverButton', function () {
+                $stars.popover('hide');
+            });
+
+        });
+
+        $(function () {
+
+            $('.rate-popover').tooltip();
+        });
+    </script>
     <script src="js/customteam.js"></script>
 
 </body>
