@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calidad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Flag-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+
+
+    <!-- Font Awesome Stylesheet -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Date-Picker Stylesheet-->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- Color Panel -->
+    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+</head>
+
+
+<body id="reservas-body">
+
+    <!--====== LOADER =====-->
+    <div class="loader"></div>
+
+
+    <!--========== COLOR-PANEL ==========-->
+    <div id="colorPanel" class="colorPanel">
+        <a id="cpToggle" href="#"></a>
+        <ul></ul>
+    </div><!-- end colorPanel -->
+
+
+    <!--========== TOP-BAR ==========-->
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fas fa-map-marker-alt"></i></span>29 Land St, Lorem City, CA</li>
+                            <li><span><i class="fas fa-phone"></i></span>+00 123 4567</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                            <li>
+                                <form>
+                                    <div class="form-group">
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                        <select class="form-control">
+                                            <option value="">EN</option>
+                                            <option value="">UR</option>
+                                            <option value="">FR</option>
+                                            <option value="">IT</option>
+                                        </select>
+                                    </div><!-- end form-group -->
+                                </form>
+                            </li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+
+    <!--================= PAGE-COVER ===============-->
+    <section class="page-cover cover-navbar-wrapper pt-174 black-full-overlay-img">
+
+        <div class="header-absolute">
+            <nav class="navbar navbar-default customized-navbar transparent-nav navbar-custom black-menu" id="mynavbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="btn_book" href="reservation-right-sidebar.html"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="div_language" class="dropdown"><a id="btn_language" href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span class="flag-icon flag-icon-es"></span> <i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_language">
+                                <li><a href=""><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-fr"></span> Francés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-nl"></span> Holandés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-no"></span> Noruego</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-se"></span> Sueco</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-pt"></span> Portugués</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-ru"></span> Ruso</a></li>
+                            </ul>
+                        </div>
+                        <!-- si esta logueado este boton -->
+                        <!-- <div class="dropdown"><a id="btn_login" class="btn_login" href="#"
+                                                class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                                            <ul class="dropdown-menu" aria-labelledby="btn_login">
+                                                <li><a href="">Tu nombre</a></li>
+                                                <li><a href="">Configurar</a></li>
+                                                <li><a href="">Logout</a></li>
+                                            </ul>
+                                        </div> -->
+                        <!-- si no este -->
+                        <a class="btn_login" href="login.html"></a>
+                        <div href="index.html" id="logo"></div>
+                    </div><!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav no-last-child navbar-nav navbar-right">
+                            <li><a href="index.html">Inicio</a>
+                            </li>
+                            <li class="active"><a href="habitaciones.html">habitaciones</a>
+                            </li>
+                            <li><a href="ubicacion.html">Ubicacion</a>
+                            </li>
+                            <li><a href="galeria.html">Galeria</a>
+                            </li>
+                            <li><a href="servicios.html">Servicios</a>
+                            </li>
+                            <li><a href="contacto.html">Contacto</a>
+                            </li>
+                            <li><a href="opiniones.html">Opiniones</a>
+                            </li>
+                            <li><a href="fidelizacion.html">Fidelizacion</a>
+                            </li>
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- end container -->
+            </nav><!-- end navbar -->
+        </div><!-- end header-absolute -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="page-title">Satisfacción del huésped</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Calidad</li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end page-cover -->
+
+
+    <!--=============INNERPAGE-WRAPPER =============-->
+
+    <section id="habitaciones" class="section-padding" style="padding-left: 3%;padding-right: 3%;" id="habitaciones">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Hello Dear Mr(s). Rachel Curtis</h2>
+                    <br>
+                    <p>We aprecciate your decision of evaluating your stay at our complex. Please evaluate from 1 (very
+                        bad)
+                        to
+                        10 (excelllent) according to your degree of satisfaction.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Limpieza General</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <span id="rateMe">
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="0" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Very bad"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="1" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="2" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="3" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="4" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="5" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="6" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="7" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="8" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="9" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Excellent"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Servicio recepcion</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <span id="rateMe2">
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="0" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Very bad"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="1" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="2" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="3" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="4" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="5" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="6" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="7" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="8" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="9" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Excellent"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Servicio Restaurante</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <span id="rateMe3">
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="0" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Very bad"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="1" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="2" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="3" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="4" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="5" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="6" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="7" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="8" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="9" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Excellent"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Servicio Restaurante</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <span id="rateMe4">
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="0" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Very bad"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="1" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="2" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="3" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="4" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="5" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="6" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="7" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="8" data-html="true"
+                                    data-toggle="popover" data-placement="top"></i>
+                                <i class="fas fa-check fa-2x py-2 px-1 rate-popover" data-index="9" data-html="true"
+                                    data-toggle="popover" data-placement="top" title="Excellent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="">
+                        <h3>Comentarios</h3>
+                        <p>Please leave your comments</p>
+                        <br>
+                        <p><i class="far fa-thumbs-up fa-2x"></i> What did you like <u>MOST</u> of our hotel?.</p>
+                        <div class="container-fluid">
+                            <textarea class="row" style="height: 90px;width:100%" name="" id=""></textarea>
+                        </div>
+                        <br>
+                        <p><i class="far fa-thumbs-down fa-2x"></i> What do you recommend us, <u>TO IMPROVE</u> at our
+                            hotel?.</p>
+                        <div class="container-fluid">
+                            <textarea class="row" style="height: 90px;width:100%" name="" id=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Check this box if you do not want your comments to be published on our website.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                <label class="form-check-label" for="gridCheck2">
+                                    I wish to recieve commercial information. offers and discounts
+                                    from
+                                    Bitacora Club Lanzarote.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                <label class="form-check-label" for="gridCheck3">
+                                    I agree with the terms of Bitacora Club Lanzarote.
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <center>
+                            <button type="button" class="btn">Enviar</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--========== FOOTER-CUSTOM ==========-->
+    <section>
+        <div id="footer-top" class="banner-padding ftr-top-style-3 txt-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5" id="more-about">
+                        <h2 class="footer-heading big-768"><span>STAR</span>HOTEL</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit.</p>
+                        <ul class="social-links list-inline list-unstyled">
+                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-youtube-play"></i></span></a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4" id="f-instagram">
+                        <h4 class="footer-heading">Instagram Post</h4>
+                        <ul class="list-unstyled list-inline" id="images-footer">
+                            <li><a href="#"><img src="https://source.unsplash.com/85x85/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/100x100/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/200x200/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/150x150/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/140x140/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/120x120/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h4 class="footer-heading">Contact Us</h4>
+                                <ul class="list-unstyled">
+                                    <li><span><i class="fa fa-map-marker-alt"></i></span>29 Land St, Lorem City, CA</li>
+                                    <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                                    <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h5 class="footer-heading-custom">Nuestro Partner Es:</h5>
+                                <div>
+                                    <img class="img-responsive" src="./images/footer.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="footer-bottom">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                                    <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
+                                </div><!-- end columns -->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                                    <ul class="list-unstyled list-inline">
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><!-- end columns -->
+                            </div><!-- end row -->
+                        </div><!-- end footer-bottom -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+    </section>
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorpanel.js"></script>
+    <script>
+        $('#colorPanel').ColorPanel({
+            styleSheet: '#cpswitch'
+            , animateContainer: false
+            , colors: {
+                '#ffcb05': 'css/yellow.css'
+                , '#3cafff': 'css/skyblue.css'
+                , '#ff6666': 'css/pink.css'
+                , '#7fc143': 'css/green.css'
+                , '#00cccc': 'css/cyan.css'
+                , '#ffbf80': 'css/skin.css'
+                , '#9797ff': 'css/lightblue.css'
+                , '#d98cb3': 'css/purple.css'
+                , '#cc9966': 'css/brown.css'
+                , '#00e6ac': 'css/spring-green.css'
+                , '#fc603f': 'css/orange.css'
+                , '#c4c920': 'css/lightgreen.css'
+                , '#e266e8': 'css/strongpurple.css'
+                , '#6ce34b': 'css/stronggreen.css'
+                ,
+            }
+        });
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-gallery.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-flex.js"></script>
+    <script src="js/custom-owl.js"></script>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Page Scripts Ends -->
+    <script>
+        var $stars1;
+        var $stars2;
+        var $stars3;
+        var $stars4;
+
+        jQuery(document).ready(function ($) {
+
+            // Custom whitelist to allow for using HTML tags in popover content
+            var myDefaultWhiteList = $.fn.tooltip.Constructor.Default.whiteList
+            myDefaultWhiteList.textarea = [];
+            myDefaultWhiteList.button = [];
+
+            $stars1 = $('#rateMe .rate-popover');
+            $stars1.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive(index);
+            });
+
+            function markStarsAsActive(index) {
+                unmarkActive();
+                for (var i = 0; i <= index; i++) {
+                    $($stars1.get(i)).addClass('amber-text');
+                }
+            }
+            function unmarkActive() {
+                $stars1.removeClass('amber-text');
+            }
+
+            $stars1.on('click', function () {
+                $stars1.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe').on('click', '#voteSubmitButton', function () {
+                $stars1.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe').on('click', '#closePopoverButton', function () {
+                $stars1.popover('hide');
+            });
+
+            $stars2 = $('#rateMe2 .rate-popover');
+            $stars2.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive2(index);
+            });
+
+            function markStarsAsActive2(index) {
+                unmarkActive2();
+                for (var i = 0; i <= index; i++) {
+                    $($stars2.get(i)).addClass('amber-text');
+                }
+            }
+            function unmarkActive2() {
+                $stars2.removeClass('amber-text');
+            }
+
+            $stars2.on('click', function () {
+                $stars2.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe2').on('click', '#voteSubmitButton', function () {
+                $stars2.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe2').on('click', '#closePopoverButton', function () {
+                $stars2.popover('hide');
+            });
+
+
+            $stars3 = $('#rateMe3 .rate-popover');
+            $stars3.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive3(index);
+            });
+
+            function markStarsAsActive3(index) {
+                unmarkActive3();
+                for (var i = 0; i <= index; i++) {
+                    $($stars3.get(i)).addClass('amber-text');
+                }
+            }
+            function unmarkActive3() {
+                $stars3.removeClass('amber-text');
+            }
+
+            $stars3.on('click', function () {
+                $stars3.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe3').on('click', '#voteSubmitButton', function () {
+                $stars3.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe3').on('click', '#closePopoverButton', function () {
+                $stars3.popover('hide');
+            });
+
+            $stars4 = $('#rateMe4 .rate-popover');
+            $stars4.on('mouseover', function () {
+                var index = $(this).attr('data-index');
+                markStarsAsActive4(index);
+            });
+
+            function markStarsAsActive4(index) {
+                unmarkActive4();
+                for (var i = 0; i <= index; i++) {
+                    $($stars4.get(i)).addClass('amber-text');
+                }
+            }
+            function unmarkActive4() {
+                $stars4.removeClass('amber-text');
+            }
+
+            $stars4.on('click', function () {
+                $stars4.popover('hide');
+            });
+
+            // Submit, you can add some extra custom code here
+            // ex. to send the information to the server
+            $('#rateMe4').on('click', '#voteSubmitButton', function () {
+                $stars4.popover('hide');
+            });
+
+            // Cancel, just close the popover
+            $('#rateMe4').on('click', '#closePopoverButton', function () {
+                $stars4.popover('hide');
+            });
+        });
+
+        $(function () {
+            $('.rate-popover').tooltip();
+        });
+    </script>
+    <script src="js/customteam.js"></script>
+
+</body>
+
+</html>

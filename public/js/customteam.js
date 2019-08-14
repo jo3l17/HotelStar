@@ -213,6 +213,7 @@ $(window).on('load', function () {
 	$('#myModal').modal('show');
 
 });
+
 var nowTemp = new Date();
 var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
@@ -238,6 +239,31 @@ var checkout = $('#fecha_termino').datepicker({
 }).on('changeDate', function (ev) {
 	checkout.hide();
 }).data('datepicker');
+
+var checkin1 = $('#fecha_inicio1').datepicker({
+	format: 'dd-mm-yyyy',
+	onRender: function (date) {
+		return date.valueOf() < now.valueOf() ? 'disabled' : '';
+	}
+}).on('changeDate', function (ev) {
+	if (ev.date.valueOf() > checkout.date.valueOf()) {
+		var newDate = new Date(ev.date)
+		newDate.setDate(newDate.getDate() + 1);
+		checkout.setValue(newDate);
+	}
+	checkin.hide();
+	$('#fecha_termino1')[0].focus();
+}).data('datepicker');
+var checkout = $('#fecha_termino1').datepicker({
+	format: 'dd-mm-yyyy',
+	onRender: function (date) {
+		return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+	}
+}).on('changeDate', function (ev) {
+	checkout.hide();
+}).data('datepicker');
+
+
 var precios = []
 $("#total").html(0)
 $("#precio-total").html(0)
@@ -349,7 +375,16 @@ let year = date.getFullYear()
 if (month < 10) {
 	$('input#fecha_inicio').val(`${day}-0${month}-${year}`)
 	$('input#fecha_termino').val(`${day+1}-0${month}-${year}`)
+	
+	$('input#fecha_inicio1').val(`${day}-0${month}-${year}`)
+	$('input#fecha_termino1').val(`${day+1}-0${month}-${year}`)
 } else {
 	$('input#fecha_inicio').val(`${day}-${month}-${year}`)
 	$('input#fecha_termino').val(`${day+1}-${month}-${year}`)
+
+	$('input#fecha_inicio1').val(`${day}-${month}-${year}`)
+	$('input#fecha_termino1').val(`${day+1}-${month}-${year}`)
 }
+$('.datepicker').datepicker(
+	{numberOfMonths: 2}
+);

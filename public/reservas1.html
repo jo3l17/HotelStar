@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contacto</title>
+    <title>Paso 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -567,12 +567,12 @@
                     <div class="panel" id="panel-login">
                         <div class="panel-heading" role="tab" id="headingLogin">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordionLogin" href="#collapseLogin"
-                                    aria-expanded="true" aria-controls="collapseLogin">
+                                <a role="button" data-toggle="collapse" data-parent="#accordionLogin"
+                                    href="#collapseLogin" aria-expanded="true" aria-controls="collapseLogin">
                                     2. Click aqui si usted es un cliente fidelizado
                                 </a>
-                                <i role="button" data-toggle="collapse" data-parent="#accordionLogin" href="#collapseLogin"
-                                    aria-expanded="true" aria-controls="collapseLogin"
+                                <i role="button" data-toggle="collapse" data-parent="#accordionLogin"
+                                    href="#collapseLogin" aria-expanded="true" aria-controls="collapseLogin"
                                     class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
                             </h4>
                         </div>
@@ -809,6 +809,103 @@
                                         beatae quas a alias neque voluptatem dignissimos laboriosam quidem recusandae,
                                         consequatur perspiciatis. Dolor porro accusantium eius dolore! Rerum!
                                     </div>
+                                </div>
+                                <div class="row mt-10">
+                                    <center>
+                                        <p>No hay disponibilidad de las habitaciones en uno o mas diás seleccionados
+                                            <br>
+                                            Revise la disponibilidad en este calendario y modifique tus dias de estadia
+                                        </p>
+                                        <button class="btn mb-10" type="button" data-toggle="modal"
+                                            data-target="#calendarioModal">
+                                            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                                        </button>
+                                        <div id="calendarioModal" class="modal fade" role="dialog"
+                                            style="z-index: 99997;">
+                                            <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal">&times;</button>
+                                                        <div class="row mt-20">
+                                                            <div class="container-fluid">
+                                                                <form action="reservas1.html" method="post"
+                                                                    class="form-inline" role="form">
+                                                                    <div class="input-group col-md-3 col-sm-3 col-lg-2">
+                                                                        <input id="fecha_inicio1" name="checkin"
+                                                                            class="form-control" type="text"
+                                                                            placeholder="Fecha Llegada:"
+                                                                            readonly="readonly" required="required"
+                                                                            value="">
+                                                                        <span class="input-group-addon" id="checkin1">
+                                                                            <i class="glyphicon glyphicon-calendar"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="input-group col-md-3 col-sm-3 col-lg-2">
+                                                                        <input id="fecha_termino1" name="checkout"
+                                                                            class="form-control" type="text"
+                                                                            placeholder="Fecha Salida:"
+                                                                            readonly="readonly" required="required"
+                                                                            value="1">
+                                                                        <span class="input-group-addon" id="checkout1">
+                                                                            <i class="glyphicon glyphicon-calendar"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="input-group col-md-3 col-sm-3 col-lg-4">
+                                                                        <span
+                                                                            style="margin:0px 20px; font-weight: bold;"
+                                                                            class="">Total noches: -18</span>
+                                                                        <button type="submit" class="btn btn-primary"><i
+                                                                                class="fa fa-refresh"></i>
+                                                                            Actualizar</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <p>¿ No hay disponibilidad para las fechas que deseas
+                                                                reservar ? Envíanos tu e-mail y buscaremos una
+                                                                apartamento para ti:</p>
+                                                            <center>
+                                                                <form action="">
+                                                                    <input type="text">
+                                                                    <button type="button" class="btn ">
+                                                                        <i class="fa fa-envelope"
+                                                                            aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <div class="form-check">
+                                                                        <label class="form-check-label"
+                                                                            for="gridCheck1">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="gridCheck1">
+                                                                            Acepto los <a href="">Terminos y
+                                                                                condiciones</a>
+                                                                        </label>
+                                                                    </div>
+                                                                </form>
+                                                            </center>
+                                                            <div>
+                                                                <div class="container-fluid">
+
+                                                                    <div class="row">
+
+                                                                        <div class="datepicker col-md-4"></div>
+
+                                                                        <div class="datepicker col-md-4"></div>
+
+                                                                        <div class="datepicker col-md-4"></div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </center>
                                 </div>
                                 <div class="row">
                                     <center>
@@ -1096,61 +1193,67 @@
         </div>
     </section>
     <section id="reservation-page" class="innerpage-wrapper">
-            
-            <div id="reservation-details"> 
-                <div class="container-fluid">
-                    <div class="row">
-                    
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-info">
-    						<div class="reserve-position center">
-                                <div class="innerpage-heading">
-                                    <h1>How to make reservation</h1>
-                                </div><!-- end innerpage-heading -->
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                <span class="hotel-name">The Star Hotel</span>
-    						</div><!-- end reserve-position -->
-                        </div><!-- end columns -->
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-support">
-                        	<div class="center">
-                                <div class="innerpage-heading">
-                                    <h1>Reservation Support</h1>
-                                </div><!-- end innerpage-heading -->
-                                
-                                <div class="support-list">
-                                    <div class="icon"><span><i class="fa fa-envelope"></i></span></div>
-                                    <div class="text">
-                                        <p>If you are on the go and still want to ask a question, simply drop us an e-mail.</p>
-                                        <p class="bold">support@starhotel.com</p>
-                                    </div><!-- end text -->
-                                </div><!-- end support-list -->
-                                
-                                <div class="support-list">
-                                    <div class="icon"><span><i class="fa fa-phone"></i></span></div>
-                                    <div class="text phone">
-                                        <p>If you are on the go and still want to ask a question, simply drop us an e-mail.</p>
-                                        <p class="bold">+222 – 5548 656</p>
-                                    </div><!-- end text -->
-                                </div><!-- end support-list -->
-                                
-                                <div class="support-list">
-                                    <div class="icon"><span><i class="fa fa-map-marker"></i></span></div>
-                                    <div class="text">
-                                        <p>Street No: 1234/A, Blu Vard Area, Main Double Road,</p>
-                                        <p class="bold">United Kingdom</p>
-                                    </div><!-- end text -->
-                                </div><!-- end support-list -->
-                                
-                            </div><!-- end center -->
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end reervation-details -->
-        
-        </section>
+
+        <div id="reservation-details">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-info">
+                        <div class="reserve-position center">
+                            <div class="innerpage-heading">
+                                <h1>How to make reservation</h1>
+                            </div><!-- end innerpage-heading -->
+
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <span class="hotel-name">The Star Hotel</span>
+                        </div><!-- end reserve-position -->
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reservation-support">
+                        <div class="center">
+                            <div class="innerpage-heading">
+                                <h1>Reservation Support</h1>
+                            </div><!-- end innerpage-heading -->
+
+                            <div class="support-list">
+                                <div class="icon"><span><i class="fa fa-envelope"></i></span></div>
+                                <div class="text">
+                                    <p>If you are on the go and still want to ask a question, simply drop us an e-mail.
+                                    </p>
+                                    <p class="bold">support@starhotel.com</p>
+                                </div><!-- end text -->
+                            </div><!-- end support-list -->
+
+                            <div class="support-list">
+                                <div class="icon"><span><i class="fa fa-phone"></i></span></div>
+                                <div class="text phone">
+                                    <p>If you are on the go and still want to ask a question, simply drop us an e-mail.
+                                    </p>
+                                    <p class="bold">+222 – 5548 656</p>
+                                </div><!-- end text -->
+                            </div><!-- end support-list -->
+
+                            <div class="support-list">
+                                <div class="icon"><span><i class="fa fa-map-marker"></i></span></div>
+                                <div class="text">
+                                    <p>Street No: 1234/A, Blu Vard Area, Main Double Road,</p>
+                                    <p class="bold">United Kingdom</p>
+                                </div><!-- end text -->
+                            </div><!-- end support-list -->
+
+                        </div><!-- end center -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end reervation-details -->
+
+    </section>
 
     <!--========== FOOTER-CUSTOM ==========-->
     <section>
@@ -1296,7 +1399,8 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- <script src="js/bootstrap-datepicker.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom-gallery.js"></script>
     <script src="js/custom-navigation.js"></script>

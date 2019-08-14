@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calidad2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CPlayfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Flag-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+
+
+    <!-- Font Awesome Stylesheet -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="cpswitch" href="css/yellow.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Date-Picker Stylesheet-->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- Color Panel -->
+    <link rel="stylesheet" href="css/jquery.colorpanel.css">
+</head>
+
+
+<body id="reservas-body">
+
+    <!--====== LOADER =====-->
+    <div class="loader"></div>
+
+
+    <!--========== COLOR-PANEL ==========-->
+    <div id="colorPanel" class="colorPanel">
+        <a id="cpToggle" href="#"></a>
+        <ul></ul>
+    </div><!-- end colorPanel -->
+
+
+    <!--========== TOP-BAR ==========-->
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fas fa-map-marker-alt"></i></span>29 Land St, Lorem City, CA</li>
+                            <li><span><i class="fas fa-phone"></i></span>+00 123 4567</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                            <li>
+                                <form>
+                                    <div class="form-group">
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                        <select class="form-control">
+                                            <option value="">EN</option>
+                                            <option value="">UR</option>
+                                            <option value="">FR</option>
+                                            <option value="">IT</option>
+                                        </select>
+                                    </div><!-- end form-group -->
+                                </form>
+                            </li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+
+    <!--================= PAGE-COVER ===============-->
+    <section class="page-cover cover-navbar-wrapper pt-174 black-full-overlay-img">
+
+        <div class="header-absolute">
+            <nav class="navbar navbar-default customized-navbar transparent-nav navbar-custom black-menu" id="mynavbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="btn_book" href="reservation-right-sidebar.html"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="div_language" class="dropdown"><a id="btn_language" href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span class="flag-icon flag-icon-es"></span> <i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="btn_language">
+                                <li><a href=""><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-fr"></span> Francés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-nl"></span> Holandés</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-no"></span> Noruego</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-se"></span> Sueco</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-pt"></span> Portugués</a></li>
+                                <li><a href=""><span class="flag-icon flag-icon-ru"></span> Ruso</a></li>
+                            </ul>
+                        </div>
+                        <!-- si esta logueado este boton -->
+                        <!-- <div class="dropdown"><a id="btn_login" class="btn_login" href="#"
+                                                class="dropdown-toggle" data-toggle="dropdown"></span></a>
+                                            <ul class="dropdown-menu" aria-labelledby="btn_login">
+                                                <li><a href="">Tu nombre</a></li>
+                                                <li><a href="">Configurar</a></li>
+                                                <li><a href="">Logout</a></li>
+                                            </ul>
+                                        </div> -->
+                        <!-- si no este -->
+                        <a class="btn_login" href="login.html"></a>
+                        <div href="index.html" id="logo"></div>
+                    </div><!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav no-last-child navbar-nav navbar-right">
+                            <li><a href="index.html">Inicio</a>
+                            </li>
+                            <li class="active"><a href="habitaciones.html">habitaciones</a>
+                            </li>
+                            <li><a href="ubicacion.html">Ubicacion</a>
+                            </li>
+                            <li><a href="galeria.html">Galeria</a>
+                            </li>
+                            <li><a href="servicios.html">Servicios</a>
+                            </li>
+                            <li><a href="contacto.html">Contacto</a>
+                            </li>
+                            <li><a href="opiniones.html">Opiniones</a>
+                            </li>
+                            <li><a href="fidelizacion.html">Fidelizacion</a>
+                            </li>
+                        </ul>
+                    </div><!-- end navbar collapse -->
+                </div><!-- end container -->
+            </nav><!-- end navbar -->
+        </div><!-- end header-absolute -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="page-title">Satisfacción del huésped</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Calidad</li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end page-cover -->
+
+
+    <!--=============INNERPAGE-WRAPPER =============-->
+
+    <section id="habitaciones" class="section-padding" style="padding-top: 4%; padding-left: 10%;padding-right: 10%;"
+        id="habitaciones">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Gracias realmente apreciamos sus comentarios.</h2>
+                <br>
+                <h2>Complete su fecha de nacimiento y será parte de nuestro programa de fidelización.</h2>
+                <div>
+                    <h2>En sus proximas reservas disfrutara los siguientes descuentos y beneficios,</h2>
+                </div>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="col-md-6">
+                        <p style="font-size:150%; color: black">1.-10% de descuento en el precio de la Tarifa normal
+                            <br>
+                            2.-5% de descuento en el precio de otras tarifas
+                            <br>
+                            3.-Ofertas exclusivas que le seran comunicadas a través de correo electronico
+                            <br>
+                            <br>
+                            Importante: Apartamentos se reserva el derecho de agregar, modificar o eliminar beneficios.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="">
+                            <p style="font-size:150%; color: black">Nombre: Juan Carlos Rivera
+                                <br>
+                                <br>
+                                Fecha de Nacimiento
+                            </p>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <select class="form-control" id="modal-day-birthdate" name="l-birthday-day">
+                                        <option value="">Dia</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <select class="form-control" name="l-birthday-month">
+                                        <option value="">Mes</option>
+                                        <option value="">Elije un Mes</option>
+                                        <option value="01">Enero</option>
+                                        <option value="02">Febrero</option>
+                                        <option value="03">Marzo</option>
+                                        <option value="04">Abril</option>
+                                        <option value="05">Mayo</option>
+                                        <option value="06">Junio</option>
+                                        <option value="07">Julio</option>
+                                        <option value="08">Augosto</option>
+                                        <option value="09">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <select class="form-control" name="l-birthday-year">
+                                        <option value="">Año</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1921">1921</option>
+                                        <option value="1920">1920</option>
+                                        <option value="1919">1919</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1915">1915</option>
+                                        <option value="1914">1914</option>
+                                        <option value="1913">1913</option>
+                                        <option value="1912">1912</option>
+                                        <option value="1911">1911</option>
+                                        <option value="1910">1910</option>
+                                        <option value="1909">1909</option>
+                                        <option value="1908">1908</option>
+                                        <option value="1907">1907</option>
+                                        <option value="1906">1906</option>
+                                        <option value="1905">1905</option>
+                                        <option value="1904">1904</option>
+                                        <option value="1903">1903</option>
+                                        <option value="1902">1902</option>
+                                        <option value="1901">1901</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mt-20">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        Deseo recibir informacion comercial, ofertas y descuentos de Bitacora Club
+                                        Lanzarote
+                                    </label>
+                                </div>
+                                <div class="form-check2">
+                                    <label class="form-check-label" for="gridCheck2">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                        Acepto los terminos y condiciones de Bitacora Club Lanzarote.
+                                    </label>
+                                </div>
+                            </div>
+                            <center class="mt-20">
+                                <button type="button" class="btn">Enviar</button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========== FOOTER-CUSTOM ==========-->
+    <section>
+        <div id="footer-top" class="banner-padding ftr-top-style-3 txt-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5" id="more-about">
+                        <h2 class="footer-heading big-768"><span>STAR</span>HOTEL</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit.</p>
+                        <ul class="social-links list-inline list-unstyled">
+                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span><i class="fab fa-youtube-play"></i></span></a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4" id="f-instagram">
+                        <h4 class="footer-heading">Instagram Post</h4>
+                        <ul class="list-unstyled list-inline" id="images-footer">
+                            <li><a href="#"><img src="https://source.unsplash.com/85x85/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/100x100/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/200x200/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/150x150/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/140x140/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                            <li><a href="#"><img src="https://source.unsplash.com/120x120/?instagram"
+                                        class="img-responsive" alt="insta-img" /></a>
+                            </li>
+                        </ul>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-left" id="contact-us">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h4 class="footer-heading">Contact Us</h4>
+                                <ul class="list-unstyled">
+                                    <li><span><i class="fa fa-map-marker-alt"></i></span>29 Land St, Lorem City, CA</li>
+                                    <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                                    <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-xs-6">
+                                <h5 class="footer-heading-custom">Nuestro Partner Es:</h5>
+                                <div>
+                                    <img class="img-responsive" src="./images/footer.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end columns -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="footer-bottom">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                                    <p>© 2017 <a href="#">StarHotel</a>. All rights reserved.</p>
+                                </div><!-- end columns -->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                                    <ul class="list-unstyled list-inline">
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><!-- end columns -->
+                            </div><!-- end row -->
+                        </div><!-- end footer-bottom -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+    </section>
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorpanel.js"></script>
+    <script>
+        $('#colorPanel').ColorPanel({
+            styleSheet: '#cpswitch'
+            , animateContainer: false
+            , colors: {
+                '#ffcb05': 'css/yellow.css'
+                , '#3cafff': 'css/skyblue.css'
+                , '#ff6666': 'css/pink.css'
+                , '#7fc143': 'css/green.css'
+                , '#00cccc': 'css/cyan.css'
+                , '#ffbf80': 'css/skin.css'
+                , '#9797ff': 'css/lightblue.css'
+                , '#d98cb3': 'css/purple.css'
+                , '#cc9966': 'css/brown.css'
+                , '#00e6ac': 'css/spring-green.css'
+                , '#fc603f': 'css/orange.css'
+                , '#c4c920': 'css/lightgreen.css'
+                , '#e266e8': 'css/strongpurple.css'
+                , '#6ce34b': 'css/stronggreen.css'
+                ,
+            }
+        });
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom-gallery.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-flex.js"></script>
+    <script src="js/custom-owl.js"></script>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Page Scripts Ends -->
+
+    <script src="js/customteam.js"></script>
+
+</body>
+
+</html>

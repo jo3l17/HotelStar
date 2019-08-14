@@ -5755,7 +5755,14 @@ input[type=date]::-webkit-outer-spin-button {
 .m-0{
 	margin: 0;
 }
-#logo img{
+#images-footer img{
+	height: 85px;
+	width: 85px;
+	object-fit: cover;
+}
+#footer-top.ftr-top-style-3{
+	background:linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)),url('https://source.unsplash.com/1600x900/?hotel') 50% 40% !important;
+	background-size:cover;	
 }
 #logo{
 	background-image: url("../images/footer.png");
@@ -5764,4 +5771,17 @@ input[type=date]::-webkit-outer-spin-button {
 	background-position: center;
 	height: 60px;
 	width: 150px;
+}
+/* agregar al final */
+.navbar{
+	box-shadow: none !important;
+}
+.navbar .dropdown-menu a {
+    padding: 10px;
+    font-size: 14px !important;
+    font-weight: 300;
+    color: #000;
+}
+.datepicker.dropdown-menu{
+	z-index: 99998;
 }

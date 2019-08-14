@@ -3695,3 +3695,7 @@ p{
 #habitaciones .panel-heading{
 	background-color: #ffcb05;
 }
+/* comentarios */
+.amber-text{
+	color:  #ffcb05 !important;
+}
