@@ -5785,3 +5785,8 @@ input[type=date]::-webkit-outer-spin-button {
 .datepicker.dropdown-menu{
 	z-index: 99998;
 }
+.star, .star-clear {
+	padding: 0.1em;
+	font-size: 2em;
+	cursor: pointer;
+  }

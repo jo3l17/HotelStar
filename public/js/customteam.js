@@ -6,7 +6,7 @@
 	var programas = $("#owl-programas-turisticos")
 	var lugares = $("#owl-lugares-interes")
 	var establecimientos = $("#owl-establecimientos")
-	var premios =$("#owl-premios")
+	var premios = $("#owl-premios")
 
 	modal.owlCarousel({
 		items: 1,
@@ -177,34 +177,34 @@
 		responsiveBaseWidth: window,
 	})
 	premios.owlCarousel({
-		items : 3,
-		itemsCustom : false,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [991,2],
-		itemsTablet: [768,2],
-		itemsTabletSmall: [600,1],
-		itemsMobile : [479,1],
-		singleItem : false,
-		itemsScaleUp : false,
-	 
+		items: 3,
+		itemsCustom: false,
+		itemsDesktop: [1199, 3],
+		itemsDesktopSmall: [991, 2],
+		itemsTablet: [768, 2],
+		itemsTabletSmall: [600, 1],
+		itemsMobile: [479, 1],
+		singleItem: false,
+		itemsScaleUp: false,
+
 		//Autoplay
-		autoPlay : true,
-		stopOnHover : true,
-	 
+		autoPlay: true,
+		stopOnHover: true,
+
 		// Navigation
-		navigation : false,
-		navigationText : false,
-		rewindNav : false,
-		scrollPerPage : false,
-	 
+		navigation: false,
+		navigationText: false,
+		rewindNav: false,
+		scrollPerPage: false,
+
 		//Pagination
-		pagination : true,
+		pagination: true,
 		paginationNumbers: false,
-	 
+
 		// Responsive 
 		responsive: true,
-		responsiveRefreshRate : 200,
-		responsiveBaseWidth: window,    
+		responsiveRefreshRate: 200,
+		responsiveBaseWidth: window,
 	});
 
 })(jQuery)
@@ -272,8 +272,8 @@ i = 0;
 $(".agregarItem").click(function () {
 	$(this).addClass("disabled")
 	var itemId = $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().attr("id")
-	var tableContainer= $(this).parent().parent().parent().parent()
-	tableContainer.attr("id",`table-${i}`)
+	var tableContainer = $(this).parent().parent().parent().parent()
+	tableContainer.attr("id", `table-${i}`)
 	console.log(tableContainer.attr("id"))
 	$(this).addClass(`btn-${i}`);
 	$("#detail-items")
@@ -374,17 +374,148 @@ let year = date.getFullYear()
 
 if (month < 10) {
 	$('input#fecha_inicio').val(`${day}-0${month}-${year}`)
-	$('input#fecha_termino').val(`${day+1}-0${month}-${year}`)
-	
+	$('input#fecha_termino').val(`${day + 1}-0${month}-${year}`)
+
 	$('input#fecha_inicio1').val(`${day}-0${month}-${year}`)
-	$('input#fecha_termino1').val(`${day+1}-0${month}-${year}`)
+	$('input#fecha_termino1').val(`${day + 1}-0${month}-${year}`)
 } else {
 	$('input#fecha_inicio').val(`${day}-${month}-${year}`)
-	$('input#fecha_termino').val(`${day+1}-${month}-${year}`)
+	$('input#fecha_termino').val(`${day + 1}-${month}-${year}`)
 
 	$('input#fecha_inicio1').val(`${day}-${month}-${year}`)
-	$('input#fecha_termino1').val(`${day+1}-${month}-${year}`)
+	$('input#fecha_termino1').val(`${day + 1}-${month}-${year}`)
 }
-$('.datepicker').datepicker(
-	{numberOfMonths: 2}
-);
+var diaActual = new Date();
+var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+// console.log(diaActual.getDay())
+diaSemanaAct = diaActual.getDay()
+// console.log(diaActual.getDate())
+fechaAct = diaActual.getDate()
+// console.log(meses[diaActual.getMonth()])
+mesAct = meses[diaActual.getMonth()]
+// console.log(diaActual.getMonth())
+// console.log(diaActual.getFullYear())
+// console.log(new Date(diaActual.getFullYear(), diaActual.getMonth() + 1, 0).getDate())
+limiteMes = new Date(diaActual.getFullYear(), diaActual.getMonth() + 1, 0).getDate()
+var bodytable1 = $('<tbody></tbody>')
+var limiteSemana = 0
+// bodytable1.append('<tr>')
+for (let i = 0; i < diaSemanaAct; i++) {
+	bodytable1.append('<td></td>')
+	limiteSemana++
+}
+for (let i = fechaAct; i < limiteMes + 1; i++) {
+	// console.log(i)
+	bodytable1.append(`<td>${i}</td>`)
+	if (limiteSemana == 6 || limiteSemana == 13 || limiteSemana == 20 || limiteSemana == 27) {
+		bodytable1.append('</tr>')
+		bodytable1.append('<tr>')
+	}
+	limiteSemana++
+}
+// console.log(bodytable1.html())
+$("#calendario").append(`
+<div class="col-xs-10 col-sm-6 col-md-4 text-center"style="padding:0; padding-left:0.5%">
+	<div class="center-block">
+	    <table class="table table-bordered">
+	    <thead>
+	    	<tr>
+	    		<th colspan="7">${meses[diaActual.getMonth()]}
+	    			2019</th>
+	    	</tr>
+	    	<tr>
+	    		<th>Sun</th>
+	    		<th>Mon</th>
+	    		<th>Tue</th>
+	    		<th>Wed</th>
+	    		<th>Thu</th>
+	    		<th>Fri</th>
+	    		<th>Sat</th>
+	    	</tr>
+		</thead>
+		${bodytable1.html()}
+	</div>
+</div>
+`)
+bodytable1.html('<tbody></tbody>')
+diaSemanaAct=new Date(diaActual.getFullYear(),diaActual.getMonth()+1,1).getDay()
+limiteMes=new Date(diaActual.getFullYear(), diaActual.getMonth() + 2, 0).getDate()
+var limiteSemana = 0
+// bodytable1.append('<tr>')
+for (let i = 0; i < diaSemanaAct; i++) {
+	bodytable1.append('<td></td>')
+	limiteSemana++
+}
+for (let i = 1; i < limiteMes + 1; i++) {
+	// console.log(i)
+	bodytable1.append(`<td>${i}</td>`)
+	if (limiteSemana == 6 || limiteSemana == 13 || limiteSemana == 20 || limiteSemana == 27) {
+		bodytable1.append('</tr>')
+		bodytable1.append('<tr>')
+	}
+	limiteSemana++
+}
+$("#calendario").append(`
+<div class="col-xs-10 col-sm-6 col-md-4 text-center"style="padding:0; padding-left:0.5%">
+	<div class="center-block">
+	    <table class="table table-bordered">
+	    <thead>
+	    	<tr>
+	    		<th colspan="7">${meses[diaActual.getMonth()+1]}
+	    			2019</th>
+	    	</tr>
+	    	<tr>
+	    		<th>Sun</th>
+	    		<th>Mon</th>
+	    		<th>Tue</th>
+	    		<th>Wed</th>
+	    		<th>Thu</th>
+	    		<th>Fri</th>
+	    		<th>Sat</th>
+	    	</tr>
+		</thead>
+		${bodytable1.html()}
+	</div>
+</div>
+`)
+
+bodytable1.html('<tbody></tbody>')
+diaSemanaAct=new Date(diaActual.getFullYear(),diaActual.getMonth()+2,1).getDay()
+var limiteSemana = 0
+// bodytable1.append('<tr>')
+for (let i = 0; i < diaSemanaAct; i++) {
+	bodytable1.append('<td></td>')
+	limiteSemana++
+}
+for (let i = 1; i < fechaAct + 1; i++) {
+	// console.log(i)
+	bodytable1.append(`<td>${i}</td>`)
+	if (limiteSemana == 6 || limiteSemana == 13 || limiteSemana == 20 || limiteSemana == 27) {
+		bodytable1.append('</tr>')
+		bodytable1.append('<tr>')
+	}
+	limiteSemana++
+}
+$("#calendario").append(`
+<div class="col-xs-10 col-sm-6 col-md-4 text-center"style="padding:0; padding-left:0.5%">
+	<div class="center-block">
+	    <table class="table table-bordered">
+	    <thead>
+	    	<tr>
+	    		<th colspan="7">${meses[diaActual.getMonth()+2]}
+	    			2019</th>
+	    	</tr>
+	    	<tr>
+	    		<th>Sun</th>
+	    		<th>Mon</th>
+	    		<th>Tue</th>
+	    		<th>Wed</th>
+	    		<th>Thu</th>
+	    		<th>Fri</th>
+	    		<th>Sat</th>
+	    	</tr>
+		</thead>
+		${bodytable1.html()}
+	</div>
+</div>
+`)
